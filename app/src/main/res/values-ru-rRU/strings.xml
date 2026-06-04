@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Setting</string>
+    <string name="index_language">Язык</string>
+    <string name="index_Wifi">Wifi</string>
+    <string name="index_Bluetooth">Bluetooth</string>
+    <string name="index_About">Около</string>
+    <string name="about_title">Около</string>
+    <string name="android_version">Версия Android</string>
+    <string name="device_code">Машинный код</string>
+    <string name="software_version">Программное обеспечение</string>
+</resources>

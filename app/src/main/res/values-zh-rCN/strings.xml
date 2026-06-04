@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">设置</string>
+    <string name="index_language">语言</string>
+    <string name="index_Wifi">Wifi</string>
+    <string name="index_Bluetooth">蓝牙</string>
+    <string name="index_About">关于本机</string>
+    <string name="about_title">设备信息</string>
+    <string name="android_version">Android版本</string>
+    <string name="device_code">设备号</string>
+    <string name="software_version">软件号</string>
+</resources>

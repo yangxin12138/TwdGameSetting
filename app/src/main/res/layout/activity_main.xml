@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:padding="80dp"
+    tools:context=".MainActivity">
+
+    <!-- 语言选项：整行一个可点击容器 -->
+    <LinearLayout
+        android:id="@+id/ll_language"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_option_selector"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingStart="36dp"
+        android:paddingEnd="36dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- 左侧固定文字：语言 -->
+        <TextView
+            android:duplicateParentState="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/index_language"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="26sp"/>
+
+        <!-- 中间占位，自动挤到右侧：当前语言文本 -->
+        <TextView
+            android:duplicateParentState="true"
+            android:id="@+id/tv_cur_lang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="26sp"
+            android:text="简体中文"/>
+
+        <!-- 右侧箭头，沿用你原来的selector，焦点自动变色 -->
+        <ImageView
+            android:duplicateParentState="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/arrow_selector"/>
+
+    </LinearLayout>
+
+    <!-- WIFI选项 -->
+    <TextView
+        android:id="@+id/tv_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_option_selector"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingStart="36dp"
+        android:text="@string/index_Wifi"
+        android:textColor="@drawable/text_color_selector"
+        android:textSize="26sp"
+        android:drawableEnd="@drawable/arrow_selector"
+        android:drawablePadding="12dp"
+        android:paddingEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_language" />
+
+    <!-- 蓝牙选项 -->
+    <TextView
+        android:id="@+id/tv_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_option_selector"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingStart="36dp"
+        android:text="@string/index_Bluetooth"
+        android:textColor="@drawable/text_color_selector"
+        android:textSize="26sp"
+        android:drawableEnd="@drawable/arrow_selector"
+        android:drawablePadding="12dp"
+        android:paddingEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_wifi" />
+
+    <!-- 关于本机选项 -->
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_option_selector"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingStart="36dp"
+        android:text="@string/index_About"
+        android:textColor="@drawable/text_color_selector"
+        android:textSize="26sp"
+        android:drawableEnd="@drawable/arrow_selector"
+        android:drawablePadding="12dp"
+        android:paddingEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_bluetooth" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

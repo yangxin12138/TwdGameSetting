@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Setting</string>
+    <string name="index_language">言語</string>
+    <string name="index_Wifi">Wi-Fi</string>
+    <string name="index_Bluetooth">ブルートゥース</string>
+    <string name="index_About">～について</string>
+    <string name="about_title">デバイス情報</string>
+    <string name="android_version">Androidバージョン</string>
+    <string name="device_code">機械コード</string>
+    <string name="software_version">ソフトウェアバージョン</string>
+</resources>
