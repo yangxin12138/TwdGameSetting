@@ -53,12 +53,13 @@ public class LanguageActivity extends AppCompatActivity {
         languageMap.put("en_US","English");
         languageMap.put("fr_FR","Français");
         languageMap.put("de_DE","Deutsch");
+        languageMap.put("es_ES","Español");
         languageMap.put("ru_RU","Pусский");
         languageMap.put("ja_JP","日本語");
         languageMap.put("ko_KR","한국어");
 
 
-        List<String> supportedLanguages = Arrays.asList("zh_CN","en_US","fr_FR","de_DE","ru_RU","ja_JP","ko_KR");
+        List<String> supportedLanguages = Arrays.asList("zh_CN","en_US","fr_FR","de_DE","es_ES","ru_RU","ja_JP","ko_KR");
         for (String language_sup : supportedLanguages){
             String languageName = languageMap.get(language_sup);
             Log.i("yangxin","------支持的语言-："+languageName);

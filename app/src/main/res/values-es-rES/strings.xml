@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Setting</string>
+    <string name="index_language">Idioma</string>
+    <string name="index_Wifi">Wifi</string>
+    <string name="index_Bluetooth">Bluetooth</string>
+    <string name="index_About">Dispositivo</string>
+    <string name="about_title">Información del dispositivo</string>
+    <string name="android_version">Versión de Android</string>
+    <string name="device_code">Código máquina</string>
+    <string name="software_version">Versión del software</string>
+</resources>

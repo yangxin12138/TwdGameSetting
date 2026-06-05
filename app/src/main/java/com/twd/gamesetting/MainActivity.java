@@ -92,6 +92,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             tv_cur_lang.setText("日本語");
         }else if (currentLanguage.equals("ko_KR")) {
             tv_cur_lang.setText("한국어");
+        } else if (currentLanguage.equals("es_ES")) {
+            tv_cur_lang.setText("Español");
         } else {
             // 默认显示英文
             tv_cur_lang.setText("English");
