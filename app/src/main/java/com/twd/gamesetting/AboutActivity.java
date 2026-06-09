@@ -52,7 +52,7 @@ public class AboutActivity extends AppCompatActivity {
     }
 
     /*
-     * 获取软件号*/
+     * 获取软件版本*/
     private void setSoftwareNo(){
         String softwareNo = Build.VERSION.INCREMENTAL;
         tv_software_version.setText(softwareNo);
