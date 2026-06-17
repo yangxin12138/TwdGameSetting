@@ -6,6 +6,10 @@
     <string name="index_About">～について</string>
     <string name="about_title">デバイス情報</string>
     <string name="android_version">Androidバージョン</string>
-    <string name="device_code">機械コード</string>
+    <string name="device_code">デバイス名</string>
     <string name="software_version">ソフトウェアバージョン</string>
+    <string name="language_select">言語選択</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="index_bright">明るさ</string>
 </resources>

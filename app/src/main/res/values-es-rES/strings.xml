@@ -6,6 +6,10 @@
     <string name="index_About">Dispositivo</string>
     <string name="about_title">Información del dispositivo</string>
     <string name="android_version">Versión de Android</string>
-    <string name="device_code">Código máquina</string>
+    <string name="device_code">Nombre del dispositivo</string>
     <string name="software_version">Versión del software</string>
+    <string name="language_select">Selección de idioma</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="index_bright">Brillo</string>
 </resources>

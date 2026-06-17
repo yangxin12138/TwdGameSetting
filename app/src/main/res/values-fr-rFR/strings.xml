@@ -6,6 +6,10 @@
     <string name="index_About">À propos</string>
     <string name="about_title">Appareil</string>
     <string name="android_version">Version d\'Android</string>
-    <string name="device_code">CodeMachine</string>
+    <string name="device_code">Nom du périphérique</string>
     <string name="software_version">Version du logiciel</string>
+    <string name="language_select">Sélection de la langue</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="index_bright">Luminosité</string>
 </resources>

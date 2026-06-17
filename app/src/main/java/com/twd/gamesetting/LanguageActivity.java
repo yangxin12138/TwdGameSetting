@@ -134,7 +134,7 @@ public class LanguageActivity extends AppCompatActivity {
                     ivCheck.setVisibility(View.VISIBLE); // 显示勾
                     ivCheck.setImageResource(R.drawable.ic_check_focus);
                 }else {
-                    ivCheck.setVisibility(View.GONE); // 隐藏勾
+                    ivCheck.setVisibility(View.INVISIBLE); // 隐藏勾
                     ivCheck.setImageResource(R.drawable.ic_check_normal);
                 }
             }

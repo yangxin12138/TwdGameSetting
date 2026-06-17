@@ -7,7 +7,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    android:padding="80dp"
+    android:paddingTop="80dp"
+    android:paddingEnd="80dp"
+    android:paddingStart="80dp"
+    android:paddingBottom="60dp"
     tools:context=".MainActivity">
 
     <!-- 语言选项：整行一个可点击容器 -->
@@ -61,6 +64,64 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/ll_bright"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_option_selector"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingStart="36dp"
+        android:paddingEnd="36dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_language">
+
+        <!-- 左侧固定文字：语言 -->
+        <TextView
+            android:duplicateParentState="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/index_bright"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="26sp"/>
+
+        <!-- 中间占位，自动挤到右侧：当前语言文本 -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+        <ImageView
+            android:duplicateParentState="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_left_selector"/>
+        <TextView
+            android:duplicateParentState="true"
+            android:id="@+id/tv_cur_bright"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="26sp"
+            android:text="100%"/>
+
+        <!-- 右侧箭头，沿用你原来的selector，焦点自动变色 -->
+        <ImageView
+            android:duplicateParentState="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_selector"/>
+
+    </LinearLayout>
+
     <!-- WIFI选项 -->
     <TextView
         android:id="@+id/tv_wifi"
@@ -83,7 +144,7 @@
         android:paddingEnd="36dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ll_language" />
+        app:layout_constraintTop_toBottomOf="@id/ll_bright" />
 
     <!-- 蓝牙选项 -->
     <TextView

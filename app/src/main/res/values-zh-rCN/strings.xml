@@ -6,6 +6,10 @@
     <string name="index_About">关于本机</string>
     <string name="about_title">设备信息</string>
     <string name="android_version">Android版本</string>
-    <string name="device_code">设备号</string>
+    <string name="device_code">设备名称</string>
     <string name="software_version">软件号</string>
+    <string name="language_select">语言选择</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="index_bright">亮度调节</string>
 </resources>

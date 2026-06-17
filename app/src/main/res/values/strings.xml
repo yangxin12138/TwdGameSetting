@@ -1,11 +1,15 @@
 <resources>
     <string name="app_name">Setting</string>
     <string name="index_language">Language</string>
+    <string name="index_bright">Brightness</string>
     <string name="index_Wifi">Wifi</string>
     <string name="index_Bluetooth">Bluetooth</string>
     <string name="index_About">About</string>
     <string name="about_title">DeviceInfo</string>
     <string name="android_version">AndroidVersion</string>
-    <string name="device_code">MachineCode</string>
+    <string name="device_code">DeviceName</string>
     <string name="software_version">SoftwareVersion</string>
+    <string name="language_select">Language Select</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
 </resources>

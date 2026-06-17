@@ -6,6 +6,10 @@
     <string name="index_About">Около</string>
     <string name="about_title">Около</string>
     <string name="android_version">Версия Android</string>
-    <string name="device_code">Машинный код</string>
+    <string name="device_code">Имя устройства</string>
     <string name="software_version">Программное обеспечение</string>
+    <string name="language_select">Выбор языка</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="index_bright">Яркость</string>
 </resources>
