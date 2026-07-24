@@ -12,4 +12,7 @@
     <string name="wifi_mac">WiFi Mac</string>
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="index_bright">Brillo</string>
+    <string name="index_sound">Sonido de la tecla</string>
+    <string name="status_on">Abrir</string>
+    <string name="status_off">Cerrar</string>
 </resources>

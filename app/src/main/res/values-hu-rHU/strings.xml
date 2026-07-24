@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Beállítás</string>
+    <string name="index_language">Nyelv</string>
+    <string name="index_bright">Eredetiség</string>
+    <string name="index_sound">Billentyű lenyomás hangja</string>
+    <string name="index_Wifi">Wifi</string>
+    <string name="index_Bluetooth">Bluetooth</string>
+    <string name="index_About">A következőkről</string>
+    <string name="about_title">Eszköz Információ</string>
+    <string name="android_version">Android verzió</string>
+    <string name="device_code">Eszköz neve</string>
+    <string name="software_version">Szoftververzió</string>
+    <string name="language_select">Nyelv választása</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="status_on">Ahol</string>
+    <string name="status_off">Kikapcs</string>
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Innstillinger</string>
+    <string name="index_language">Språk</string>
+    <string name="index_bright">Lysstyrke</string>
+    <string name="index_sound">Tastetrykklyd</string>
+    <string name="index_Wifi">Wifi</string>
+    <string name="index_Bluetooth">Bluetooth</string>
+    <string name="index_About">Om</string>
+    <string name="about_title">Enhetsinformasjon</string>
+    <string name="android_version">Android-versjon</string>
+    <string name="device_code">Enhetsnavn</string>
+    <string name="software_version">Programversjon</string>
+    <string name="language_select">Språkvalg</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="status_on">Slå opp</string>
+    <string name="status_off">Lukk</string>
+</resources>

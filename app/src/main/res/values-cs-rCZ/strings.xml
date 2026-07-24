@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Nastavení</string>
+    <string name="index_language">Jazyk</string>
+    <string name="index_bright">Jasnost</string>
+    <string name="index_sound">Zvuk stisknutí klávesy</string>
+    <string name="index_Wifi">Wifi</string>
+    <string name="index_Bluetooth">Bluetooth</string>
+    <string name="index_About">O zařízení</string>
+    <string name="about_title">Informace o zařízení</string>
+    <string name="android_version">Verze Android</string>
+    <string name="device_code">Název zařízení</string>
+    <string name="software_version">Verze softwaru</string>
+    <string name="language_select">Výběr jazyka</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="status_on">On</string>
+    <string name="status_off">Vypnout</string>
+</resources>

@@ -12,4 +12,7 @@
     <string name="wifi_mac">WiFi Mac</string>
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="index_bright">明るさ</string>
+    <string name="index_sound">キー音</string>
+    <string name="status_on">オンにする</string>
+    <string name="status_off">閉める</string>
 </resources>

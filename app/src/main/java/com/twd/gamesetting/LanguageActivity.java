@@ -1,5 +1,6 @@
 package com.twd.gamesetting;
 
+import android.annotation.SuppressLint;
 import android.app.backup.BackupManager;
 import android.content.Context;
 import android.content.Intent;
@@ -24,6 +25,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.twd.gamesetting.utils.SoundHelper;
+
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -37,11 +40,14 @@ public class LanguageActivity extends AppCompatActivity {
     ListView listView;
     private final Context context = this;
     LanguageItemAdapter languageItemAdapter;
+    private SoundHelper soundHelper;
+    private long lastFocusSoundTime = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_language);
         listView = findViewById(R.id.list_language);
+        soundHelper = SoundHelper.getInstance(this);
 
 
         Locale currentLocale = getResources().getConfiguration().locale;
@@ -56,10 +62,41 @@ public class LanguageActivity extends AppCompatActivity {
         languageMap.put("es_ES","Español");
         languageMap.put("ru_RU","Pусский");
         languageMap.put("ja_JP","日本語");
+        languageMap.put("ar_SA","العربية");
+        languageMap.put("bg_BG","Български");
+        languageMap.put("cs_CZ","Čeština");
+        languageMap.put("da_DK","Danskke");
+        languageMap.put("el_GR","Ελληνικά");
+        languageMap.put("fa_IR","فارسی");
+        languageMap.put("fi_FI","Finnish");
+        languageMap.put("fil_PH","Filipino");
+        languageMap.put("hi_IN","Hindi");
+        languageMap.put("hr_HR","Hrvatski");
+        languageMap.put("hu_HU","Magyar");
+        languageMap.put("in_ID","Bahasa Indonesia");
+        languageMap.put("it_IT","Italiano");
+        languageMap.put("iw_IL","Hebrew");
+        languageMap.put("lt_LT","Lietuvių");
+        languageMap.put("lv_LT","Latviski");
+        languageMap.put("ms_MY","Malay");
+        languageMap.put("nb_NO","Norsk bokmål");
+        languageMap.put("nl_NL","Nederlands");
+        languageMap.put("pl_PL","Polski");
+        languageMap.put("pt_PT","Português");
+        languageMap.put("ro_RO","Română");
+        languageMap.put("sk_SK","Slovensky");
+        languageMap.put("sl_SI","Slovenski jezik");
+        languageMap.put("sv_SE","Svenska");
+        languageMap.put("th_TH","ไทย");
+        languageMap.put("tr_TR","Türkçe");
+        languageMap.put("uk_UA","Українська");
+        languageMap.put("vi_VN","Tiếng Việt");
         languageMap.put("ko_KR","한국어");
 
 
-        List<String> supportedLanguages = Arrays.asList("zh_CN","en_US","fr_FR","de_DE","es_ES","ru_RU","ja_JP","ko_KR");
+        List<String> supportedLanguages = Arrays.asList("zh_CN","en_US","fr_FR","de_DE","es_ES","ru_RU","ja_JP","ko_KR","ar_SA"
+                ,"bg_BG","cs_CZ","da_DK","el_GR","fa_IR","fi_FI","fil_PH","hi_IN","hr_HR","hu_HU","in_ID","it_IT","iw_IL","lt_LT","lv_LT","ms_MY","nb_NO","nl_NL","pl_PL","pt_PT","ro_RO","sk_SK","sl_SI","sv_SE","th_TH","tr_TR","uk_UA","vi_VN"
+        );
         for (String language_sup : supportedLanguages){
             String languageName = languageMap.get(language_sup);
             Log.i("yangxin","------支持的语言-："+languageName);
@@ -74,6 +111,7 @@ public class LanguageActivity extends AppCompatActivity {
         listView.setAdapter(languageItemAdapter);
 
         listView.setOnItemClickListener((parent, view, position, id) -> {
+            soundHelper.playConfirm(); // 确认音效
             LanguageBean select = languageBeans.get(position);
             String languageCode = select.getLanguageCode(); // "zh_CN" 或 "en_US"
             String[] parts = languageCode.split("_");
@@ -93,6 +131,11 @@ public class LanguageActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 languageItemAdapter.setFocusedItem(position);
+                long now = System.currentTimeMillis();
+                if(now - lastFocusSoundTime > 120){
+                    soundHelper.playSelect();
+                    lastFocusSoundTime = now;
+                }
             }
 
             @Override
@@ -200,5 +243,17 @@ public class LanguageActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @SuppressLint("MissingSuperCall")
+    @Override
+    public void onBackPressed() {
+        soundHelper.playSelect();
+        super.onBackPressed();
     }
 }

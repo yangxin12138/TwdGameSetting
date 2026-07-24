@@ -12,4 +12,7 @@
     <string name="wifi_mac">WiFi Mac</string>
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="index_bright">밝기</string>
+    <string name="index_sound">키 소리</string>
+    <string name="status_on">열다</string>
+    <string name="status_off">닫기</string>
 </resources>

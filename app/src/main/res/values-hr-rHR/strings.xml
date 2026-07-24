@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Postavke</string>
+    <string name="index_language">Jezik</string>
+    <string name="index_bright">Svjetlost</string>
+    <string name="index_sound">Zvuk pritiska tipke</string>
+    <string name="index_Wifi">Wifi</string>
+    <string name="index_Bluetooth">Bluetooth</string>
+    <string name="index_About">O uređaju</string>
+    <string name="about_title">Podaci o uređaju</string>
+    <string name="android_version">Android verzija</string>
+    <string name="device_code">Ime uređaja</string>
+    <string name="software_version">Softver verzija</string>
+    <string name="language_select">Izbor jezika</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="status_on">On</string>
+    <string name="status_off">Iza</string>
+</resources>

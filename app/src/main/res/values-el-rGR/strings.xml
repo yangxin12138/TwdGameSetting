@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Σύνθεση</string>
+    <string name="index_language">Γλώσσα</string>
+    <string name="index_bright">Φωτεινότητα</string>
+    <string name="index_sound">Ήχος πίεσης πλήκτρου</string>
+    <string name="index_Wifi">Wifi</string>
+    <string name="index_Bluetooth">Bluetooth</string>
+    <string name="index_About">Για</string>
+    <string name="about_title">Πληροφορίες Συσκευής</string>
+    <string name="android_version">Έκδοση Android</string>
+    <string name="device_code">Όνομα Συσκευής</string>
+    <string name="software_version">Εκδοχή λογισμικού</string>
+    <string name="language_select">Επιλογή Γλώσσας</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="status_on">Στην</string>
+    <string name="status_off">κλείσιμο</string>
+</resources>

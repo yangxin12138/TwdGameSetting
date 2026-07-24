@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Asetus</string>
+    <string name="index_language">Kieli</string>
+    <string name="index_bright">Valonvaimentajat</string>
+    <string name="index_sound">Näppäimenpainosäännös</string>
+    <string name="index_Wifi">Wifi</string>
+    <string name="index_Bluetooth">Bluetooth</string>
+    <string name="index_About">Näytä</string>
+    <string name="about_title">Laite tiedot</string>
+    <string name="android_version">AndroidVersio</string>
+    <string name="device_code">Laitekoko</string>
+    <string name="software_version">Ohjelmistoversio</string>
+    <string name="language_select">Kieli valinta</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="status_on">On</string>
+    <string name="status_off">Off</string>
+</resources>

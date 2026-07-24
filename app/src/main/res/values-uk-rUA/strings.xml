@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Налаштування</string>
+    <string name="index_language">Мова</string>
+    <string name="index_bright">Яскравість</string>
+    <string name="index_sound">Звук натискання клавіш</string>
+    <string name="index_Wifi">Wifi</string>
+    <string name="index_Bluetooth">Bluetooth</string>
+    <string name="index_About">Про</string>
+    <string name="about_title">Інформація про пристрій</string>
+    <string name="android_version">Версія Android</string>
+    <string name="device_code">Назва пристрою</string>
+    <string name="software_version">Версія програмного забезпечення</string>
+    <string name="language_select">Вибір мови</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="status_on">Увімкнути</string>
+    <string name="status_off">Вимкнути</string>
+</resources>

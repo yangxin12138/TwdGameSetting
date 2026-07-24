@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Setarea</string>
+    <string name="index_language">Limba</string>
+    <string name="index_bright">Luminositate</string>
+    <string name="index_sound">Sunet de apăsare a tastei</string>
+    <string name="index_Wifi">Wifi</string>
+    <string name="index_Bluetooth">Bluetooth</string>
+    <string name="index_About">Despre</string>
+    <string name="about_title">Informații dispozitiv</string>
+    <string name="android_version">Versiune Android</string>
+    <string name="device_code">Numele dispozitivului</string>
+    <string name="software_version">Versiunea software</string>
+    <string name="language_select">Selectare limbă</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="status_on">Pornire</string>
+    <string name="status_off">închide</string>
+</resources>

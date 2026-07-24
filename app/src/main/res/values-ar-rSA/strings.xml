@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">إعداد</string>
+    <string name="index_language">اللغة</string>
+    <string name="index_bright">سطوع</string>
+    <string name="index_sound">صوت الضغط على المفاتيح</string>
+    <string name="index_Wifi">Wifi</string>
+    <string name="index_Bluetooth">Bluetooth</string>
+    <string name="index_About">حول</string>
+    <string name="about_title">معلومات الجهاز</string>
+    <string name="android_version">إصدار أندرويد</string>
+    <string name="device_code">اسم الجهاز</string>
+    <string name="software_version">إصدار البرنامج</string>
+    <string name="language_select">اختيار اللغة</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="status_on">على</string>
+    <string name="status_off">إيقاف</string>
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Iestatījums</string>
+    <string name="index_language">Valoda</string>
+    <string name="index_bright">Svērtība</string>
+    <string name="index_sound">Tasta spēja zvaigžņot</string>
+    <string name="index_Wifi">Wifi</string>
+    <string name="index_Bluetooth">Bluetooth</string>
+    <string name="index_About">Parūdīt par</string>
+    <string name="about_title">Ierīces informācija</string>
+    <string name="android_version">Android Versija</string>
+    <string name="device_code">Ierīces nosaukums</string>
+    <string name="software_version">Programmatūras versija</string>
+    <string name="language_select">Valodas izvēle</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="status_on">Iedarot</string>
+    <string name="status_off">aizslēgt</string>
+</resources>

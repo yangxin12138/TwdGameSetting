@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">การตั้งค่า</string>
+    <string name="index_language">ภาษา</string>
+    <string name="index_bright">ความสว่าง</string>
+    <string name="index_sound">เสียงกดปุ่ม</string>
+    <string name="index_Wifi">Wifi</string>
+    <string name="index_Bluetooth">Bluetooth</string>
+    <string name="index_About">เกี่ยวกับ</string>
+    <string name="about_title">ข้อมูลอุปกรณ์</string>
+    <string name="android_version">เวอร์ชัน Android</string>
+    <string name="device_code">ชื่ออุปกรณ์</string>
+    <string name="software_version">เวอร์ชันซอฟต์แวร์</string>
+    <string name="language_select">เลือกภาษา</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="status_on">เปิด</string>
+    <string name="status_off">ปิด</string>
+</resources>

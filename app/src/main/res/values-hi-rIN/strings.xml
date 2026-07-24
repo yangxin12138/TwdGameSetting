@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">सेटिंग</string>
+    <string name="index_language">भाषा</string>
+    <string name="index_bright">चमक</string>
+    <string name="index_sound">कीप्रेस साउंड</string>
+    <string name="index_Wifi">Wifi</string>
+    <string name="index_Bluetooth">Bluetooth</string>
+    <string name="index_About">के बारे में</string>
+    <string name="about_title">डिवाइस जानकारी</string>
+    <string name="android_version">एंड्रॉइड संस्करण</string>
+    <string name="device_code">डिवाइस नाम</string>
+    <string name="software_version">सॉफ्टवेयर संस्करण</string>
+    <string name="language_select">भाषा चयन करें</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="status_on">ऑन</string>
+    <string name="status_off">ऑफ</string>
+</resources>

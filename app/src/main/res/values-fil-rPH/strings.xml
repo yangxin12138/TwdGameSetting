@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Stock label</string>
+    <string name="index_language">Wika</string>
+    <string name="index_bright">Kaliwanagan</string>
+    <string name="index_sound">Keypress Sound</string>
+    <string name="index_Wifi">Wifi</string>
+    <string name="index_Bluetooth">Bluetooth</string>
+    <string name="index_About">Tungkol</string>
+    <string name="about_title">DeviceInfo</string>
+    <string name="android_version">Bersyon ng Android</string>
+    <string name="device_code">Device Name</string>
+    <string name="software_version">Software Version</string>
+    <string name="language_select">Piliin ang Wastong Wika</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="status_on">On</string>
+    <string name="status_off">Off</string>
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">تنظیمات</string>
+    <string name="index_language">زبان</string>
+    <string name="index_bright">روشنایی</string>
+    <string name="index_sound">صدای کلید فشار</string>
+    <string name="index_Wifi">Wifi</string>
+    <string name="index_Bluetooth">Bluetooth</string>
+    <string name="index_About">درباره</string>
+    <string name="about_title">اطلاعات دستگاه</string>
+    <string name="android_version">نسخه اندروید</string>
+    <string name="device_code">نام دستگاه</string>
+    <string name="software_version">نسخه نرم افزار</string>
+    <string name="language_select">انتخاب زبان</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="status_on">باز کردن</string>
+    <string name="status_off">بستن</string>
+</resources>

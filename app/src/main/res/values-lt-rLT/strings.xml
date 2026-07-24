@@ -1,18 +1,18 @@
 <resources>
     <string name="app_name">Setting</string>
     <string name="index_language">Language</string>
+    <string name="index_bright">Brightness</string>
+    <string name="index_sound">Keypress Sound</string>
     <string name="index_Wifi">Wifi</string>
     <string name="index_Bluetooth">Bluetooth</string>
     <string name="index_About">About</string>
     <string name="about_title">DeviceInfo</string>
     <string name="android_version">AndroidVersion</string>
-    <string name="device_code">DeviceName</string>
-    <string name="software_version">SoftwareVersion</string>
-    <string name="language_select">Language Select</string>
+    <string name="device_code">Pavadinimas įrenginiui</string>
+    <string name="software_version">Programos versija</string>
+    <string name="language_select">Pasirinkta kalba</string>
     <string name="wifi_mac">WiFi Mac</string>
     <string name="bluetooth_mac">Bluetooth Mac</string>
-    <string name="index_bright">Brightness</string>
-    <string name="index_sound">Keypress sound</string>
-    <string name="status_on">On</string>
-    <string name="status_off">Off</string>
+    <string name="status_on">Paleisti</string>
+    <string name="status_off">Uždaryti</string>
 </resources>

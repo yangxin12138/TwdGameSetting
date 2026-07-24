@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">הגדרות</string>
+    <string name="index_language">שפה</string>
+    <string name="index_bright">בהירות</string>
+    <string name="index_sound">קליפה סאונד</string>
+    <string name="index_Wifi">Wifi</string>
+    <string name="index_Bluetooth">Bluetooth</string>
+    <string name="index_About">אודות</string>
+    <string name="about_title">מידע על המכשיר</string>
+    <string name="android_version">גרסה אנדרואיד</string>
+    <string name="device_code">שם המכשיר</string>
+    <string name="software_version">גרסת תוכנה</string>
+    <string name="language_select">בחר שפה</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="status_on">על</string>
+    <string name="status_off">סגור</string>
+</resources>

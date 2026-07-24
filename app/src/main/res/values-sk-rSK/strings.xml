@@ -6,13 +6,13 @@
     <string name="index_Wifi">Wifi</string>
     <string name="index_Bluetooth">Bluetooth</string>
     <string name="index_About">About</string>
-    <string name="about_title">DeviceInfo</string>
-    <string name="android_version">AndroidVersion</string>
-    <string name="device_code">DeviceName</string>
-    <string name="software_version">SoftwareVersion</string>
-    <string name="language_select">Language Select</string>
+    <string name="about_title">Informácie o zariadení</string>
+    <string name="android_version">Verzia Android</string>
+    <string name="device_code">Názov zariadenia</string>
+    <string name="software_version">Verzia softvéru</string>
+    <string name="language_select">Výber jazyka</string>
     <string name="wifi_mac">WiFi Mac</string>
     <string name="bluetooth_mac">Bluetooth Mac</string>
-    <string name="status_on">On</string>
-    <string name="status_off">Off</string>
+    <string name="status_on">Zapnúť</string>
+    <string name="status_off">Zatvoriť</string>
 </resources>

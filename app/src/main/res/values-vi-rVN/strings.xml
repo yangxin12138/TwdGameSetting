@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Cài đặt</string>
+    <string name="index_language">Ngôn ngữ</string>
+    <string name="index_bright">Độ sáng</string>
+    <string name="index_sound">Âm thanh nhấn phím</string>
+    <string name="index_Wifi">Wifi</string>
+    <string name="index_Bluetooth">Bluetooth</string>
+    <string name="index_About">Về chúng tôi</string>
+    <string name="about_title">Thông Tin Thiết Bị</string>
+    <string name="android_version">Phiên bản Android</string>
+    <string name="device_code">Tên thiết bị</string>
+    <string name="software_version">Phiên bản phần mềm</string>
+    <string name="language_select">Chọn ngôn ngữ</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="status_on">mở</string>
+    <string name="status_off">đóng</string>
+</resources>

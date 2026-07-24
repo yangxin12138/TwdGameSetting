@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Impostazione</string>
+    <string name="index_language">Lingua</string>
+    <string name="index_bright">Luminosità</string>
+    <string name="index_sound">Suono della pressione del tasto</string>
+    <string name="index_Wifi">Wifi</string>
+    <string name="index_Bluetooth">Bluetooth</string>
+    <string name="index_About">Di</string>
+    <string name="about_title">Informazioni sul dispositivo</string>
+    <string name="android_version">Versione Android</string>
+    <string name="device_code">Nome del dispositivo</string>
+    <string name="software_version">Versione del software</string>
+    <string name="language_select">Selezione lingua</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="status_on">Su</string>
+    <string name="status_off">Off</string>
+</resources>

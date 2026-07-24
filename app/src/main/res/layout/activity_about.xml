@@ -36,6 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <!-- 2. 设备号 -->
+        <!-- 设备编号 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -44,27 +45,32 @@
             android:layout_marginTop="20dp">
 
             <TextView
-                android:layout_width="0dp"
-                android:layout_weight="2"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
                 android:text="@string/device_code"
                 android:textColor="@color/white"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:layoutDirection="ltr"
+                android:textDirection="ltr"/>
+
+            <!-- 中间占位View，撑开剩余空间 -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
 
             <TextView
                 android:id="@+id/tv_device_name"
-                android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
                 android:textColor="@color/white"
                 android:textSize="24sp"
                 tools:text="TWD-GAME-001" />
         </LinearLayout>
 
-
-
-        <!-- 3. 软件版本号 -->
+        <!-- 软件版本号 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -73,24 +79,32 @@
             android:layout_marginTop="20dp">
 
             <TextView
-                android:layout_width="0dp"
-                android:layout_weight="2"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
                 android:text="@string/software_version"
                 android:textColor="@color/white"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:layoutDirection="ltr"
+                android:textDirection="ltr"/>
+
+            <!-- 中间占位View，撑开剩余空间 -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
 
             <TextView
                 android:id="@+id/tv_software_version"
-                android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
                 android:textColor="@color/white"
                 android:textSize="24sp"
                 tools:text="V1.0.0" />
         </LinearLayout>
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -100,7 +114,7 @@
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="3"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
                 android:text="@string/wifi_mac"
@@ -110,7 +124,7 @@
             <TextView
                 android:id="@+id/tv_wifi_mac"
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
                 android:textSize="24sp"
@@ -126,7 +140,7 @@
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="3"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
                 android:text="@string/bluetooth_mac"
@@ -136,7 +150,7 @@
             <TextView
                 android:id="@+id/tv_bluetooth_mac"
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
                 android:textSize="24sp"

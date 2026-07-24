@@ -1,5 +1,6 @@
 package com.twd.gamesetting;
 
+import android.annotation.SuppressLint;
 import android.content.ComponentName;
 import android.content.ContentResolver;
 import android.content.Intent;
@@ -9,9 +10,14 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SwitchCompat;
+
+import com.twd.gamesetting.utils.GlobalSoundSwitchUtil;
+import com.twd.gamesetting.utils.SoundHelper;
 
 import java.util.Locale;
 
@@ -20,11 +26,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     LinearLayout LL_language;  TextView tv_cur_lang;
     TextView tv_wifi;
     TextView tv_bluetooth;
-    TextView tv_about;
     LinearLayout LL_bright; TextView tv_cur_bright;
+    LinearLayout LL_sound;
+    LinearLayout LL_about;
+    TextView tv_sound_status;
+    private SoundHelper soundHelper;
+    // 防焦点音效频繁触发
+    private long lastFocusSoundTime = 0;
 
     // 亮度范围 50~100，步长10
-    private final int MIN_BRIGHT = 50;
+    private final int MIN_BRIGHT = 10;
     private final int MAX_BRIGHT = 100;
     private final int STEP = 10;
 
@@ -42,14 +53,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         updateCurrentLanguage();
     }
     private void initView(){
+
+        soundHelper = SoundHelper.getInstance(this);
+        LL_sound = findViewById(R.id.ll_sound);
+        tv_sound_status = findViewById(R.id.tv_sound_status);
+
         LL_language = findViewById(R.id.ll_language);  tv_cur_lang =findViewById(R.id.tv_cur_lang);
         tv_wifi = findViewById(R.id.tv_wifi);
         tv_bluetooth = findViewById(R.id.tv_bluetooth);
-        tv_about = findViewById(R.id.tv_about);
+        LL_about = findViewById(R.id.ll_about);
         LL_bright = findViewById(R.id.ll_bright); tv_cur_bright = findViewById(R.id.tv_cur_bright);
 
         // 初始化读取亮度
         readCurrentBrightness();
+
+        boolean soundOpen = GlobalSoundSwitchUtil.isSoundEffectOpen(getContentResolver());
+        updateSoundStatusText(soundOpen);
+
+
+
 
         LL_bright.setOnKeyListener(new View.OnKeyListener() {
             @Override
@@ -63,19 +85,35 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         currentVal -= STEP;
                         if (currentVal < MIN_BRIGHT) currentVal = MIN_BRIGHT;
                         setBrightness(currentVal);
+                        soundHelper.playSelect();
                         return true;
                     case KeyEvent.KEYCODE_DPAD_RIGHT:
                         // 右箭头：亮度升高
                         currentVal += STEP;
                         if (currentVal > MAX_BRIGHT) currentVal = MAX_BRIGHT;
                         setBrightness(currentVal);
+                        soundHelper.playSelect();
                         return true;
                 }return false;}});
+        LL_sound.setOnClickListener(v -> {
+            soundHelper.playConfirm(); // 按下OK播放确认音效
+            boolean current = GlobalSoundSwitchUtil.isSoundEffectOpen(getContentResolver());
+            boolean newState = !current;
+            // 保存
+            GlobalSoundSwitchUtil.setSoundEffect(getContentResolver(), newState);
+            // 更新界面文字
+            updateSoundStatusText(newState);
+        });
         LL_language.setOnClickListener(this::onClick);
         tv_wifi.setOnClickListener(this::onClick);
         tv_bluetooth.setOnClickListener(this::onClick);
-        tv_about.setOnClickListener(this::onClick);
-
+        LL_about.setOnClickListener(this::onClick);
+        setFocusListener(LL_language);
+        setFocusListener(LL_bright);
+        setFocusListener(tv_wifi);
+        setFocusListener(tv_bluetooth);
+        setFocusListener(LL_about);
+        setFocusListener(LL_sound);
         LL_language.requestFocus();
         updateCurrentLanguage();
     }
@@ -83,6 +121,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         Intent intent;
+        soundHelper.playConfirm();
         if (view.getId() == R.id.ll_language){
             intent = new Intent(this,LanguageActivity.class);
             startActivity(intent);
@@ -95,12 +134,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             intent = new Intent(Settings.ACTION_BLUETOOTH_SETTINGS);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
-        } else if (view.getId() == R.id.tv_about) {
+        } else if (view.getId() == R.id.ll_about) {
             intent = new Intent(this, AboutActivity.class);
             startActivity(intent);
         }
     }
-
+    @SuppressLint("MissingSuperCall")
+    @Override
+    public void onBackPressed() {
+        soundHelper.playSelect();
+        super.onBackPressed();
+    }
     private void updateCurrentLanguage() {
         Locale currentLocale = getResources().getConfiguration().locale;
         String currentLanguage = currentLocale.getLanguage() + "_" + currentLocale.getCountry();
@@ -126,7 +170,65 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             tv_cur_lang.setText("한국어");
         } else if (currentLanguage.equals("es_ES")) {
             tv_cur_lang.setText("Español");
-        } else {
+        } else if (currentLanguage.equals("ar_SA")) {
+            tv_cur_lang.setText("Arabic");
+        } else if (currentLanguage.equals("bg_BG")) {
+            tv_cur_lang.setText("Български");
+        } else if (currentLanguage.equals("cs_CZ")) {
+            tv_cur_lang.setText("Čeština");
+        } else if (currentLanguage.equals("da_DK")) {
+            tv_cur_lang.setText("Dansk");
+        } else if (currentLanguage.equals("el_GR")) {
+            tv_cur_lang.setText("Ελληνικά");
+        } else if (currentLanguage.equals("fa_IR")) {
+            tv_cur_lang.setText("Farsi");
+        } else if (currentLanguage.equals("fi_FI")) {
+            tv_cur_lang.setText("Suomi");
+        } else if (currentLanguage.equals("fil_PH")) {
+            tv_cur_lang.setText("Filipino");
+        } else if (currentLanguage.equals("hi_IN")) {
+            tv_cur_lang.setText("हिंदी");
+        } else if (currentLanguage.equals("hr_HR")) {
+            tv_cur_lang.setText("Hrvatski");
+        } else if (currentLanguage.equals("hu_HU")) {
+            tv_cur_lang.setText("Magyar");
+        } else if (currentLanguage.equals("in_ID")) {
+            tv_cur_lang.setText("Bahasa Indonesia");
+        } else if (currentLanguage.equals("it_IT")) {
+            tv_cur_lang.setText("Italiano");
+        } else if (currentLanguage.equals("iw_IL")) {
+            tv_cur_lang.setText("Hebrew");
+        }  else if (currentLanguage.equals("lt_LT")) {
+            tv_cur_lang.setText("Lietuvių");
+        }  else if (currentLanguage.equals("lv_LT")) {
+            tv_cur_lang.setText("Latviski");
+        }  else if (currentLanguage.equals("ms_MY")) {
+            tv_cur_lang.setText("Bahasa Melayu");
+        }  else if (currentLanguage.equals("nb_NO")) {
+            tv_cur_lang.setText("Norsk bokmål");
+        }  else if (currentLanguage.equals("nl_NL")) {
+            tv_cur_lang.setText("Nederlands");
+        }  else if (currentLanguage.equals("pl_PL")) {
+            tv_cur_lang.setText("Polski");
+        }  else if (currentLanguage.equals("pt_PT")) {
+            tv_cur_lang.setText("Português");
+        }  else if (currentLanguage.equals("ro_RO")) {
+            tv_cur_lang.setText("Română");
+        }  else if (currentLanguage.equals("sk_SK")) {
+            tv_cur_lang.setText("Slovensky");
+        }  else if (currentLanguage.equals("sl_SI")) {
+            tv_cur_lang.setText("Slovenski jezik");
+        }  else if (currentLanguage.equals("sv_SE")) {
+            tv_cur_lang.setText("Svenska");
+        }  else if (currentLanguage.equals("th_TH")) {
+            tv_cur_lang.setText("ไทย");
+        }  else if (currentLanguage.equals("tr_TR")) {
+            tv_cur_lang.setText("Türkçe");
+        }  else if (currentLanguage.equals("uk_UA")) {
+            tv_cur_lang.setText("Українська");
+        }  else if (currentLanguage.equals("vi_VN")) {
+            tv_cur_lang.setText("Tiếng Việt");
+        }  else {
             // 默认显示英文
             tv_cur_lang.setText("English");
         }
@@ -178,5 +280,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         android.view.WindowManager.LayoutParams lp = getWindow().getAttributes();
         lp.screenBrightness = sysVal / 255f;
         getWindow().setAttributes(lp);
+    }
+
+    private void setFocusListener(View view){
+        view.setOnFocusChangeListener((v, hasFocus) -> {
+            if(hasFocus){
+                long now = System.currentTimeMillis();
+                if(now - lastFocusSoundTime > 120){
+                    soundHelper.playSelect();
+                    lastFocusSoundTime = now;
+                }
+            }
+        });
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    private void updateSoundStatusText(boolean isOpen){
+        if(isOpen){
+            tv_sound_status.setText(R.string.status_on);
+        }else{
+            tv_sound_status.setText(R.string.status_off);
+        }
     }
 }

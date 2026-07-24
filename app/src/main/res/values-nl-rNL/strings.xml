@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Instellingen</string>
+    <string name="index_language">Taal</string>
+    <string name="index_bright">Helderheid</string>
+    <string name="index_sound">Keypress Geluid</string>
+    <string name="index_Wifi">Wifi</string>
+    <string name="index_Bluetooth">Bluetooth</string>
+    <string name="index_About">Over ons</string>
+    <string name="about_title">Apparaatinformatie</string>
+    <string name="android_version">AndroidVersie</string>
+    <string name="device_code">Apparaatnaam</string>
+    <string name="software_version">Software versie</string>
+    <string name="language_select">Taal selecteren</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="status_on">Aan</string>
+    <string name="status_off">Uitgeschakeld</string>
+</resources>

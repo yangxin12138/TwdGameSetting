@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Ingenjör</string>
+    <string name="index_language">Språk</string>
+    <string name="index_bright">Ljusstyrka</string>
+    <string name="index_sound">Tangentlyd Klickljud</string>
+    <string name="index_Wifi">Wifi</string>
+    <string name="index_Bluetooth">Bluetooth</string>
+    <string name="index_About">Om</string>
+    <string name="about_title">Enhetsinformation</string>
+    <string name="android_version">Android Version</string>
+    <string name="device_code">Enhetsnamn</string>
+    <string name="software_version">Programvarus version</string>
+    <string name="language_select">Språkval</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="status_on">Aktivera</string>
+    <string name="status_off">Stäng</string>
+</resources>

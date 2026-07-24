@@ -1,5 +1,6 @@
 package com.twd.gamesetting;
 
+import android.annotation.SuppressLint;
 import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
 import android.net.wifi.WifiInfo;
@@ -11,6 +12,8 @@ import android.util.Log;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.twd.gamesetting.utils.SoundHelper;
+
 public class AboutActivity extends AppCompatActivity {
 
     private String TAG = "AboutActivity";
@@ -18,10 +21,12 @@ public class AboutActivity extends AppCompatActivity {
     TextView tv_software_version;
     TextView tv_wifi_mac;
     TextView tv_bluetooth_mac;
+    private SoundHelper soundHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
+        soundHelper = SoundHelper.getInstance(this);
         tv_device_name = findViewById(R.id.tv_device_name);
         tv_software_version = findViewById(R.id.tv_software_version);
         tv_wifi_mac = findViewById(R.id.tv_wifi_mac);
@@ -32,7 +37,12 @@ public class AboutActivity extends AppCompatActivity {
         setMACAddressBluetooth();
     }
 
-
+    @SuppressLint("MissingSuperCall")
+    @Override
+    public void onBackPressed() {
+        soundHelper.playSelect();
+        super.onBackPressed();
+    }
     /*
      * 获取设备名称*/
     private void setDeviceName(){

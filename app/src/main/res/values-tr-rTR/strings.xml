@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Ayarlar</string>
+    <string name="index_language">Dil</string>
+    <string name="index_bright">Güçlülük</string>
+    <string name="index_sound">Tuşa Basma Ses</string>
+    <string name="index_Wifi">Wifi</string>
+    <string name="index_Bluetooth">Bluetooth</string>
+    <string name="index_About">Hakkında</string>
+    <string name="about_title">Cihaz Bilgisi</string>
+    <string name="android_version">Android Sürüm</string>
+    <string name="device_code">Cihaz Adı</string>
+    <string name="software_version">Yazılım Sürümü</string>
+    <string name="language_select">Dil Seç</string>
+    <string name="wifi_mac">WiFi Mac</string>
+    <string name="bluetooth_mac">Bluetooth Mac</string>
+    <string name="status_on">Açmak</string>
+    <string name="status_off">Kapat</string>
+</resources>
