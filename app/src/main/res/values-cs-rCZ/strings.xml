@@ -15,4 +15,8 @@
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="status_on">On</string>
     <string name="status_off">Vypnout</string>
+    <string name="factory_button">výrobce výchozí nastavení</string>
+    <string name="factory_dialog_title">Obnovení výrobce nastaví všechna data a pak restartuje.</string>
+    <string name="factory_dialog_cancel">Storno</string>
+    <string name="factory_dialog_Confirm">Potvrdit</string>
 </resources>

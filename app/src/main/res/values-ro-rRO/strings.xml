@@ -15,4 +15,8 @@
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="status_on">Pornire</string>
     <string name="status_off">închide</string>
+    <string name="factory_button">Resetarea fabricii</string>
+    <string name="factory_dialog_title">Restaurarea setărilor de fabrica va şterge toate datele şi apoi va reporni.</string>
+    <string name="factory_dialog_cancel">Anulează</string>
+    <string name="factory_dialog_Confirm">Confirmă</string>
 </resources>

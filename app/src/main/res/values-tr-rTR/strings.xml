@@ -15,4 +15,8 @@
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="status_on">Açmak</string>
     <string name="status_off">Kapat</string>
+    <string name="factory_button">Fabrika Sıfırlama</string>
+    <string name="factory_dialog_title">Fabrika ayarlarını geri yüklemek tüm verileri temizleyecek ve ardından yeniden başlatacaktır.</string>
+    <string name="factory_dialog_cancel">İptal et</string>
+    <string name="factory_dialog_Confirm">Onayla</string>
 </resources>

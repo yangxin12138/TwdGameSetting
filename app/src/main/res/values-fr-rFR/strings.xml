@@ -15,4 +15,8 @@
     <string name="index_sound">Le son des touches</string>
     <string name="status_on">Ouvrir</string>
     <string name="status_off">Fermer</string>
+    <string name="factory_button">Réinitialisation d\'usine</string>
+    <string name="factory_dialog_title">La restauration des paramètres d\'usine effacera toutes les données et redémarrera ensuite.</string>
+    <string name="factory_dialog_cancel">Annuler</string>
+    <string name="factory_dialog_Confirm">Confirmer</string>
 </resources>

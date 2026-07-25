@@ -15,4 +15,8 @@
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="status_on">On</string>
     <string name="status_off">Off</string>
+    <string name="factory_button">Valmistuksen palautus</string>
+    <string name="factory_dialog_title">Palauttamalla valmistajan asetukset poistetaan kaikki tiedot ja käynnistetään uudelleen.</string>
+    <string name="factory_dialog_cancel">Peruuta</string>
+    <string name="factory_dialog_Confirm">Vahvista</string>
 </resources>

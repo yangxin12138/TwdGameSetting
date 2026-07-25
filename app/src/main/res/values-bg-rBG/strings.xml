@@ -15,4 +15,8 @@
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="status_on">Върху</string>
     <string name="status_off">Изкл.</string>
+    <string name="factory_button">Изходни настройки</string>
+    <string name="factory_dialog_title">Възстановяването на фабричните настройки ще изтрие всички данни и след това ще рестартира.</string>
+    <string name="factory_dialog_cancel">Отказ</string>
+    <string name="factory_dialog_Confirm">Потвърди</string>
 </resources>

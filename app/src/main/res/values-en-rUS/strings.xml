@@ -15,4 +15,8 @@
     <string name="index_sound">Keypress sound</string>
     <string name="status_on">On</string>
     <string name="status_off">Off</string>
+    <string name="factory_button">Factory Reset</string>
+    <string name="factory_dialog_title">Restoring factory settings will clear all data and then restart.</string>
+    <string name="factory_dialog_cancel">Cancel</string>
+    <string name="factory_dialog_Confirm">Confirm</string>
 </resources>

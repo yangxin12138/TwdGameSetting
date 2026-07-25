@@ -15,4 +15,8 @@
     <string name="index_sound">按键声音</string>
     <string name="status_on">开启</string>
     <string name="status_off">关闭</string>
+    <string name="factory_button">恢复出厂设置</string>
+    <string name="factory_dialog_title">恢复出厂设置将清除所有数据并重新启动。</string>
+    <string name="factory_dialog_cancel">取消</string>
+    <string name="factory_dialog_Confirm">确认</string>
 </resources>

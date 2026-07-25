@@ -15,4 +15,8 @@
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="status_on">على</string>
     <string name="status_off">إيقاف</string>
+    <string name="factory_button">إعادة تعيين المصنع</string>
+    <string name="factory_dialog_title">استعادة الإعدادات المصنعية ستقوم بمسح جميع البيانات ثم إعادة التشغيل.</string>
+    <string name="factory_dialog_cancel">إلغاء</string>
+    <string name="factory_dialog_Confirm">تأكيد</string>
 </resources>

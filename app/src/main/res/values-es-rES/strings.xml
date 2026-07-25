@@ -15,4 +15,8 @@
     <string name="index_sound">Sonido de la tecla</string>
     <string name="status_on">Abrir</string>
     <string name="status_off">Cerrar</string>
+    <string name="factory_button">Restablecimiento de fábrica</string>
+    <string name="factory_dialog_title">Restaurar la configuración de fábrica borrará todos los datos y luego reiniciará.</string>
+    <string name="factory_dialog_cancel">Cancelar</string>
+    <string name="factory_dialog_Confirm">Confirmar</string>
 </resources>

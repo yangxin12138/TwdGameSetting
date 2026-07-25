@@ -15,4 +15,8 @@
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="status_on">Zapnúť</string>
     <string name="status_off">Zatvoriť</string>
+    <string name="factory_button">Obnoviť továreň</string>
+    <string name="factory_dialog_title">Obnovenie továrenských nastavení vymazá všetky údaje a potom reštartuje.</string>
+    <string name="factory_dialog_cancel">Zrušiť</string>
+    <string name="factory_dialog_Confirm">Potvrdiť</string>
 </resources>

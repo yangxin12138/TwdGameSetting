@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="50dp"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:id="@+id/factory_title"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/factory_dialog_title"
+        android:textColor="@color/white"
+        android:textSize="26sp" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:id="@+id/factory_cancel_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_option_selector"
+            android:layout_marginStart="20dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusRight="@id/factory_ok_bt"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <TextView
+                android:duplicateParentState="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/factory_dialog_cancel"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textColor="@drawable/text_color_selector"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/factory_ok_bt"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusLeft="@id/factory_cancel_bt"
+            android:background="@drawable/bg_option_selector"
+            android:orientation="horizontal">
+            <TextView
+                android:duplicateParentState="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/factory_dialog_Confirm"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textColor="@drawable/text_color_selector"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

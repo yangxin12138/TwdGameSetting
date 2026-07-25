@@ -15,4 +15,8 @@
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="status_on">ऑन</string>
     <string name="status_off">ऑफ</string>
+    <string name="factory_button">फैक्ट्री रीसेट</string>
+    <string name="factory_dialog_title">फैक्टरी सेटिंग्स को बहाल करने से सभी डेटा मिट जाएगा और फिर रिस्टार्ट होगा।</string>
+    <string name="factory_dialog_cancel">रद्द करें</string>
+    <string name="factory_dialog_Confirm">पुष्टि करें</string>
 </resources>

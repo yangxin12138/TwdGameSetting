@@ -15,4 +15,8 @@
     <string name="index_sound">キー音</string>
     <string name="status_on">オンにする</string>
     <string name="status_off">閉める</string>
+    <string name="factory_button">出荷時設定の復元</string>
+    <string name="factory_dialog_title">出荷時設定を復元すると、すべてのデータが消去され、再起動されます。</string>
+    <string name="factory_dialog_cancel">キャンセル</string>
+    <string name="factory_dialog_Confirm">確認</string>
 </resources>

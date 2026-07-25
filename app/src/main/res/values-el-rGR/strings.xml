@@ -15,4 +15,8 @@
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="status_on">Στην</string>
     <string name="status_off">κλείσιμο</string>
+    <string name="factory_button">Επαναφορά του εργοστασίου</string>
+    <string name="factory_dialog_title">Η επαναφορά των παραμέτρων του εργοστασίου θα διαγράψει όλα τα δεδομένα και θα επανεκκινήσει.</string>
+    <string name="factory_dialog_cancel">Ακύρωση</string>
+    <string name="factory_dialog_Confirm">Επιβεβαίωση</string>
 </resources>

@@ -15,4 +15,8 @@
     <string name="index_sound">키 소리</string>
     <string name="status_on">열다</string>
     <string name="status_off">닫기</string>
+    <string name="factory_button">공장 재설정</string>
+    <string name="factory_dialog_title">공장 설정을 복원하면 모든 데이터를 삭제하고 다시 시작합니다.</string>
+    <string name="factory_dialog_cancel">취소</string>
+    <string name="factory_dialog_Confirm">확인</string>
 </resources>

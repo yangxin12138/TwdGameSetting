@@ -15,4 +15,8 @@
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="status_on">Paleisti</string>
     <string name="status_off">Uždaryti</string>
+    <string name="factory_button">Gamyklos atstatymas</string>
+    <string name="factory_dialog_title">Atkurti gamyklos nustatymus išvalys visus duomenis ir tada iš naujo pradės.</string>
+    <string name="factory_dialog_cancel">Atšaukti</string>
+    <string name="factory_dialog_Confirm">Patvirtinti</string>
 </resources>

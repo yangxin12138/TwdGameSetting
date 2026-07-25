@@ -15,4 +15,8 @@
     <string name="index_sound">Звук клавиш</string>
     <string name="status_on">Oткрыть</string>
     <string name="status_off">Закрыть</string>
+    <string name="factory_button">Фабричное сброс</string>
+    <string name="factory_dialog_title">Восстановление заводских настроек очистит все данные, а затем перезапустит.</string>
+    <string name="factory_dialog_cancel">Отменить</string>
+    <string name="factory_dialog_Confirm">Подтвердить</string>
 </resources>

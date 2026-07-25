@@ -15,4 +15,8 @@
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="status_on">Увімкнути</string>
     <string name="status_off">Вимкнути</string>
+    <string name="factory_button">Фабричне перезавантаження</string>
+    <string name="factory_dialog_title">Відновлення заводських налаштувань очистить всі дані, а потім перезапустить.</string>
+    <string name="factory_dialog_cancel">Скасувати</string>
+    <string name="factory_dialog_Confirm">Підтвердити</string>
 </resources>

@@ -15,4 +15,8 @@
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="status_on">เปิด</string>
     <string name="status_off">ปิด</string>
+    <string name="factory_button">รีเซ็ตโรงงาน</string>
+    <string name="factory_dialog_title">การฟื้นฟูการตั้งค่าโรงงานจะล้างข้อมูลทั้งหมด และจากนั้นเริ่มต้นใหม่</string>
+    <string name="factory_dialog_cancel">ยกเลิก</string>
+    <string name="factory_dialog_Confirm">ยืนยัน</string>
 </resources>

@@ -15,4 +15,8 @@
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="status_on">Su</string>
     <string name="status_off">Off</string>
+    <string name="factory_button">Impostazioni di fabbrica</string>
+    <string name="factory_dialog_title">Il ripristino delle impostazioni di fabbrica cancellerà tutti i dati e poi riavvierà il dispositivo.</string>
+    <string name="factory_dialog_cancel">Annulla</string>
+    <string name="factory_dialog_Confirm">Conferma</string>
 </resources>

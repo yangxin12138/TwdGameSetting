@@ -15,4 +15,8 @@
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="status_on">On</string>
     <string name="status_off">Iza</string>
+    <string name="factory_button">Poništenje postavki zavoda</string>
+    <string name="factory_dialog_title">Povratak na postavke proizvođača izbrisat će sve podatke, a zatim ponovno pokrenuti uređaj.</string>
+    <string name="factory_dialog_cancel">Otkazati</string>
+    <string name="factory_dialog_Confirm">Potvrdite</string>
 </resources>

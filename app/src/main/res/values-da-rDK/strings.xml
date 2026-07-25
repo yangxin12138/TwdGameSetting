@@ -15,4 +15,8 @@
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="status_on">På</string>
     <string name="status_off">Slukket</string>
+    <string name="factory_button">Nulstil fabrikstandard</string>
+    <string name="factory_dialog_title">Genindstilling af fabriksindstillinger vil slette alle data og derefter genstarte.</string>
+    <string name="factory_dialog_cancel">Afbestem</string>
+    <string name="factory_dialog_Confirm">Bekræft</string>
 </resources>

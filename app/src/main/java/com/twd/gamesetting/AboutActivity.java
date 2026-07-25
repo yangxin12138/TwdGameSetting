@@ -1,14 +1,19 @@
 package com.twd.gamesetting;
 
 import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
+import android.content.Intent;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,7 +26,9 @@ public class AboutActivity extends AppCompatActivity {
     TextView tv_software_version;
     TextView tv_wifi_mac;
     TextView tv_bluetooth_mac;
+    TextView factory_tv;
     private SoundHelper soundHelper;
+    private Context context;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,16 +38,25 @@ public class AboutActivity extends AppCompatActivity {
         tv_software_version = findViewById(R.id.tv_software_version);
         tv_wifi_mac = findViewById(R.id.tv_wifi_mac);
         tv_bluetooth_mac = findViewById(R.id.tv_bluetooth_mac);
+        factory_tv = findViewById(R.id.factory_tv);
         setDeviceName();
         setSoftwareNo();
         setMACAddressWifi();
         setMACAddressBluetooth();
+        context = this;
+        factory_tv.requestFocus();
+        factory_tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showFactoryDialog();
+            }
+        });
     }
 
     @SuppressLint("MissingSuperCall")
     @Override
     public void onBackPressed() {
-        soundHelper.playSelect();
+        //soundHelper.playSelect();
         super.onBackPressed();
     }
     /*
@@ -84,6 +100,53 @@ public class AboutActivity extends AppCompatActivity {
                 Log.i(TAG, "setMACAddressBluetooth: --------bluetooth = " + macAddress);
             }
             tv_bluetooth_mac.setText(macAddress);
+        }
+    }
+
+    private void showFactoryDialog(){
+        Dialog FactoryDialog = new Dialog(this,R.style.DialogStyle);
+
+        //加载自定义布局文件
+        LayoutInflater inflater = LayoutInflater.from(this);
+        View dialogView = inflater.inflate(R.layout.factory_dialog, null);
+        FactoryDialog.setContentView(dialogView);
+        dialogView.setPadding(50,0,50,50);
+
+        final TextView factoryTitle = dialogView.findViewById(R.id.factory_title);
+        final LinearLayout okBT = dialogView.findViewById(R.id.factory_ok_bt);
+        final LinearLayout cancelBT = dialogView.findViewById(R.id.factory_cancel_bt);
+        factoryTitle.setText(getString(R.string.factory_dialog_title));
+        FactoryDialog.show();
+
+        okBT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.i(TAG, "onClick: factory ok");
+                try {
+                    startFactoryDefault(context);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        cancelBT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.i(TAG, "onClick: factory cancel");
+                FactoryDialog.dismiss();
+            }
+        });
+    }
+
+    public static void startFactoryDefault(Context context) throws Exception {
+        if (Build.VERSION.SDK_INT < 26) {
+            context.sendBroadcast(new Intent("android.intent.action.MASTER_CLEAR"));
+        } else {
+            Intent intent = new Intent("android.intent.action.FACTORY_RESET");
+            intent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
+            intent.setPackage("android");
+            context.sendBroadcast(intent);
         }
     }
 }

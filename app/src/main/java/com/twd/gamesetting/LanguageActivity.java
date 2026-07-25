@@ -111,7 +111,7 @@ public class LanguageActivity extends AppCompatActivity {
         listView.setAdapter(languageItemAdapter);
 
         listView.setOnItemClickListener((parent, view, position, id) -> {
-            soundHelper.playConfirm(); // 确认音效
+            //soundHelper.playConfirm(); // 确认音效
             LanguageBean select = languageBeans.get(position);
             String languageCode = select.getLanguageCode(); // "zh_CN" 或 "en_US"
             String[] parts = languageCode.split("_");
@@ -133,7 +133,7 @@ public class LanguageActivity extends AppCompatActivity {
                 languageItemAdapter.setFocusedItem(position);
                 long now = System.currentTimeMillis();
                 if(now - lastFocusSoundTime > 120){
-                    soundHelper.playSelect();
+                    //soundHelper.playSelect();
                     lastFocusSoundTime = now;
                 }
             }
@@ -253,7 +253,7 @@ public class LanguageActivity extends AppCompatActivity {
     @SuppressLint("MissingSuperCall")
     @Override
     public void onBackPressed() {
-        soundHelper.playSelect();
+        //soundHelper.playSelect();
         super.onBackPressed();
     }
 }

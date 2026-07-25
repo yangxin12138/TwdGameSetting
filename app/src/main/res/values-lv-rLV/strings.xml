@@ -15,4 +15,8 @@
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="status_on">Iedarot</string>
     <string name="status_off">aizslēgt</string>
+    <string name="factory_button">Rūpnīcas atjaunošana</string>
+    <string name="factory_dialog_title">Rūpnīcas iestatījumu atjaunošana izdzēs visus datus un pēc tam restartēs.</string>
+    <string name="factory_dialog_cancel">Atcelt</string>
+    <string name="factory_dialog_Confirm">Apstiprināt</string>
 </resources>

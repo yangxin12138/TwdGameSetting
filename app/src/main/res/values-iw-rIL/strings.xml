@@ -15,4 +15,8 @@
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="status_on">על</string>
     <string name="status_off">סגור</string>
+    <string name="factory_button">איפוס מפעל</string>
+    <string name="factory_dialog_title">שחזור הגדרות המפעל יינקה את כל הנתונים ואז יפעל מחדש.</string>
+    <string name="factory_dialog_cancel">ביטול</string>
+    <string name="factory_dialog_Confirm">אישור</string>
 </resources>

@@ -85,18 +85,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         currentVal -= STEP;
                         if (currentVal < MIN_BRIGHT) currentVal = MIN_BRIGHT;
                         setBrightness(currentVal);
-                        soundHelper.playSelect();
+                        //soundHelper.playSelect();
                         return true;
                     case KeyEvent.KEYCODE_DPAD_RIGHT:
                         // 右箭头：亮度升高
                         currentVal += STEP;
                         if (currentVal > MAX_BRIGHT) currentVal = MAX_BRIGHT;
                         setBrightness(currentVal);
-                        soundHelper.playSelect();
+                        //soundHelper.playSelect();
                         return true;
                 }return false;}});
         LL_sound.setOnClickListener(v -> {
-            soundHelper.playConfirm(); // 按下OK播放确认音效
+            //soundHelper.playConfirm(); // 按下OK播放确认音效
             boolean current = GlobalSoundSwitchUtil.isSoundEffectOpen(getContentResolver());
             boolean newState = !current;
             // 保存
@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         Intent intent;
-        soundHelper.playConfirm();
+        //soundHelper.playConfirm();
         if (view.getId() == R.id.ll_language){
             intent = new Intent(this,LanguageActivity.class);
             startActivity(intent);
@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @SuppressLint("MissingSuperCall")
     @Override
     public void onBackPressed() {
-        soundHelper.playSelect();
+        //soundHelper.playSelect();
         super.onBackPressed();
     }
     private void updateCurrentLanguage() {
@@ -287,7 +287,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if(hasFocus){
                 long now = System.currentTimeMillis();
                 if(now - lastFocusSoundTime > 120){
-                    soundHelper.playSelect();
+                    //soundHelper.playSelect();
                     lastFocusSoundTime = now;
                 }
             }

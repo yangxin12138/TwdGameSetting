@@ -15,4 +15,8 @@
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="status_on">باز کردن</string>
     <string name="status_off">بستن</string>
+    <string name="factory_button">تنظیم مجدد کارخانه</string>
+    <string name="factory_dialog_title">بازیابی تنظیمات کارخانه تمام داده ها را پاک می کند و سپس دوباره شروع می شود.</string>
+    <string name="factory_dialog_cancel">لغو کنید</string>
+    <string name="factory_dialog_Confirm">تایید کنید</string>
 </resources>

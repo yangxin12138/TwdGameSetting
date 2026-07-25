@@ -15,4 +15,8 @@
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="status_on">mở</string>
     <string name="status_off">đóng</string>
+    <string name="factory_button">Đặt lại nhà máy</string>
+    <string name="factory_dialog_title">Việc khôi phục cài đặt nhà máy sẽ xóa tất cả dữ liệu và sau đó khởi động lại.</string>
+    <string name="factory_dialog_cancel">Hủy bỏ</string>
+    <string name="factory_dialog_Confirm">Xác nhận</string>
 </resources>

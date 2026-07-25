@@ -15,4 +15,8 @@
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="status_on">Ahol</string>
     <string name="status_off">Kikapcs</string>
+    <string name="factory_button">Gyári beállítás</string>
+    <string name="factory_dialog_title">A gyári beállítások visszaállítása törli az összes adatot, majd újraindítja a rendszert.</string>
+    <string name="factory_dialog_cancel">Mégse</string>
+    <string name="factory_dialog_Confirm">Megerősít</string>
 </resources>

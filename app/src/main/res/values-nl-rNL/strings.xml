@@ -15,4 +15,8 @@
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="status_on">Aan</string>
     <string name="status_off">Uitgeschakeld</string>
+    <string name="factory_button">Fabrieksinstelling herstellen</string>
+    <string name="factory_dialog_title">Herstel van fabrieksinstellingen zult alle gegevens wissen en daarna opnieuw opstarten.</string>
+    <string name="factory_dialog_cancel">Annuleren</string>
+    <string name="factory_dialog_Confirm">Bevestig</string>
 </resources>

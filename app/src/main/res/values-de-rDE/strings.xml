@@ -15,4 +15,8 @@
     <string name="index_sound">Tasten-Sound</string>
     <string name="status_on">Einschalten</string>
     <string name="status_off">Schließen</string>
+    <string name="factory_button">Hersteller-Reset</string>
+    <string name="factory_dialog_title">Die Wiederherstellung der Werkseinstellungen löscht alle Daten und führt dann einen Neustart durch.</string>
+    <string name="factory_dialog_cancel">Stornieren</string>
+    <string name="factory_dialog_Confirm">Bestätigen</string>
 </resources>

@@ -15,4 +15,8 @@
     <string name="bluetooth_mac">Bluetooth Mac</string>
     <string name="status_on">Membuka</string>
     <string name="status_off">Tutup</string>
+    <string name="factory_button">Setkan semula kilang</string>
+    <string name="factory_dialog_title">Memulihkan tetapan kilang akan membersihkan semua data dan kemudian memulakan semula.</string>
+    <string name="factory_dialog_cancel">Pembatalan</string>
+    <string name="factory_dialog_Confirm">Mengesahkan</string>
 </resources>

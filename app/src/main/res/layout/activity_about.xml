@@ -156,6 +156,21 @@
                 android:textSize="24sp"
                 tools:text="00.00.01.01" />
         </LinearLayout>
-
+        <TextView
+            android:id="@+id/factory_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:clickable="true"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/factory_button"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_option_selector"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
