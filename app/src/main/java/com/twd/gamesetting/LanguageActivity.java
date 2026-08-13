@@ -175,7 +175,7 @@ public class LanguageActivity extends AppCompatActivity {
                 isSelected = languageBean.isSelect();
                 if (isSelected){
                     ivCheck.setVisibility(View.VISIBLE); // 显示勾
-                    ivCheck.setImageResource(R.drawable.ic_check_focus);
+                    ivCheck.setImageResource(R.drawable.ic_check_normal);
                 }else {
                     ivCheck.setVisibility(View.INVISIBLE); // 隐藏勾
                     ivCheck.setImageResource(R.drawable.ic_check_normal);
@@ -184,15 +184,15 @@ public class LanguageActivity extends AppCompatActivity {
 
             //设置聚焦效果
             if (position == focusedItem){
-                itemView.setBackgroundResource(R.color.bg_focus);
-                tvName.setTextColor(ContextCompat.getColor(context,R.color.tv_focus));
+                itemView.setBackgroundResource(R.drawable.bg_gradient_focus_red_border);
+                tvName.setTextColor(ContextCompat.getColor(context,R.color.tv_normal));
                 if (languageBean.isSelect()){
-                    ivCheck.setImageResource(R.drawable.ic_check_focus);
+                    ivCheck.setImageResource(R.drawable.ic_check_normal);
                 }else {
                     ivCheck.setImageResource(R.drawable.unselected);
                 }
             }else {
-                itemView.setBackgroundResource(R.color.bg_normal);
+                itemView.setBackgroundResource(R.drawable.bg_gradient_normal);
                 tvName.setTextColor(ContextCompat.getColor(context,R.color.tv_normal));
                 if (languageBean.isSelect()){
                     ivCheck.setImageResource(R.drawable.ic_check_normal);

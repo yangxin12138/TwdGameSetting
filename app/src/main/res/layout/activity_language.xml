@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LanguageActivity"
-    android:background="@drawable/gradient"
+    android:background="@drawable/bg"
     android:paddingTop="20dp"
     android:paddingStart="80dp"
     android:paddingEnd="80dp">
