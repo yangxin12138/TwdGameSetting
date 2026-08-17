@@ -11,4 +11,5 @@
 
     <color name="tv_normal">#FFFFFFFF</color>
     <color name="tv_focus">#6674ab</color>
+    <color name="slap_color">#515151</color>
 </resources>
