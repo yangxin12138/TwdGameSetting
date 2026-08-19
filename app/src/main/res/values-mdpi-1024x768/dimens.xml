@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="index_paddingTop">40dp</dimen>
+    <dimen name="index_paddingBottom">30dp</dimen>
+    <dimen name="index_ll_marginTop">12dp</dimen>
+    <dimen name="deviceinfo_content_marginTop">10dp</dimen>
+    <dimen name="deviceinfo_factorytv_marginTop">15dp</dimen>
+</resources>

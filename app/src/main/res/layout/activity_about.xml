@@ -163,7 +163,7 @@
             android:clickable="true"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="@dimen/deviceinfo_factorytv_marginTop"
             android:text="@string/factory_button"
             android:textColor="@drawable/text_color_selector"
             android:textSize="24sp"
