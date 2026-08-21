@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="deviceinfo_content_marginTop">100dp</dimen>
+    <dimen name="index_item_marginTop">26dp</dimen>
 </resources>
