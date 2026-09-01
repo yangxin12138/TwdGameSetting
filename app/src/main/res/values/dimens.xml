@@ -5,4 +5,8 @@
     <dimen name="index_ll_marginTop">16dp</dimen>
     <dimen name="deviceinfo_content_marginTop">50dp</dimen>
     <dimen name="deviceinfo_factorytv_marginTop">50dp</dimen>
+
+    <dimen name="item_height">60dp</dimen>
+    <dimen name="language_item_height">550dp</dimen>
+    <dimen name="about_item_marginTop">20dp</dimen>
 </resources>

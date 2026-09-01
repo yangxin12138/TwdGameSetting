@@ -25,7 +25,7 @@
     <ListView
         android:id="@+id/list_language"
         android:layout_width="match_parent"
-        android:layout_height="550dp"
+        android:layout_height="@dimen/language_item_height"
         android:divider="@android:color/transparent"
         android:layout_marginTop="10dp"
         android:dividerHeight="16dp"

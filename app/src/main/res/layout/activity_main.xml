@@ -17,7 +17,7 @@
     <LinearLayout
         android:id="@+id/ll_language"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="@dimen/item_height"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="@dimen/index_ll_marginTop"
@@ -68,7 +68,7 @@
     <LinearLayout
         android:id="@+id/ll_sound"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="@dimen/item_height"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="@dimen/index_ll_marginTop"
@@ -112,7 +112,7 @@
     <LinearLayout
         android:id="@+id/ll_bright"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="@dimen/item_height"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="@dimen/index_ll_marginTop"
@@ -171,7 +171,7 @@
     <TextView
         android:id="@+id/tv_wifi"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="@dimen/item_height"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="@dimen/index_ll_marginTop"
@@ -195,7 +195,7 @@
     <TextView
         android:id="@+id/tv_bluetooth"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="@dimen/item_height"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="@dimen/index_ll_marginTop"
@@ -219,7 +219,7 @@
     <LinearLayout
         android:id="@+id/ll_about"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="@dimen/item_height"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="@dimen/index_ll_marginTop"

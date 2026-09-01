@@ -42,7 +42,7 @@
             android:layout_height="60dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="@dimen/about_item_marginTop">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -76,7 +76,7 @@
             android:layout_height="60dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="@dimen/about_item_marginTop">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -110,7 +110,7 @@
             android:layout_height="60dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="@dimen/about_item_marginTop">
 
             <TextView
                 android:layout_width="0dp"
@@ -133,15 +133,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_marginTop="@dimen/about_item_marginTop"
             android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp">
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
+                android:layout_weight="1"
                 android:text="@string/bluetooth_mac"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
@@ -154,6 +154,7 @@
                 android:textSize="24sp"
                 tools:text="00.00.01.01" />
         </LinearLayout>
+
         <TextView
             android:id="@+id/factory_tv"
             android:layout_width="wrap_content"
