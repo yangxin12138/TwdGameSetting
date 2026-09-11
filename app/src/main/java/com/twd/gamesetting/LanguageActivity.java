@@ -77,7 +77,6 @@ public class LanguageActivity extends AppCompatActivity {
         languageMap.put("it_IT","Italiano");
         languageMap.put("iw_IL","Hebrew");
         languageMap.put("lt_LT","Lietuvių");
-        languageMap.put("lv_LT","Latviski");
         languageMap.put("ms_MY","Malay");
         languageMap.put("nb_NO","Norsk bokmål");
         languageMap.put("nl_NL","Nederlands");
@@ -95,7 +94,7 @@ public class LanguageActivity extends AppCompatActivity {
 
 
         List<String> supportedLanguages = Arrays.asList("zh_CN","en_US","fr_FR","de_DE","es_ES","ru_RU","ja_JP","ko_KR","ar_SA"
-                ,"bg_BG","cs_CZ","da_DK","el_GR","fa_IR","fi_FI","fil_PH","hi_IN","hr_HR","hu_HU","in_ID","it_IT","iw_IL","lt_LT","lv_LT","ms_MY","nb_NO","nl_NL","pl_PL","pt_PT","ro_RO","sk_SK","sl_SI","sv_SE","th_TH","tr_TR","uk_UA","vi_VN"
+                ,"bg_BG","cs_CZ","da_DK","el_GR","fa_IR","fi_FI","fil_PH","hi_IN","hr_HR","hu_HU","in_ID","it_IT","iw_IL","lt_LT","ms_MY","nb_NO","nl_NL","pl_PL","pt_PT","ro_RO","sk_SK","sl_SI","sv_SE","th_TH","tr_TR","uk_UA","vi_VN"
         );
         for (String language_sup : supportedLanguages){
             String languageName = languageMap.get(language_sup);
