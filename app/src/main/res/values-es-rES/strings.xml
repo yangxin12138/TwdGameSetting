@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">Restaurar la configuración de fábrica borrará todos los datos y luego reiniciará.</string>
     <string name="factory_dialog_cancel">Cancelar</string>
     <string name="factory_dialog_Confirm">Confirmar</string>
+    <string name="time_setting">Tiempo</string>
+    <string name="time_useNetTime">Internet Tiempo</string>
+    <string name="time_time_title">Tiempo</string>
+    <string name="time_date_title">Fecha</string>
+    <string name="time_24Hours_title">24 horas</string>
+    <string name="time_timeZone_title">Zona horaria</string>
+    <string name="time_timePicker_title">Configuración del tiempo</string>
+    <string name="time_datePicker_title">Configuración de fecha</string>
 </resources>

@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">Η επαναφορά των παραμέτρων του εργοστασίου θα διαγράψει όλα τα δεδομένα και θα επανεκκινήσει.</string>
     <string name="factory_dialog_cancel">Ακύρωση</string>
     <string name="factory_dialog_Confirm">Επιβεβαίωση</string>
+    <string name="time_setting">Χρόνος</string>
+    <string name="time_useNetTime">Διαδικτυακός Χρόνος</string>
+    <string name="time_time_title">Χρόνος</string>
+    <string name="time_date_title">Ημερομηνία</string>
+    <string name="time_24Hours_title">24-ώρες</string>
+    <string name="time_timeZone_title">Περιοχή Ωρακόμετρου</string>
+    <string name="time_timePicker_title">Ρυθμίσεις Χρόνου</string>
+    <string name="time_datePicker_title">Ρυθμίσεις ημερομηνίας</string>
 </resources>

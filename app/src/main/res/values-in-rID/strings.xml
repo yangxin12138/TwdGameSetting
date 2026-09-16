@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">Mengembalikan pengaturan pabrik akan membersihkan semua data dan kemudian memulai ulang.</string>
     <string name="factory_dialog_cancel">Batal</string>
     <string name="factory_dialog_Confirm">Konfirmasi</string>
+    <string name="time_setting">Waktu</string>
+    <string name="time_useNetTime">Waktu Internet</string>
+    <string name="time_time_title">Waktu</string>
+    <string name="time_date_title">Tanggal</string>
+    <string name="time_24Hours_title">24 jam</string>
+    <string name="time_timeZone_title">Zona Waktu</string>
+    <string name="time_timePicker_title">Pengaturan Waktu</string>
+    <string name="time_datePicker_title">Pengaturan Tanggal</string>
 </resources>

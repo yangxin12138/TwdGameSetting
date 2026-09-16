@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">Herstel van fabrieksinstellingen zult alle gegevens wissen en daarna opnieuw opstarten.</string>
     <string name="factory_dialog_cancel">Annuleren</string>
     <string name="factory_dialog_Confirm">Bevestig</string>
+    <string name="time_setting">Tijd</string>
+    <string name="time_useNetTime">Internet Time</string>
+    <string name="time_time_title">Tijd</string>
+    <string name="time_date_title">Datum</string>
+    <string name="time_24Hours_title">24-uur</string>
+    <string name="time_timeZone_title">Tijdzone</string>
+    <string name="time_timePicker_title">Tijdinstellingen</string>
+    <string name="time_datePicker_title">Datuminstellingen</string>
 </resources>

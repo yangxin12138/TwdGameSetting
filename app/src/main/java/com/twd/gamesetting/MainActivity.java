@@ -16,6 +16,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SwitchCompat;
 
+import com.twd.gamesetting.time.TimeActivity;
 import com.twd.gamesetting.utils.GlobalSoundSwitchUtil;
 import com.twd.gamesetting.utils.SoundHelper;
 
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     LinearLayout LL_bright; TextView tv_cur_bright;
     LinearLayout LL_sound;
     LinearLayout LL_about;
+    LinearLayout LL_time;
     TextView tv_sound_status;
     private SoundHelper soundHelper;
     // 防焦点音效频繁触发
@@ -63,6 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv_bluetooth = findViewById(R.id.tv_bluetooth);
         LL_about = findViewById(R.id.ll_about);
         LL_bright = findViewById(R.id.ll_bright); tv_cur_bright = findViewById(R.id.tv_cur_bright);
+        LL_time = findViewById(R.id.ll_time);
 
         // 初始化读取亮度
         readCurrentBrightness();
@@ -108,12 +111,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv_wifi.setOnClickListener(this::onClick);
         tv_bluetooth.setOnClickListener(this::onClick);
         LL_about.setOnClickListener(this::onClick);
-        setFocusListener(LL_language);
-        setFocusListener(LL_bright);
-        setFocusListener(tv_wifi);
-        setFocusListener(tv_bluetooth);
-        setFocusListener(LL_about);
-        setFocusListener(LL_sound);
+        LL_time.setOnClickListener(this::onClick);
         LL_language.requestFocus();
         updateCurrentLanguage();
     }
@@ -136,6 +134,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         } else if (view.getId() == R.id.ll_about) {
             intent = new Intent(this, AboutActivity.class);
+            startActivity(intent);
+        }else if (view.getId() == R.id.ll_time) {
+            intent = new Intent(this, TimeActivity.class);
             startActivity(intent);
         }
     }
@@ -282,17 +283,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         getWindow().setAttributes(lp);
     }
 
-    private void setFocusListener(View view){
-        view.setOnFocusChangeListener((v, hasFocus) -> {
-            if(hasFocus){
-                long now = System.currentTimeMillis();
-                if(now - lastFocusSoundTime > 120){
-                    //soundHelper.playSelect();
-                    lastFocusSoundTime = now;
-                }
-            }
-        });
-    }
     @Override
     protected void onDestroy() {
         super.onDestroy();

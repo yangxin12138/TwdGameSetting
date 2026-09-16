@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">Die Wiederherstellung der Werkseinstellungen löscht alle Daten und führt dann einen Neustart durch.</string>
     <string name="factory_dialog_cancel">Stornieren</string>
     <string name="factory_dialog_Confirm">Bestätigen</string>
+    <string name="time_setting">Zeit</string>
+    <string name="time_useNetTime">Internet Zeit</string>
+    <string name="time_time_title">Zeit</string>
+    <string name="time_date_title">Datum</string>
+    <string name="time_24Hours_title">24 Stunden</string>
+    <string name="time_timeZone_title">Zeitzone</string>
+    <string name="time_timePicker_title">Zeiteinstellungen</string>
+    <string name="time_datePicker_title">Datumseinstellungen</string>
 </resources>

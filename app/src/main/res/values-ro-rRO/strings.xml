@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">Restaurarea setărilor de fabrica va şterge toate datele şi apoi va reporni.</string>
     <string name="factory_dialog_cancel">Anulează</string>
     <string name="factory_dialog_Confirm">Confirmă</string>
+    <string name="time_setting">Timp</string>
+    <string name="time_useNetTime">Timpul Internetului</string>
+    <string name="time_time_title">Timp</string>
+    <string name="time_date_title">Data</string>
+    <string name="time_24Hours_title">24-Hours</string>
+    <string name="time_timeZone_title">Fusul orar</string>
+    <string name="time_timePicker_title">Setări de timp</string>
+    <string name="time_datePicker_title">Setări de dată</string>
 </resources>

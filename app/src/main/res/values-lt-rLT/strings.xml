@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">Atkurti gamyklos nustatymus išvalys visus duomenis ir tada iš naujo pradės.</string>
     <string name="factory_dialog_cancel">Atšaukti</string>
     <string name="factory_dialog_Confirm">Patvirtinti</string>
+    <string name="time_setting">Laikas</string>
+    <string name="time_useNetTime">Tinklo laikas</string>
+    <string name="time_time_title">Laikas</string>
+    <string name="time_date_title">Data</string>
+    <string name="time_24Hours_title">24 valandos</string>
+    <string name="time_timeZone_title">LaikasZona</string>
+    <string name="time_timePicker_title">Laiko nustatymai</string>
+    <string name="time_datePicker_title">Data nustatymai</string>
 </resources>

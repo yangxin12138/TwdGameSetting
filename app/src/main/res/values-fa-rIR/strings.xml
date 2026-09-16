@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">بازیابی تنظیمات کارخانه تمام داده ها را پاک می کند و سپس دوباره شروع می شود.</string>
     <string name="factory_dialog_cancel">لغو کنید</string>
     <string name="factory_dialog_Confirm">تایید کنید</string>
+    <string name="time_setting">زمان</string>
+    <string name="time_useNetTime">زمان اینترنت</string>
+    <string name="time_time_title">زمان</string>
+    <string name="time_date_title">تاریخ</string>
+    <string name="time_24Hours_title">24 ساعته</string>
+    <string name="time_timeZone_title">منطقه زمانی</string>
+    <string name="time_timePicker_title">تنظیمات زمان</string>
+    <string name="time_datePicker_title">تنظیمات تاریخ</string>
 </resources>

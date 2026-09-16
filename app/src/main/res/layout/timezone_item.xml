@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/timezone_list_item_padding"
+    android:id="@+id/time_zone_root"
+    android:clickable="true">
+
+    <!-- 时区名称TextView -->
+    <TextView
+        android:id="@+id/textViewTimeZoneName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:text="时区名称"
+        android:textSize="@dimen/timezone_dialog_title_text_size"
+        android:paddingStart="@dimen/timezone_list_item_paddingStart"/>
+
+    <!-- 时区偏移量TextView -->
+    <TextView
+        android:id="@+id/textViewTimeZoneOffset"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="时区偏移量"
+        android:textSize="@dimen/timezone_dialog_title_text_size"
+        android:paddingStart="@dimen/timezone_list_item_offset_paddingStart"
+        android:paddingLeft="@dimen/timezone_list_item_offset_paddingEnd"
+        android:layout_gravity="right"/>
+
+</LinearLayout>

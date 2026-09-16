@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">Възстановяването на фабричните настройки ще изтрие всички данни и след това ще рестартира.</string>
     <string name="factory_dialog_cancel">Отказ</string>
     <string name="factory_dialog_Confirm">Потвърди</string>
+    <string name="time_setting">Време</string>
+    <string name="time_useNetTime">Интернет Време</string>
+    <string name="time_time_title">Време</string>
+    <string name="time_date_title">Дата</string>
+    <string name="time_24Hours_title">24 часа</string>
+    <string name="time_timeZone_title">Часовна зона</string>
+    <string name="time_timePicker_title">Настройки на времето</string>
+    <string name="time_datePicker_title">Настройки за дата</string>
 </resources>

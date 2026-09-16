@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">Fabrika ayarlarını geri yüklemek tüm verileri temizleyecek ve ardından yeniden başlatacaktır.</string>
     <string name="factory_dialog_cancel">İptal et</string>
     <string name="factory_dialog_Confirm">Onayla</string>
+    <string name="time_setting">Zaman</string>
+    <string name="time_useNetTime">İnternet Zamanı</string>
+    <string name="time_time_title">Zaman</string>
+    <string name="time_date_title">Tarih</string>
+    <string name="time_24Hours_title">24-Saat</string>
+    <string name="time_timeZone_title">TimeZone</string>
+    <string name="time_timePicker_title">Zaman Ayarları</string>
+    <string name="time_datePicker_title">Tarih Ayarları</string>
 </resources>

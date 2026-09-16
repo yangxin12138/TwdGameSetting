@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">공장 설정을 복원하면 모든 데이터를 삭제하고 다시 시작합니다.</string>
     <string name="factory_dialog_cancel">취소</string>
     <string name="factory_dialog_Confirm">확인</string>
+    <string name="time_setting">시간</string>
+    <string name="time_useNetTime">인터넷 시간</string>
+    <string name="time_time_title">시간</string>
+    <string name="time_date_title">날짜</string>
+    <string name="time_24Hours_title">24시간</string>
+    <string name="time_timeZone_title">시간대</string>
+    <string name="time_timePicker_title">시간 설정</string>
+    <string name="time_datePicker_title">날짜 설정</string>
 </resources>

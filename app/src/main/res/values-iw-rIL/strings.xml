@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">שחזור הגדרות המפעל יינקה את כל הנתונים ואז יפעל מחדש.</string>
     <string name="factory_dialog_cancel">ביטול</string>
     <string name="factory_dialog_Confirm">אישור</string>
+    <string name="time_setting">זמן</string>
+    <string name="time_useNetTime">זמן אינטרנט</string>
+    <string name="time_time_title">זמן</string>
+    <string name="time_date_title">תאריך</string>
+    <string name="time_24Hours_title">24 שעות</string>
+    <string name="time_timeZone_title">הגדרות זמן</string>
+    <string name="time_timePicker_title">הגדרות זמן</string>
+    <string name="time_datePicker_title">הגדרות תאריך</string>
 </resources>

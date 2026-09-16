@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">Obnovenie továrenských nastavení vymazá všetky údaje a potom reštartuje.</string>
     <string name="factory_dialog_cancel">Zrušiť</string>
     <string name="factory_dialog_Confirm">Potvrdiť</string>
+    <string name="time_setting">Čas</string>
+    <string name="time_useNetTime">Internet Čas</string>
+    <string name="time_time_title">Čas</string>
+    <string name="time_date_title">Dátum</string>
+    <string name="time_24Hours_title">24-Hodín</string>
+    <string name="time_timeZone_title">Časové pásmo</string>
+    <string name="time_timePicker_title">Nastavenia času</string>
+    <string name="time_datePicker_title">Nastavenia dátumu</string>
 </resources>

@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">Povratak na postavke proizvođača izbrisat će sve podatke, a zatim ponovno pokrenuti uređaj.</string>
     <string name="factory_dialog_cancel">Otkazati</string>
     <string name="factory_dialog_Confirm">Potvrdite</string>
+    <string name="time_setting">Vrijeme</string>
+    <string name="time_useNetTime">Internet Time</string>
+    <string name="time_time_title">Vrijeme</string>
+    <string name="time_date_title">Datum</string>
+    <string name="time_24Hours_title">24 sata</string>
+    <string name="time_timeZone_title">Vremenska zona</string>
+    <string name="time_timePicker_title">Postavke vremena</string>
+    <string name="time_datePicker_title">Postavke datuma</string>
 </resources>

@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">Pagbawi ng factory settings ay magpapalampas ng lahat ng data at magrerestart.</string>
     <string name="factory_dialog_cancel">Iwan</string>
     <string name="factory_dialog_Confirm">Suriin</string>
+    <string name="time_setting">Time</string>
+    <string name="time_useNetTime">Internet Time</string>
+    <string name="time_time_title">Time</string>
+    <string name="time_date_title">Petsa</string>
+    <string name="time_24Hours_title">24-Hours</string>
+    <string name="time_timeZone_title">TimeZone</string>
+    <string name="time_timePicker_title">Pangalan ng Oras</string>
+    <string name="time_datePicker_title">Paggawa ng Araw</string>
 </resources>

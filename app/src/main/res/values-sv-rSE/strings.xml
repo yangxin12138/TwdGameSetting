@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">Återställa fabriksinställningar rensar alla data och startar sedan om.</string>
     <string name="factory_dialog_cancel">Avbryt</string>
     <string name="factory_dialog_Confirm">Bekräfta</string>
+    <string name="time_setting">Tid</string>
+    <string name="time_useNetTime">Internet Tid</string>
+    <string name="time_time_title">Tid</string>
+    <string name="time_date_title">Datum</string>
+    <string name="time_24Hours_title">24-timmars</string>
+    <string name="time_timeZone_title">Tidszon</string>
+    <string name="time_timePicker_title">Tidsinställningar</string>
+    <string name="time_datePicker_title">Datuminställningar</string>
 </resources>

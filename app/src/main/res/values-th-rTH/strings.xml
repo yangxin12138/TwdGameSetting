@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">การฟื้นฟูการตั้งค่าโรงงานจะล้างข้อมูลทั้งหมด และจากนั้นเริ่มต้นใหม่</string>
     <string name="factory_dialog_cancel">ยกเลิก</string>
     <string name="factory_dialog_Confirm">ยืนยัน</string>
+    <string name="time_setting">เวลา</string>
+    <string name="time_useNetTime">อินเทอร์เน็ตไทม์</string>
+    <string name="time_time_title">เวลา</string>
+    <string name="time_date_title">วันที่</string>
+    <string name="time_24Hours_title">24 ชั่วโมง</string>
+    <string name="time_timeZone_title">เขตเวลา</string>
+    <string name="time_timePicker_title">การตั้งค่าเวลา</string>
+    <string name="time_datePicker_title">การตั้งค่าวันที่</string>
 </resources>

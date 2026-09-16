@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">Il ripristino delle impostazioni di fabbrica cancellerà tutti i dati e poi riavvierà il dispositivo.</string>
     <string name="factory_dialog_cancel">Annulla</string>
     <string name="factory_dialog_Confirm">Conferma</string>
+    <string name="time_setting">Tempo</string>
+    <string name="time_useNetTime">Tempo Internet</string>
+    <string name="time_time_title">Tempo</string>
+    <string name="time_date_title">Data</string>
+    <string name="time_24Hours_title">24 ore</string>
+    <string name="time_timeZone_title">Fuso orario</string>
+    <string name="time_timePicker_title">Impostazioni del tempo</string>
+    <string name="time_datePicker_title">Impostazioni della data</string>
 </resources>

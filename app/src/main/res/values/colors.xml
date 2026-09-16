@@ -12,4 +12,5 @@
     <color name="tv_normal">#FFFFFFFF</color>
     <color name="tv_focus">#6674ab</color>
     <color name="slap_color">#282828</color>
+    <color name="auto_time_checked">#9c9b9e</color>
 </resources>

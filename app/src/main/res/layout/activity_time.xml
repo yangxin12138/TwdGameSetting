@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:paddingTop="@dimen/index_paddingTop"
+    android:paddingEnd="80dp"
+    android:paddingStart="80dp"
+    android:paddingBottom="@dimen/index_paddingBottom"
+    android:orientation="vertical"
+    tools:context=".time.TimeActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_autoTime"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="@dimen/index_ll_marginTop"
+        android:background="@drawable/bg_option_selector"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingStart="36dp"
+        android:paddingEnd="36dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:duplicateParentState="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_useNetTime"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="26sp"/>
+
+        <TextView
+            android:duplicateParentState="true"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:duplicateParentState="true"
+            android:id="@+id/tv_autoTime_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:textColor="@drawable/text_color_selector"
+            android:text="开启"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_time_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="@dimen/index_ll_marginTop"
+        android:background="@drawable/bg_option_selector"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingStart="36dp"
+        android:paddingEnd="36dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_time_title"
+            android:duplicateParentState="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_time_title"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="26sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:duplicateParentState="true"
+            android:id="@+id/tv_time_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:textColor="@drawable/text_color_selector"
+            android:text="08:00"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_date_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="@dimen/index_ll_marginTop"
+        android:background="@drawable/bg_option_selector"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingStart="36dp"
+        android:paddingEnd="36dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_date_title"
+            android:duplicateParentState="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_date_title"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="26sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:duplicateParentState="true"
+            android:id="@+id/tv_date_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:textColor="@drawable/text_color_selector"
+            android:text="1997/01/01"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_24Hours_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="@dimen/index_ll_marginTop"
+        android:background="@drawable/bg_option_selector"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingStart="36dp"
+        android:paddingEnd="36dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_24Hours_title"
+            android:duplicateParentState="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_24Hours_title"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="26sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:duplicateParentState="true"
+            android:id="@+id/tv_24Hours_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:textColor="@drawable/text_color_selector"
+            android:text="开启"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_time_zone_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="@dimen/index_ll_marginTop"
+        android:background="@drawable/bg_option_selector"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingStart="36dp"
+        android:paddingEnd="36dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:duplicateParentState="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_timeZone_title"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="26sp"/>
+
+
+
+        <TextView
+            android:duplicateParentState="true"
+            android:id="@+id/tv_time_zone_summary"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:textColor="@drawable/text_color_selector"
+            android:text="GMT +8:00000000000000"/>
+    </LinearLayout>
+</LinearLayout>

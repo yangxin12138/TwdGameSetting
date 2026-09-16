@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">Восстановление заводских настроек очистит все данные, а затем перезапустит.</string>
     <string name="factory_dialog_cancel">Отменить</string>
     <string name="factory_dialog_Confirm">Подтвердить</string>
+    <string name="time_setting">Время</string>
+    <string name="time_useNetTime">Интернет-время</string>
+    <string name="time_time_title">Время</string>
+    <string name="time_date_title">Данные</string>
+    <string name="time_24Hours_title">24 часа</string>
+    <string name="time_timeZone_title">Fusul часовой</string>
+    <string name="time_timePicker_title">Настройки времени</string>
+    <string name="time_datePicker_title">Настройки даты</string>
 </resources>

@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">Obnovitev tovarniških nastavitev bo počistila vse podatke in nato znova zagnala.</string>
     <string name="factory_dialog_cancel">Prekliči</string>
     <string name="factory_dialog_Confirm">Potrdi</string>
+    <string name="time_setting">Čas</string>
+    <string name="time_useNetTime">Internet Čas</string>
+    <string name="time_time_title">Čas</string>
+    <string name="time_date_title">Datum</string>
+    <string name="time_24Hours_title">24 ura</string>
+    <string name="time_timeZone_title">Časovna zona</string>
+    <string name="time_timePicker_title">Nastavitve časa</string>
+    <string name="time_datePicker_title">Nastavitve datuma</string>
 </resources>

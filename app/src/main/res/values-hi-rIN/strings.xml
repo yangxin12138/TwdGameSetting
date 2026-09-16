@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">फैक्टरी सेटिंग्स को बहाल करने से सभी डेटा मिट जाएगा और फिर रिस्टार्ट होगा।</string>
     <string name="factory_dialog_cancel">रद्द करें</string>
     <string name="factory_dialog_Confirm">पुष्टि करें</string>
+    <string name="time_setting">समय</string>
+    <string name="time_useNetTime">इंटरनेट समय</string>
+    <string name="time_time_title">समय</string>
+    <string name="time_date_title">तारीख</string>
+    <string name="time_24Hours_title">24-घंटे</string>
+    <string name="time_timeZone_title">समय क्षेत्र</string>
+    <string name="time_timePicker_title">समय सेटिंग्स</string>
+    <string name="time_datePicker_title">तारीख सेटिंग्स</string>
 </resources>

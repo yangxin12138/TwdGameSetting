@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">Memulihkan tetapan kilang akan membersihkan semua data dan kemudian memulakan semula.</string>
     <string name="factory_dialog_cancel">Pembatalan</string>
     <string name="factory_dialog_Confirm">Mengesahkan</string>
+    <string name="time_setting">Masa</string>
+    <string name="time_useNetTime">Masa Internet</string>
+    <string name="time_time_title">Masa</string>
+    <string name="time_date_title">Tarikh</string>
+    <string name="time_24Hours_title">24-Jam</string>
+    <string name="time_timeZone_title">Zon Waktu</string>
+    <string name="time_timePicker_title">Pengaturan Masa</string>
+    <string name="time_datePicker_title">Pengaturan Tarikh</string>
 </resources>

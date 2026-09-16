@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">Przywrócenie ustawień fabrycznych wyczyści wszystkie dane, a następnie ponownie uruchomi.</string>
     <string name="factory_dialog_cancel">Anuluj</string>
     <string name="factory_dialog_Confirm">Potwierdź</string>
+    <string name="time_setting">Czas</string>
+    <string name="time_useNetTime">Czas internetowy</string>
+    <string name="time_time_title">Czas</string>
+    <string name="time_date_title">Data</string>
+    <string name="time_24Hours_title">24-godziny</string>
+    <string name="time_timeZone_title">Strefa czasowa</string>
+    <string name="time_timePicker_title">Ustawienia czasu</string>
+    <string name="time_datePicker_title">Ustawienia daty</string>
 </resources>

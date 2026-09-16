@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">استعادة الإعدادات المصنعية ستقوم بمسح جميع البيانات ثم إعادة التشغيل.</string>
     <string name="factory_dialog_cancel">إلغاء</string>
     <string name="factory_dialog_Confirm">تأكيد</string>
+    <string name="time_setting">الوقت</string>
+    <string name="time_useNetTime">وقت الإنترنت</string>
+    <string name="time_time_title">الوقت</string>
+    <string name="time_date_title">تاريخ</string>
+    <string name="time_24Hours_title">24 ساعة</string>
+    <string name="time_timeZone_title">المنطقة الزمنية</string>
+    <string name="time_timePicker_title">إعدادات الوقت</string>
+    <string name="time_datePicker_title">إعدادات التاريخ</string>
 </resources>

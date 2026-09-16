@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">A gyári beállítások visszaállítása törli az összes adatot, majd újraindítja a rendszert.</string>
     <string name="factory_dialog_cancel">Mégse</string>
     <string name="factory_dialog_Confirm">Megerősít</string>
+    <string name="time_setting">Idő</string>
+    <string name="time_useNetTime">Internet Idő</string>
+    <string name="time_time_title">Idő</string>
+    <string name="time_date_title">Dátum</string>
+    <string name="time_24Hours_title">24 óra</string>
+    <string name="time_timeZone_title">Időzóna</string>
+    <string name="time_timePicker_title">Idő beállítások</string>
+    <string name="time_datePicker_title">Dátumbeállítások</string>
 </resources>

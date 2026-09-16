@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">La restauration des paramètres d\'usine effacera toutes les données et redémarrera ensuite.</string>
     <string name="factory_dialog_cancel">Annuler</string>
     <string name="factory_dialog_Confirm">Confirmer</string>
+    <string name="time_setting">Temps</string>
+    <string name="time_useNetTime">Temps d\'Internet</string>
+    <string name="time_time_title">Temps</string>
+    <string name="time_date_title">Date</string>
+    <string name="time_24Hours_title">24 heures</string>
+    <string name="time_timeZone_title">Fuseau horaire</string>
+    <string name="time_timePicker_title">Paramètres de temps</string>
+    <string name="time_datePicker_title">Paramètres de date</string>
 </resources>

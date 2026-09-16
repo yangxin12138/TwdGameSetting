@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">Відновлення заводських налаштувань очистить всі дані, а потім перезапустить.</string>
     <string name="factory_dialog_cancel">Скасувати</string>
     <string name="factory_dialog_Confirm">Підтвердити</string>
+    <string name="time_setting">Час</string>
+    <string name="time_useNetTime">Інтернет-час</string>
+    <string name="time_time_title">Час</string>
+    <string name="time_date_title">Тарих</string>
+    <string name="time_24Hours_title">24 години без перерви</string>
+    <string name="time_timeZone_title">Часовий пояс</string>
+    <string name="time_timePicker_title">Налаштування часу</string>
+    <string name="time_datePicker_title">Налаштування дати</string>
 </resources>

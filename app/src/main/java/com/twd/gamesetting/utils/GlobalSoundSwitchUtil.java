@@ -14,7 +14,6 @@ public class GlobalSoundSwitchUtil {
             int value = Settings.System.getInt(cr, Settings.System.SOUND_EFFECTS_ENABLED);
             return value == 1;
         } catch (Settings.SettingNotFoundException e) {
-            // 系统默认开启音效
             return false;
         }
     }

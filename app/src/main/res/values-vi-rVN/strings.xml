@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">Việc khôi phục cài đặt nhà máy sẽ xóa tất cả dữ liệu và sau đó khởi động lại.</string>
     <string name="factory_dialog_cancel">Hủy bỏ</string>
     <string name="factory_dialog_Confirm">Xác nhận</string>
+    <string name="time_setting">Thời gian</string>
+    <string name="time_useNetTime">Internet Thời gian</string>
+    <string name="time_time_title">Thời gian</string>
+    <string name="time_date_title">Date</string>
+    <string name="time_24Hours_title">24-Hours</string>
+    <string name="time_timeZone_title">Múi giờ</string>
+    <string name="time_timePicker_title">Thời gian Cài đặt</string>
+    <string name="time_datePicker_title">Cài đặt Ngày</string>
 </resources>

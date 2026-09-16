@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">Å gjenopprette fabrikken vil rydde alle data og så starte igjen.</string>
     <string name="factory_dialog_cancel">Avlys</string>
     <string name="factory_dialog_Confirm">Bekreft</string>
+    <string name="time_setting">Tid</string>
+    <string name="time_useNetTime">Internets Tid</string>
+    <string name="time_time_title">Tid</string>
+    <string name="time_date_title">Dato</string>
+    <string name="time_24Hours_title">24-timers</string>
+    <string name="time_timeZone_title">Tidszone</string>
+    <string name="time_timePicker_title">Tidsinnstillinger</string>
+    <string name="time_datePicker_title">Datoinnstillinger</string>
 </resources>

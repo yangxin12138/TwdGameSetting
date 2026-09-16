@@ -19,4 +19,12 @@
     <string name="factory_dialog_title">Palauttamalla valmistajan asetukset poistetaan kaikki tiedot ja käynnistetään uudelleen.</string>
     <string name="factory_dialog_cancel">Peruuta</string>
     <string name="factory_dialog_Confirm">Vahvista</string>
+    <string name="time_setting">Aika</string>
+    <string name="time_useNetTime">Internet Time</string>
+    <string name="time_time_title">Aika</string>
+    <string name="time_date_title">Päivämäärä</string>
+    <string name="time_24Hours_title">24-tuntinen</string>
+    <string name="time_timeZone_title">Time Zone</string>
+    <string name="time_timePicker_title">Aikasetukset</string>
+    <string name="time_datePicker_title">Päivämääräasetukset</string>
 </resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/timezone_dialog_padding"
+    android:background="@android:color/white" > <!-- 背景色 -->
+
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/time_timeZone_title"
+        android:textSize="@dimen/timezone_dialog_title_text_size"
+        android:textColor="@android:color/black" />
+    <ListView
+        android:id="@+id/listView_TimeZone"
+        android:layout_width="@dimen/timezone_dialog_list_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
