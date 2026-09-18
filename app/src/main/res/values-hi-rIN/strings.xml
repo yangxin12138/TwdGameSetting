@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">समय क्षेत्र</string>
     <string name="time_timePicker_title">समय सेटिंग्स</string>
     <string name="time_datePicker_title">तारीख सेटिंग्स</string>
+    <string name="light">शेकर लाइट</string>
+    <string name="light_brightness_high">उच्च</string>
+    <string name="light_brightness_medium">मध्यम</string>
+    <string name="light_brightness_low">कम</string>
+    <string name="light_mode_title">मोड</string>
+    <string name="light_mode_steady_on_Red">शाश्वत लाल</string>
+    <string name="light_mode_steady_on_Yellow">शाश्वत पीला</string>
+    <string name="light_mode_steady_on_Green">शाश्वत हरा</string>
+    <string name="light_mode_steady_on_Skyblue">शाश्वत आसमानी नीला</string>
+    <string name="light_mode_steady_on_Blue">शाश्वत नीला</string>
+    <string name="light_mode_steady_on_Purple">शाश्वत बैंगनी</string>
+    <string name="light_mode_steady_on_Lightblue">शाश्वत हल्का नीला</string>
+    <string name="light_mode_breath_Red">साँस लेना लाल</string>
+    <string name="light_mode_breath_Yellow">साँस लेना पीला</string>
+    <string name="light_mode_breath_Green">साँस लेना हरा</string>
+    <string name="light_mode_breath_Skyblue">साँस लेना आसमानी नीला</string>
+    <string name="light_mode_breath_Blue">साँस लेना नीला</string>
+    <string name="light_mode_breath_Purple">साँस लेना बैंगनी</string>
+    <string name="light_mode_breath_Lightblue">साँस लेना हल्का नीला</string>
+    <string name="light_mode_breath_ColorCycle">साँस लेना रंग बदलना</string>
+    <string name="light_mode_rotating_ColorCycle">घुमाएँ  रंग बदलना</string>
+    <string name="light_mode_turn_off">बंद करें</string>
+    <string name="light_brightness_unsupported_title">रोटेटिंग कलर साइकिल में ब्राइटनेस एडजस्टमेंट सपोर्टेड नहीं है।</string>
 </resources>

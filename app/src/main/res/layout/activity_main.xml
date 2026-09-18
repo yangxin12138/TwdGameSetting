@@ -250,7 +250,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/ll_rgb"
+                android:id="@+id/ll_light"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/item_height"
                 android:layout_marginStart="16dp"
@@ -269,7 +269,7 @@
                     android:duplicateParentState="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="RGB灯效"
+                    android:text="@string/light"
                     android:textColor="@drawable/text_color_selector"
                     android:textSize="26sp"/>
 

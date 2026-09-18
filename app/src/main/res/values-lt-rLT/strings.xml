@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">LaikasZona</string>
     <string name="time_timePicker_title">Laiko nustatymai</string>
     <string name="time_datePicker_title">Data nustatymai</string>
+    <string name="light">Shaker šviesos</string>
+    <string name="light_brightness_high">Aukštas</string>
+    <string name="light_brightness_medium">Vidutinis</string>
+    <string name="light_brightness_low">Žemas</string>
+    <string name="light_mode_title">Režimas</string>
+    <string name="light_mode_steady_on_Red">Statinis raudona</string>
+    <string name="light_mode_steady_on_Yellow">Statinis geltona</string>
+    <string name="light_mode_steady_on_Green">Statinis žalias</string>
+    <string name="light_mode_steady_on_Skyblue">Statinis Dangaus žydrumo</string>
+    <string name="light_mode_steady_on_Blue">Statinis mėlyna</string>
+    <string name="light_mode_steady_on_Purple">Statinis Violetinė</string>
+    <string name="light_mode_steady_on_Lightblue">Statinis Šviesiai mėlyna</string>
+    <string name="light_mode_breath_Red">Kvėpuoti raudona</string>
+    <string name="light_mode_breath_Yellow">Kvėpuoti geltona</string>
+    <string name="light_mode_breath_Green">Kvėpuoti žalias</string>
+    <string name="light_mode_breath_Skyblue">Kvėpuoti Dangaus žydrumo</string>
+    <string name="light_mode_breath_Blue">Kvėpuoti mėlyna</string>
+    <string name="light_mode_breath_Purple">Kvėpuoti Violetinė</string>
+    <string name="light_mode_breath_Lightblue">Kvėpuoti Šviesiai mėlyna</string>
+    <string name="light_mode_breath_ColorCycle">Kvėpuoti Spalvų keitimo ciklas</string>
+    <string name="light_mode_rotating_ColorCycle">Ciklinis spalvų keitimas</string>
+    <string name="light_mode_turn_off">Išjungti</string>
+    <string name="light_brightness_unsupported_title">Šviesumo negalima reguliuoti besisukančio spalvų kaitos ciklo režimu.</string>
 </resources>

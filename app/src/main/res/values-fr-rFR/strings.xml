@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">Fuseau horaire</string>
     <string name="time_timePicker_title">Paramètres de temps</string>
     <string name="time_datePicker_title">Paramètres de date</string>
+    <string name="light">Lampe à bascule</string>
+    <string name="light_brightness_high">Haut</string>
+    <string name="light_brightness_medium">Moyen</string>
+    <string name="light_brightness_low">Faible</string>
+    <string name="light_mode_title">Mode</string>
+    <string name="light_mode_steady_on_Red">Allumer Rouge</string>
+    <string name="light_mode_steady_on_Yellow">Allumer Jaune</string>
+    <string name="light_mode_steady_on_Green">Allumer Vert</string>
+    <string name="light_mode_steady_on_Skyblue">Allumer Bleu ciel</string>
+    <string name="light_mode_steady_on_Blue">Allumer Bleu</string>
+    <string name="light_mode_steady_on_Purple">Allumer Violet</string>
+    <string name="light_mode_steady_on_Lightblue">Allumer  Bleu pâle</string>
+    <string name="light_mode_breath_Red">Haleine Rouge</string>
+    <string name="light_mode_breath_Yellow">Haleine Jaune</string>
+    <string name="light_mode_breath_Green">Haleine Vert</string>
+    <string name="light_mode_breath_Skyblue">Haleine Bleu ciel</string>
+    <string name="light_mode_breath_Blue">Haleine Bleu</string>
+    <string name="light_mode_breath_Purple">Haleine Violet</string>
+    <string name="light_mode_breath_Lightblue">Haleine Bleu pâle</string>
+    <string name="light_mode_breath_ColorCycle">Cycle de couleurs de Haleine</string>
+    <string name="light_mode_rotating_ColorCycle">Cycle de couleurs rotatif</string>
+    <string name="light_mode_turn_off">Éteindre</string>
+    <string name="light_brightness_unsupported_title">Le réglage de la luminosité n\'est pas pris en charge dans le mode de cycle de couleurs rotatif.</string>
 </resources>

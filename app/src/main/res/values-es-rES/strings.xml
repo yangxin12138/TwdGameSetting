@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">Zona horaria</string>
     <string name="time_timePicker_title">Configuración del tiempo</string>
     <string name="time_datePicker_title">Configuración de fecha</string>
+    <string name="light">Lámpara de mecedora</string>
+    <string name="light_brightness_high">Alto</string>
+    <string name="light_brightness_medium">Medio</string>
+    <string name="light_brightness_low">Bajo</string>
+    <string name="light_mode_title">Modo</string>
+    <string name="light_mode_steady_on_Red">Rojo estático</string>
+    <string name="light_mode_steady_on_Yellow">Amarillo estático</string>
+    <string name="light_mode_steady_on_Green">Verde estático</string>
+    <string name="light_mode_steady_on_Skyblue">Azul cielo estático</string>
+    <string name="light_mode_steady_on_Blue">Azul estático</string>
+    <string name="light_mode_steady_on_Purple">Púrpura estático</string>
+    <string name="light_mode_steady_on_Lightblue">Azul claro estático</string>
+    <string name="light_mode_breath_Red">Aliento rojo</string>
+    <string name="light_mode_breath_Yellow">Aliento amarillo</string>
+    <string name="light_mode_breath_Green">Aliento verde</string>
+    <string name="light_mode_breath_Skyblue">Aliento azul cielo</string>
+    <string name="light_mode_breath_Blue">Aliento azul</string>
+    <string name="light_mode_breath_Purple">Aliento púrpura</string>
+    <string name="light_mode_breath_Lightblue">Aliento azul claro</string>
+    <string name="light_mode_breath_ColorCycle">Ciclo de color de la respiración</string>
+    <string name="light_mode_rotating_ColorCycle">Ciclo de colores rotativo</string>
+    <string name="light_mode_turn_off">Apagar</string>
+    <string name="light_brightness_unsupported_title">El ajuste de brillo no es compatible con el ciclo de colores rotativo.</string>
 </resources>

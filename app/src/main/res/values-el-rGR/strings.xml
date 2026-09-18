@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">Περιοχή Ωρακόμετρου</string>
     <string name="time_timePicker_title">Ρυθμίσεις Χρόνου</string>
     <string name="time_datePicker_title">Ρυθμίσεις ημερομηνίας</string>
+    <string name="light">Φως ραβδού</string>
+    <string name="light_brightness_high">Ψηλά</string>
+    <string name="light_brightness_medium">Μέσον</string>
+    <string name="light_brightness_low">Χαμηλός</string>
+    <string name="light_mode_title">Λειτουργία</string>
+    <string name="light_mode_steady_on_Red">αιώνιος κόκκινος</string>
+    <string name="light_mode_steady_on_Yellow">αιώνιος κίτρινος</string>
+    <string name="light_mode_steady_on_Green">αιώνιος πράσινος</string>
+    <string name="light_mode_steady_on_Skyblue">αιώνιος Γαλάζιο</string>
+    <string name="light_mode_steady_on_Blue">αιώνιος μπλε</string>
+    <string name="light_mode_steady_on_Purple">αιώνιος Μωβ</string>
+    <string name="light_mode_steady_on_Lightblue">αιώνιος Απαλό γαλάζιο</string>
+    <string name="light_mode_breath_Red">αναπνέω κόκκινος</string>
+    <string name="light_mode_breath_Yellow">αναπνέω κίτρινος</string>
+    <string name="light_mode_breath_Green">αναπνέω πράσινος</string>
+    <string name="light_mode_breath_Skyblue">αναπνέω Γαλάζιο</string>
+    <string name="light_mode_breath_Blue">αναπνέω μπλε</string>
+    <string name="light_mode_breath_Purple">αναπνέω Μωβ</string>
+    <string name="light_mode_breath_Lightblue">αναπνέω Απαλό γαλάζιο</string>
+    <string name="light_mode_breath_ColorCycle">αναπνέω Αλλαγή χρώματος</string>
+    <string name="light_mode_rotating_ColorCycle">Περιστροφικός Αλλαγή χρώματος</string>
+    <string name="light_mode_turn_off">Κλείνω</string>
+    <string name="light_brightness_unsupported_title">Η ρύθμιση φωτεινότητας δεν υποστηρίζεται στον περιστρεφόμενο κύκλο χρωμάτων.</string>
 </resources>

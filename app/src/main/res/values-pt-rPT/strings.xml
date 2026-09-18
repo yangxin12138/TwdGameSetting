@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">Fuso horário</string>
     <string name="time_timePicker_title">Configurações do tempo</string>
     <string name="time_datePicker_title">Configurações de data</string>
+    <string name="light">Luz de oscilação</string>
+    <string name="light_brightness_high">Alto</string>
+    <string name="light_brightness_medium">Médio</string>
+    <string name="light_brightness_low">Baixo</string>
+    <string name="light_mode_title">Modo</string>
+    <string name="light_mode_steady_on_Red">Vermelho Estático</string>
+    <string name="light_mode_steady_on_Yellow">Amarelo Estático</string>
+    <string name="light_mode_steady_on_Green">Verde Estático</string>
+    <string name="light_mode_steady_on_Skyblue">Azul-celeste Estático</string>
+    <string name="light_mode_steady_on_Blue">Azul Estático</string>
+    <string name="light_mode_steady_on_Purple">Roxo Estático</string>
+    <string name="light_mode_steady_on_Lightblue">Azul-claro Estático</string>
+    <string name="light_mode_breath_Red">Respiração Vermelha</string>
+    <string name="light_mode_breath_Yellow">Respiração Amarela</string>
+    <string name="light_mode_breath_Green">Respiração Verde</string>
+    <string name="light_mode_breath_Skyblue">Respiração Azul-Celeste</string>
+    <string name="light_mode_breath_Blue">Respiração Azul</string>
+    <string name="light_mode_breath_Purple">Respiração Púrpura</string>
+    <string name="light_mode_breath_Lightblue">Respiração Azul Claro</string>
+    <string name="light_mode_breath_ColorCycle">Ciclo de Cores da Respiração</string>
+    <string name="light_mode_rotating_ColorCycle">Ciclo de Cores Rotativo</string>
+    <string name="light_mode_turn_off">Desligar</string>
+    <string name="light_brightness_unsupported_title">O ajuste de brilho não é compatível com o Ciclo de Cores Rotativo.</string>
 </resources>

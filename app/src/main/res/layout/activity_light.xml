@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LanguageActivity"
+    android:background="@drawable/gradient"
+    android:paddingTop="20dp"
+    android:paddingStart="80dp"
+    android:paddingEnd="80dp">
+
+    <TextView
+        android:id="@+id/tv_light_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/light"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_light_bright"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="@dimen/deviceinfo_content_marginTop"
+        android:background="@drawable/bg_option_selector"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_light_title"
+        android:paddingStart="36dp"
+        android:paddingEnd="36dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:duplicateParentState="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/index_bright"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="26sp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+        <ImageView
+            android:duplicateParentState="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_left_selector"/>
+
+        <TextView
+            android:duplicateParentState="true"
+            android:id="@+id/tv_light_cur_bright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="@dimen/index_ll_marginTop"
+            android:paddingEnd="@dimen/index_ll_marginTop"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="26sp"
+            android:text="高"/>
+
+        <ImageView
+            android:duplicateParentState="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_selector"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_light_mode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="@dimen/index_ll_marginTop"
+        android:background="@drawable/bg_option_selector"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_light_bright"
+        android:paddingStart="36dp"
+        android:paddingEnd="36dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:duplicateParentState="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/light_mode_title"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="26sp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:duplicateParentState="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_left_selector"/>
+
+        <TextView
+            android:duplicateParentState="true"
+            android:id="@+id/tv_light_cur_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="120dp"
+            android:maxWidth="320dp"
+            android:gravity="center"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="26sp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingStart="@dimen/index_ll_marginTop"
+            android:paddingEnd="@dimen/index_ll_marginTop"
+            android:text="长亮-红"/>
+
+        <ImageView
+            android:duplicateParentState="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_selector"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

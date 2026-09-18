@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">Часовна зона</string>
     <string name="time_timePicker_title">Настройки на времето</string>
     <string name="time_datePicker_title">Настройки за дата</string>
+    <string name="light">Joystick светлина</string>
+    <string name="light_brightness_high">Високи</string>
+    <string name="light_brightness_medium">Среден</string>
+    <string name="light_brightness_low">Ниска</string>
+    <string name="light_mode_title">Режим</string>
+    <string name="light_mode_steady_on_Red">Стейди Он Ред</string>
+    <string name="light_mode_steady_on_Yellow">Стой на Жълто</string>
+    <string name="light_mode_steady_on_Green">Стейди Он Грин</string>
+    <string name="light_mode_steady_on_Skyblue">Стабилно в небесно-синьо</string>
+    <string name="light_mode_steady_on_Blue">Стабилност в Блу</string>
+    <string name="light_mode_steady_on_Purple">Стой на пурпурно</string>
+    <string name="light_mode_steady_on_Lightblue">Стабилно Зелено Светло</string>
+    <string name="light_mode_breath_Red">Дишане Ред</string>
+    <string name="light_mode_breath_Yellow">Дъхът на жълтото</string>
+    <string name="light_mode_breath_Green">Дишане зелено</string>
+    <string name="light_mode_breath_Skyblue">Дъхът на небесно синьо</string>
+    <string name="light_mode_breath_Blue">Дъхът на сините</string>
+    <string name="light_mode_breath_Purple">Дъхът на пурпурния</string>
+    <string name="light_mode_breath_Lightblue">Дишане Светъл Бял</string>
+    <string name="light_mode_breath_ColorCycle">Цикъл на дишане и цвят</string>
+    <string name="light_mode_rotating_ColorCycle">Ротационен цвятен цикъл</string>
+    <string name="light_mode_turn_off">Изключи</string>
+    <string name="light_brightness_unsupported_title">Регулиране на яркостта не е поддържано в Ротационния цвят на цикъла</string>
 </resources>

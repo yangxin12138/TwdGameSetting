@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">タイムゾーン</string>
     <string name="time_timePicker_title">時間設定</string>
     <string name="time_datePicker_title">日付設定</string>
+    <string name="light">ロッカランプ</string>
+    <string name="light_brightness_high">高い</string>
+    <string name="light_brightness_medium">中くらい</string>
+    <string name="light_brightness_low">低い</string>
+    <string name="light_mode_title">パターン</string>
+    <string name="light_mode_steady_on_Red">永遠の 赤</string>
+    <string name="light_mode_steady_on_Yellow">永遠の 黄色</string>
+    <string name="light_mode_steady_on_Green">永遠の 緑色</string>
+    <string name="light_mode_steady_on_Skyblue">永遠の 空色</string>
+    <string name="light_mode_steady_on_Blue">永遠の青色</string>
+    <string name="light_mode_steady_on_Purple">永遠の 紫</string>
+    <string name="light_mode_steady_on_Lightblue">永遠の  淡い青色</string>
+    <string name="light_mode_breath_Red">息をする 赤</string>
+    <string name="light_mode_breath_Yellow">息をする 黄色</string>
+    <string name="light_mode_breath_Green">息をする 緑色</string>
+    <string name="light_mode_breath_Skyblue">息をする 空色</string>
+    <string name="light_mode_breath_Blue">息をする 青色</string>
+    <string name="light_mode_breath_Purple">息をする 紫</string>
+    <string name="light_mode_breath_Lightblue">息をする 淡い青色</string>
+    <string name="light_mode_breath_ColorCycle">息をする  カラーサイクル</string>
+    <string name="light_mode_rotating_ColorCycle">回転カラーサイクル</string>
+    <string name="light_mode_turn_off">消す</string>
+    <string name="light_brightness_unsupported_title">「回転カラーサイクル」では、明るさの調整はサポートされていません。</string>
 </resources>

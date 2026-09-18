@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">Múi giờ</string>
     <string name="time_timePicker_title">Thời gian Cài đặt</string>
     <string name="time_datePicker_title">Cài đặt Ngày</string>
+    <string name="light">Đèn Joystick</string>
+    <string name="light_brightness_high">Cao</string>
+    <string name="light_brightness_medium">Trung bình</string>
+    <string name="light_brightness_low">Thấp</string>
+    <string name="light_mode_title">Chế độ</string>
+    <string name="light_mode_steady_on_Red">Đỏ Tĩnh</string>
+    <string name="light_mode_steady_on_Yellow">Vàng Tĩnh</string>
+    <string name="light_mode_steady_on_Green">Xanh Tĩnh</string>
+    <string name="light_mode_steady_on_Skyblue">Xanh da trời tĩnh lặng</string>
+    <string name="light_mode_steady_on_Blue">Xanh Tĩnh Lặng</string>
+    <string name="light_mode_steady_on_Purple">Tím Tĩnh</string>
+    <string name="light_mode_steady_on_Lightblue">Xanh nhạt tĩnh</string>
+    <string name="light_mode_breath_Red">Hơi thở đỏ</string>
+    <string name="light_mode_breath_Yellow">Hơi thở vàng</string>
+    <string name="light_mode_breath_Green">Hơi thở Xanh</string>
+    <string name="light_mode_breath_Skyblue">Hơi thở màu xanh da trời</string>
+    <string name="light_mode_breath_Blue">Hơi thở xanh</string>
+    <string name="light_mode_breath_Purple">Hơi thở Tím</string>
+    <string name="light_mode_breath_Lightblue">Hơi thở màu xanh nhạt</string>
+    <string name="light_mode_breath_ColorCycle">Chu kỳ màu sắc theo hơi thở</string>
+    <string name="light_mode_rotating_ColorCycle">Chu kỳ màu xoay vòng</string>
+    <string name="light_mode_turn_off">Tắt</string>
+    <string name="light_brightness_unsupported_title">Tính năng điều chỉnh độ sáng không được hỗ trợ trong chế độ Chu kỳ màu xoay vòng.</string>
 </resources>

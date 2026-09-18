@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">Tidszone</string>
     <string name="time_timePicker_title">Tidsindstillinger</string>
     <string name="time_datePicker_title">Datoindstillinger</string>
+    <string name="light">Joystick lys</string>
+    <string name="light_brightness_high">Høj</string>
+    <string name="light_brightness_medium">Mellem</string>
+    <string name="light_brightness_low">Lavt</string>
+    <string name="light_mode_title">Tilstand</string>
+    <string name="light_mode_steady_on_Red">Lys rød</string>
+    <string name="light_mode_steady_on_Yellow">Lys gul</string>
+    <string name="light_mode_steady_on_Green">Lys grønt</string>
+    <string name="light_mode_steady_on_Skyblue">Lys himmelblå</string>
+    <string name="light_mode_steady_on_Blue">Lys blå</string>
+    <string name="light_mode_steady_on_Purple">Lys lilla</string>
+    <string name="light_mode_steady_on_Lightblue">Lys  lyseblå</string>
+    <string name="light_mode_breath_Red">Åndedrag rød</string>
+    <string name="light_mode_breath_Yellow">Åndedrag gul</string>
+    <string name="light_mode_breath_Green">Åndedrag grønt</string>
+    <string name="light_mode_breath_Skyblue">Åndedrag himmelblå</string>
+    <string name="light_mode_breath_Blue">Åndedrag  blå</string>
+    <string name="light_mode_breath_Purple">Åndedrag lilla</string>
+    <string name="light_mode_breath_Lightblue">Åndedrag lyseblå</string>
+    <string name="light_mode_breath_ColorCycle">Åndedrag Farvecyklus</string>
+    <string name="light_mode_rotating_ColorCycle">Roterende Farvecyklus</string>
+    <string name="light_mode_turn_off">Slå for</string>
+    <string name="light_brightness_unsupported_title">Lysstyrkejustering understøttes ikke i roterende farvecyklus</string>
 </resources>

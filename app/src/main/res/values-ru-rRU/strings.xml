@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">Fusul часовой</string>
     <string name="time_timePicker_title">Настройки времени</string>
     <string name="time_datePicker_title">Настройки даты</string>
+    <string name="light">Лампа качалки</string>
+    <string name="light_brightness_high">Высокий</string>
+    <string name="light_brightness_medium">Середина</string>
+    <string name="light_brightness_low">Низкий</string>
+    <string name="light_mode_title">Режим</string>
+    <string name="light_mode_steady_on_Red">Статический красный</string>
+    <string name="light_mode_steady_on_Yellow">Статический желтый</string>
+    <string name="light_mode_steady_on_Green">Статический зеленый</string>
+    <string name="light_mode_steady_on_Skyblue">Статический небесно-голубой</string>
+    <string name="light_mode_steady_on_Blue">Статический синий</string>
+    <string name="light_mode_steady_on_Purple">Статический фиолетовый</string>
+    <string name="light_mode_steady_on_Lightblue">Статический светло-голубой</string>
+    <string name="light_mode_breath_Red">Дыхание Красное</string>
+    <string name="light_mode_breath_Yellow">Дыхание желтый</string>
+    <string name="light_mode_breath_Green">Дыши зеленью</string>
+    <string name="light_mode_breath_Skyblue">Дыхание цвета небесной лазури</string>
+    <string name="light_mode_breath_Blue">Дыхание синевы</string>
+    <string name="light_mode_breath_Purple">Дыхание пурпура</string>
+    <string name="light_mode_breath_Lightblue">Дыхание Светло-голубой</string>
+    <string name="light_mode_breath_ColorCycle">Цикл смены цвета при дыхании</string>
+    <string name="light_mode_rotating_ColorCycle">Циклическая смена цветов</string>
+    <string name="light_mode_turn_off">Выключать</string>
+    <string name="light_brightness_unsupported_title">Регулировка яркости не поддерживается в режиме циклической смены цветов с вращением.</string>
 </resources>

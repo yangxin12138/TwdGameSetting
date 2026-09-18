@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">Fusul orar</string>
     <string name="time_timePicker_title">Setări de timp</string>
     <string name="time_datePicker_title">Setări de dată</string>
+    <string name="light">Lumină shaker</string>
+    <string name="light_brightness_high">Ridicat</string>
+    <string name="light_brightness_medium">Mediu</string>
+    <string name="light_brightness_low">Scăzut</string>
+    <string name="light_mode_title">Mod</string>
+    <string name="light_mode_steady_on_Red">Roșu static</string>
+    <string name="light_mode_steady_on_Yellow">Galben static</string>
+    <string name="light_mode_steady_on_Green">Verde static</string>
+    <string name="light_mode_steady_on_Skyblue">Albastru-cer static</string>
+    <string name="light_mode_steady_on_Blue">Albastru static</string>
+    <string name="light_mode_steady_on_Purple">Violet static</string>
+    <string name="light_mode_steady_on_Lightblue">Albastru deschis static</string>
+    <string name="light_mode_breath_Red">Respirație Roșie</string>
+    <string name="light_mode_breath_Yellow">Respirație galbenă</string>
+    <string name="light_mode_breath_Green">Respirație verde</string>
+    <string name="light_mode_breath_Skyblue">Respirație de albastru-cer</string>
+    <string name="light_mode_breath_Blue">Respirație albastră</string>
+    <string name="light_mode_breath_Purple">Respirație purpurie</string>
+    <string name="light_mode_breath_Lightblue">Respirație Albastră Deschisă</string>
+    <string name="light_mode_breath_ColorCycle">Ciclu de culori sincronizat cu respirația</string>
+    <string name="light_mode_rotating_ColorCycle">Ciclu de culori rotativ</string>
+    <string name="light_mode_turn_off">Opriți</string>
+    <string name="light_brightness_unsupported_title">Reglarea luminozității nu este disponibilă în modul de ciclu cromatic rotativ.</string>
 </resources>

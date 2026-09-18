@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">Time Zone</string>
     <string name="time_timePicker_title">Aikasetukset</string>
     <string name="time_datePicker_title">Päivämääräasetukset</string>
+    <string name="light">Joystick Valo</string>
+    <string name="light_brightness_high">Korkea</string>
+    <string name="light_brightness_medium">Keskikokoinen</string>
+    <string name="light_brightness_low">Matala</string>
+    <string name="light_mode_title">Tila</string>
+    <string name="light_mode_steady_on_Red">Pidä aina päällä punainen</string>
+    <string name="light_mode_steady_on_Yellow">Pidä aina päällä keltainen</string>
+    <string name="light_mode_steady_on_Green">Pidä aina päällä vihreä</string>
+    <string name="light_mode_steady_on_Skyblue">Pidä aina päällä Taivaansininen</string>
+    <string name="light_mode_steady_on_Blue">Pidä aina päällä sininen</string>
+    <string name="light_mode_steady_on_Purple">Pidä aina päällä Violetti</string>
+    <string name="light_mode_steady_on_Lightblue">Pidä aina päällä Vaaleansininen</string>
+    <string name="light_mode_breath_Red">Hengittää punainen</string>
+    <string name="light_mode_breath_Yellow">Hengittää keltainen</string>
+    <string name="light_mode_breath_Green">Hengittää vihreä</string>
+    <string name="light_mode_breath_Skyblue">Hengittää Taivaansininen</string>
+    <string name="light_mode_breath_Blue">Hengittää sininen</string>
+    <string name="light_mode_breath_Purple">Hengittää Violetti</string>
+    <string name="light_mode_breath_Lightblue">Hengittää Vaaleansininen</string>
+    <string name="light_mode_breath_ColorCycle">Hengittää Värisykli</string>
+    <string name="light_mode_rotating_ColorCycle">Kiertää Värisykli</string>
+    <string name="light_mode_turn_off">Sammuta</string>
+    <string name="light_brightness_unsupported_title">Kirkkauden säätöä ei tueta pyörivässä värisyklissä.</string>
 </resources>

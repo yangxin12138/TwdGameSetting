@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">시간대</string>
     <string name="time_timePicker_title">시간 설정</string>
     <string name="time_datePicker_title">날짜 설정</string>
+    <string name="light">로터 램프</string>
+    <string name="light_brightness_high">높은</string>
+    <string name="light_brightness_medium">중간</string>
+    <string name="light_brightness_low">낮은</string>
+    <string name="light_mode_title">모드</string>
+    <string name="light_mode_steady_on_Red">스태틱 레드</string>
+    <string name="light_mode_steady_on_Yellow">스태틱 옐로우</string>
+    <string name="light_mode_steady_on_Green">스태틱 그린</string>
+    <string name="light_mode_steady_on_Skyblue">스태틱 하늘색</string>
+    <string name="light_mode_steady_on_Blue">스태틱 파란색</string>
+    <string name="light_mode_steady_on_Purple">스태틱 퍼플</string>
+    <string name="light_mode_steady_on_Lightblue">스태틱 연한 파란색</string>
+    <string name="light_mode_breath_Red">숨 쉬다 레드</string>
+    <string name="light_mode_breath_Yellow">숨 쉬다 옐로우</string>
+    <string name="light_mode_breath_Green">숨 쉬다 그린</string>
+    <string name="light_mode_breath_Skyblue">숨 쉬다 하늘색</string>
+    <string name="light_mode_breath_Blue">숨 쉬다 파란색</string>
+    <string name="light_mode_breath_Purple">숨 쉬다 퍼플</string>
+    <string name="light_mode_breath_Lightblue">숨 쉬다 연한 파란색</string>
+    <string name="light_mode_breath_ColorCycle">숨 쉬다 주기</string>
+    <string name="light_mode_rotating_ColorCycle">회전 주기</string>
+    <string name="light_mode_turn_off">끄다</string>
+    <string name="light_brightness_unsupported_title">회전/반복 모드에서는 밝기 조절이 지원되지 않습니다.</string>
 </resources>

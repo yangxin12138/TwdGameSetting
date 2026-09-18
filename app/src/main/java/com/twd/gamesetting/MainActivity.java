@@ -16,9 +16,11 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SwitchCompat;
 
+import com.twd.gamesetting.light.LightActivity;
 import com.twd.gamesetting.time.TimeActivity;
 import com.twd.gamesetting.utils.GlobalSoundSwitchUtil;
 import com.twd.gamesetting.utils.SoundHelper;
+import com.twd.gamesetting.utils.SystemUtils;
 
 import java.util.Locale;
 
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     LinearLayout LL_sound;
     LinearLayout LL_about;
     LinearLayout LL_time;
+    LinearLayout LL_light;
     TextView tv_sound_status;
     private SoundHelper soundHelper;
     // 防焦点音效频繁触发
@@ -53,6 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onResume();
         // 每次返回MainActivity时更新当前语言显示
         updateCurrentLanguage();
+        readCurrentBrightness();
     }
     private void initView(){
 
@@ -66,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         LL_about = findViewById(R.id.ll_about);
         LL_bright = findViewById(R.id.ll_bright); tv_cur_bright = findViewById(R.id.tv_cur_bright);
         LL_time = findViewById(R.id.ll_time);
-
+        LL_light = findViewById(R.id.ll_light);
         // 初始化读取亮度
         readCurrentBrightness();
 
@@ -111,9 +115,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv_wifi.setOnClickListener(this::onClick);
         tv_bluetooth.setOnClickListener(this::onClick);
         LL_about.setOnClickListener(this::onClick);
+        LL_bright.setOnClickListener(this::onClick);
         LL_time.setOnClickListener(this::onClick);
+        LL_light.setOnClickListener(this::onClick);
         LL_language.requestFocus();
         updateCurrentLanguage();
+        boolean hasJoyStickLight = SystemUtils.getProperty("ro.sys.joystick.led","0").equals("1");
+        Log.d("yangxin", "initView: led = " + SystemUtils.getProperty("ro.sys.joystick.led","0"));
+        LL_light.setVisibility(hasJoyStickLight ? View.VISIBLE : View.GONE);
     }
 
     @Override
@@ -137,6 +146,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         }else if (view.getId() == R.id.ll_time) {
             intent = new Intent(this, TimeActivity.class);
+            startActivity(intent);
+        }else if (view.getId() == R.id.ll_light) {
+            intent = new Intent(this, LightActivity.class);
+            startActivity(intent);
+        }else if (view.getId() == R.id.ll_bright) {
+            intent = new Intent(this, BrightnessActivity.class);
             startActivity(intent);
         }
     }

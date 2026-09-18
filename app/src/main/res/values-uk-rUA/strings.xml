@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">Часовий пояс</string>
     <string name="time_timePicker_title">Налаштування часу</string>
     <string name="time_datePicker_title">Налаштування дати</string>
+    <string name="light">Світильник</string>
+    <string name="light_brightness_high">Високий</string>
+    <string name="light_brightness_medium">Середній</string>
+    <string name="light_brightness_low">Низький</string>
+    <string name="light_mode_title">Режим</string>
+    <string name="light_mode_steady_on_Red">Статичний червоний</string>
+    <string name="light_mode_steady_on_Yellow">Статичний жовтий</string>
+    <string name="light_mode_steady_on_Green">Статичний зелений</string>
+    <string name="light_mode_steady_on_Skyblue">Статичний небесно-блакитний</string>
+    <string name="light_mode_steady_on_Blue">Статичний синій</string>
+    <string name="light_mode_steady_on_Purple">Статичний фіолетовий</string>
+    <string name="light_mode_steady_on_Lightblue">Статичний світло-блакитний</string>
+    <string name="light_mode_breath_Red">Червоний подих</string>
+    <string name="light_mode_breath_Yellow">Жовтий подих</string>
+    <string name="light_mode_breath_Green">Дихай зелено</string>
+    <string name="light_mode_breath_Skyblue">Подих небесної блакиті</string>
+    <string name="light_mode_breath_Blue">Дихай синім</string>
+    <string name="light_mode_breath_Purple">Фіолетовий подих</string>
+    <string name="light_mode_breath_Lightblue">Дихання світло-блакитного кольору</string>
+    <string name="light_mode_breath_ColorCycle">Цикл зміни кольору залежно від дихання</string>
+    <string name="light_mode_rotating_ColorCycle">Циклічна зміна кольорів</string>
+    <string name="light_mode_turn_off">Вимкнути</string>
+    <string name="light_brightness_unsupported_title">Регулювання яскравості не підтримується в режимі циклічної зміни кольорів із обертанням.</string>
 </resources>

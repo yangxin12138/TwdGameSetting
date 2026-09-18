@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">Zon Waktu</string>
     <string name="time_timePicker_title">Pengaturan Masa</string>
     <string name="time_datePicker_title">Pengaturan Tarikh</string>
+    <string name="light">Lampu shaker</string>
+    <string name="light_brightness_high">Tinggi</string>
+    <string name="light_brightness_medium">Sederhana</string>
+    <string name="light_brightness_low">Rendah</string>
+    <string name="light_mode_title">Mod</string>
+    <string name="light_mode_steady_on_Red">Merah Statik</string>
+    <string name="light_mode_steady_on_Yellow">Kuning Statik</string>
+    <string name="light_mode_steady_on_Green">Hijau Statik</string>
+    <string name="light_mode_steady_on_Skyblue">Biru Langit Statik</string>
+    <string name="light_mode_steady_on_Blue">Biru Statik</string>
+    <string name="light_mode_steady_on_Purple">Ungu Statik</string>
+    <string name="light_mode_steady_on_Lightblue">Biru Muda Statik</string>
+    <string name="light_mode_breath_Red">Nafas Merah</string>
+    <string name="light_mode_breath_Yellow">Nafas Kuning</string>
+    <string name="light_mode_breath_Green">Nafas Hijau</string>
+    <string name="light_mode_breath_Skyblue">Nafas Biru Langit</string>
+    <string name="light_mode_breath_Blue">Nafas Biru</string>
+    <string name="light_mode_breath_Purple">Nafas Ungu</string>
+    <string name="light_mode_breath_Lightblue">Nafas Biru Muda</string>
+    <string name="light_mode_breath_ColorCycle">Kitaran Warna Nafas</string>
+    <string name="light_mode_rotating_ColorCycle">Kitaran Warna Berputar</string>
+    <string name="light_mode_turn_off">Matikan</string>
+    <string name="light_brightness_unsupported_title">Kecerahan tidak boleh dilaraskan dalam mod kitaran perubahan warna berputar.</string>
 </resources>

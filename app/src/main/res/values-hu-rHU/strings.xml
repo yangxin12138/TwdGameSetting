@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">Időzóna</string>
     <string name="time_timePicker_title">Idő beállítások</string>
     <string name="time_datePicker_title">Dátumbeállítások</string>
+    <string name="light">Shaker lámpa</string>
+    <string name="light_brightness_high">Magas</string>
+    <string name="light_brightness_medium">Közepes</string>
+    <string name="light_brightness_low">Low</string>
+    <string name="light_mode_title">Mód</string>
+    <string name="light_mode_steady_on_Red">Statikus vörös</string>
+    <string name="light_mode_steady_on_Yellow">Statikus sárga</string>
+    <string name="light_mode_steady_on_Green">Statikus zöld</string>
+    <string name="light_mode_steady_on_Skyblue">Statikus égszínkék</string>
+    <string name="light_mode_steady_on_Blue">Statikus kék</string>
+    <string name="light_mode_steady_on_Purple">Statikus lila</string>
+    <string name="light_mode_steady_on_Lightblue">Statikus világoskék</string>
+    <string name="light_mode_breath_Red">Lehelet vörös</string>
+    <string name="light_mode_breath_Yellow">Lehelet sárga</string>
+    <string name="light_mode_breath_Green">Lehelet zöld</string>
+    <string name="light_mode_breath_Skyblue">Lehelet égszínkék</string>
+    <string name="light_mode_breath_Blue">Lehelet kék</string>
+    <string name="light_mode_breath_Purple">Lehelet lila</string>
+    <string name="light_mode_breath_Lightblue">Lehelet világoskék</string>
+    <string name="light_mode_breath_ColorCycle">Lehelet Színváltó ciklus</string>
+    <string name="light_mode_rotating_ColorCycle">Forog Színváltó ciklus</string>
+    <string name="light_mode_turn_off">Kapcsolja ki</string>
+    <string name="light_brightness_unsupported_title">A fényerő-szabályozás nem támogatott a forgó színciklus módban.</string>
 </resources>

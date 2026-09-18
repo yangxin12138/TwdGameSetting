@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">Časovna zona</string>
     <string name="time_timePicker_title">Nastavitve časa</string>
     <string name="time_datePicker_title">Nastavitve datuma</string>
+    <string name="light">Lučka za igralno palico</string>
+    <string name="light_brightness_high">Visoko</string>
+    <string name="light_brightness_medium">Srednje</string>
+    <string name="light_brightness_low">Nizko</string>
+    <string name="light_mode_title">Način</string>
+    <string name="light_mode_steady_on_Red">Statična rdeča</string>
+    <string name="light_mode_steady_on_Yellow">Statična rumena</string>
+    <string name="light_mode_steady_on_Green">Statična zelena</string>
+    <string name="light_mode_steady_on_Skyblue">Statična nebesno modra</string>
+    <string name="light_mode_steady_on_Blue">Statična modrina</string>
+    <string name="light_mode_steady_on_Purple">Statična vijolična</string>
+    <string name="light_mode_steady_on_Lightblue">Statična svetlo modra</string>
+    <string name="light_mode_breath_Red">Dihaj Rdeči</string>
+    <string name="light_mode_breath_Yellow">Dihaj Rumeni</string>
+    <string name="light_mode_breath_Green">Dihaj zeleno</string>
+    <string name="light_mode_breath_Skyblue">Dihaj Nebesno modra</string>
+    <string name="light_mode_breath_Blue">Dihaj modro</string>
+    <string name="light_mode_breath_Purple">Dihaj Vijolični</string>
+    <string name="light_mode_breath_Lightblue">Dihaj svetlo modre barve</string>
+    <string name="light_mode_breath_ColorCycle">Cikel barv dihanja</string>
+    <string name="light_mode_rotating_ColorCycle">Krožeče barvno zaporedje</string>
+    <string name="light_mode_turn_off">Izklopi</string>
+    <string name="light_brightness_unsupported_title">Prilagajanje svetlosti v načinu kroženja barv z vrtenjem ni podprto.</string>
 </resources>

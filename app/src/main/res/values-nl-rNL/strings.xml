@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">Tijdzone</string>
     <string name="time_timePicker_title">Tijdinstellingen</string>
     <string name="time_datePicker_title">Datuminstellingen</string>
+    <string name="light">Joystick Licht</string>
+    <string name="light_brightness_high">Hoog</string>
+    <string name="light_brightness_medium">Gemiddeld</string>
+    <string name="light_brightness_low">Laag</string>
+    <string name="light_mode_title">Modus</string>
+    <string name="light_mode_steady_on_Red">Heel helder rood</string>
+    <string name="light_mode_steady_on_Yellow">Heel helder geel</string>
+    <string name="light_mode_steady_on_Green">Heel helder groen</string>
+    <string name="light_mode_steady_on_Skyblue">Heel helder hemelblauw</string>
+    <string name="light_mode_steady_on_Blue">Heel helder blauw</string>
+    <string name="light_mode_steady_on_Purple">Heel helder paars</string>
+    <string name="light_mode_steady_on_Lightblue">Heel helder lichtblauw</string>
+    <string name="light_mode_breath_Red">Ademhaling rood</string>
+    <string name="light_mode_breath_Yellow">Ademhaling geel</string>
+    <string name="light_mode_breath_Green">Ademhaling groen</string>
+    <string name="light_mode_breath_Skyblue">Ademhaling hemelblauw</string>
+    <string name="light_mode_breath_Blue">Ademhaling blauw</string>
+    <string name="light_mode_breath_Purple">Ademhaling paars</string>
+    <string name="light_mode_breath_Lightblue">Ademhaling lichtblauw</string>
+    <string name="light_mode_breath_ColorCycle">Ademhaling kleur cyclus</string>
+    <string name="light_mode_rotating_ColorCycle">Roterende kleurcyclus</string>
+    <string name="light_mode_turn_off">Uitschakelen</string>
+    <string name="light_brightness_unsupported_title">Helderheidsaanpassing wordt niet ondersteund in de Roterende Kleurcyclus</string>
 </resources>

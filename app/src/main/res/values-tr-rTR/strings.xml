@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">TimeZone</string>
     <string name="time_timePicker_title">Zaman Ayarları</string>
     <string name="time_datePicker_title">Tarih Ayarları</string>
+    <string name="light">Shaker Işık</string>
+    <string name="light_brightness_high">Yüksek</string>
+    <string name="light_brightness_medium">Orta</string>
+    <string name="light_brightness_low">Düşük</string>
+    <string name="light_mode_title">Modu</string>
+    <string name="light_mode_steady_on_Red">Statik Kırmızı</string>
+    <string name="light_mode_steady_on_Yellow">Statik Sarı</string>
+    <string name="light_mode_steady_on_Green">Statik Yeşil</string>
+    <string name="light_mode_steady_on_Skyblue">Statik Gök Mavisi</string>
+    <string name="light_mode_steady_on_Blue">Statik Mavi</string>
+    <string name="light_mode_steady_on_Purple">Statik Mor</string>
+    <string name="light_mode_steady_on_Lightblue">Statik Açık Mavi</string>
+    <string name="light_mode_breath_Red">Kızıl Nefes</string>
+    <string name="light_mode_breath_Yellow">Sarı Nefes</string>
+    <string name="light_mode_breath_Green">Yeşil Nefes</string>
+    <string name="light_mode_breath_Skyblue">Gök Mavisi Nefes</string>
+    <string name="light_mode_breath_Blue">Mavi Nefes</string>
+    <string name="light_mode_breath_Purple">Mor Nefes</string>
+    <string name="light_mode_breath_Lightblue">Nefes Açık Mavi</string>
+    <string name="light_mode_breath_ColorCycle">Nefes Rengi Döngüsü</string>
+    <string name="light_mode_rotating_ColorCycle">Dönen Renk Döngüsü</string>
+    <string name="light_mode_turn_off">Kapamak</string>
+    <string name="light_brightness_unsupported_title">Dönen Renk Döngüsü\'nde parlaklık ayarı desteklenmez.</string>
 </resources>

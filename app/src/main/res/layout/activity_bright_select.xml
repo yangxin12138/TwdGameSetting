@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/index_bright"
+        android:textSize="32sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/tv_low"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:gravity="center"
+        android:text="@string/light_brightness_low"
+        android:textColor="@drawable/text_color_selector"
+        android:layout_marginTop="@dimen/deviceinfo_content_marginTop"
+        android:textSize="26sp"
+        android:paddingStart="36dp"
+        android:paddingEnd="36dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/bg_option_selector"/>
+
+    <TextView
+        android:id="@+id/tv_mid"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:gravity="center"
+        android:text="@string/light_brightness_medium"
+        android:textSize="26sp"
+        android:layout_marginTop="@dimen/index_ll_marginTop"
+        android:textColor="@drawable/text_color_selector"
+        android:paddingStart="36dp"
+        android:paddingEnd="36dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/bg_option_selector"/>
+
+    <TextView
+        android:id="@+id/tv_high"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:gravity="center"
+        android:text="@string/light_brightness_high"
+        android:textSize="26sp"
+        android:layout_marginTop="@dimen/index_ll_marginTop"
+        android:textColor="@drawable/text_color_selector"
+        android:paddingStart="36dp"
+        android:paddingEnd="36dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/bg_option_selector"/>
+
+</LinearLayout>

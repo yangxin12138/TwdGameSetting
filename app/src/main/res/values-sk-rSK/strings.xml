@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">Časové pásmo</string>
     <string name="time_timePicker_title">Nastavenia času</string>
     <string name="time_datePicker_title">Nastavenia dátumu</string>
+    <string name="light">Shaker svetlá</string>
+    <string name="light_brightness_high">Vysoký</string>
+    <string name="light_brightness_medium">Stredná</string>
+    <string name="light_brightness_low">Nízky</string>
+    <string name="light_mode_title">Režim</string>
+    <string name="light_mode_steady_on_Red">Statická červená</string>
+    <string name="light_mode_steady_on_Yellow">Statická žltá</string>
+    <string name="light_mode_steady_on_Green">Statická zelená</string>
+    <string name="light_mode_steady_on_Skyblue">Statická nebeská modrá</string>
+    <string name="light_mode_steady_on_Blue">Statická modrá</string>
+    <string name="light_mode_steady_on_Purple">Statická fialová</string>
+    <string name="light_mode_steady_on_Lightblue">Statická svetlomodrá</string>
+    <string name="light_mode_breath_Red">Dych Červený</string>
+    <string name="light_mode_breath_Yellow">Dych Žltý</string>
+    <string name="light_mode_breath_Green">Dych zelená</string>
+    <string name="light_mode_breath_Skyblue">Dych Nebesky modrý</string>
+    <string name="light_mode_breath_Blue">Dych modrej</string>
+    <string name="light_mode_breath_Purple">Dych Fialový</string>
+    <string name="light_mode_breath_Lightblue">Dych svetlomodrá</string>
+    <string name="light_mode_breath_ColorCycle">Cyklus farieb dychu</string>
+    <string name="light_mode_rotating_ColorCycle">Rotujúci farebný cyklus</string>
+    <string name="light_mode_turn_off">Vypnúť</string>
+    <string name="light_brightness_unsupported_title">Nastavenie jasu nie je v režime rotujúceho farebného cyklu podporované.</string>
 </resources>

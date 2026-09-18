@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">منطقه زمانی</string>
     <string name="time_timePicker_title">تنظیمات زمان</string>
     <string name="time_datePicker_title">تنظیمات تاریخ</string>
+    <string name="light">چراغ لرزه</string>
+    <string name="light_brightness_high">بالا</string>
+    <string name="light_brightness_medium">متوسط</string>
+    <string name="light_brightness_low">پایین</string>
+    <string name="light_mode_title">حالت</string>
+    <string name="light_mode_steady_on_Red">قرمز ایستا</string>
+    <string name="light_mode_steady_on_Yellow">زرد ایستا</string>
+    <string name="light_mode_steady_on_Green">سبز ایستا</string>
+    <string name="light_mode_steady_on_Skyblue">آبی آسمانی ایستا</string>
+    <string name="light_mode_steady_on_Blue">آبی ایستا</string>
+    <string name="light_mode_steady_on_Purple">بنفش ایستا</string>
+    <string name="light_mode_steady_on_Lightblue">آبی روشن ایستا</string>
+    <string name="light_mode_breath_Red">نفسِ سرخ</string>
+    <string name="light_mode_breath_Yellow">تنفسِ زرد</string>
+    <string name="light_mode_breath_Green">تنفس سبز</string>
+    <string name="light_mode_breath_Skyblue">تنفس آبی آسمانی</string>
+    <string name="light_mode_breath_Blue">تنفسِ آبی</string>
+    <string name="light_mode_breath_Purple">نفس ارغوانی</string>
+    <string name="light_mode_breath_Lightblue">تنفسِ آبی روشن</string>
+    <string name="light_mode_breath_ColorCycle">تنفسِ چرخه</string>
+    <string name="light_mode_rotating_ColorCycle">چرخهٔ چرخشی</string>
+    <string name="light_mode_turn_off">خاموش کردن</string>
+    <string name="light_brightness_unsupported_title">تنظیم روشنایی در حالت چرخه چرخشی پشتیبانی نمی‌شود.</string>
 </resources>

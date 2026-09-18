@@ -22,12 +22,37 @@
     <string name="factory_dialog_Confirm">Confirm</string>
     <string name="time_setting">Time</string>
     <string name="time_useNetTime">Internet Time</string>
-    <string name="time_time_title">Time</string>
+    <string name="time_time_title">Time Settings</string>
     <string name="time_date_title">Date</string>
     <string name="time_24Hours_title">24-Hours</string>
     <string name="time_timeZone_title">TimeZone</string>
     <string name="time_timePicker_title">Time Settings</string>
     <string name="time_datePicker_title">Date Settings</string>
+
+    <string name="light">Joystick Light</string>
+    <string name="light_brightness_high">High</string>
+    <string name="light_brightness_medium">Medium</string>
+    <string name="light_brightness_low">Low</string>
+    <string name="light_mode_title">" Mode"</string>
+    <string name="light_mode_steady_on_Red">Static Red</string>
+    <string name="light_mode_steady_on_Yellow">Static Yellow</string>
+    <string name="light_mode_steady_on_Green">Static Green</string>
+    <string name="light_mode_steady_on_Skyblue">Static Sky Blue</string>
+    <string name="light_mode_steady_on_Blue">Static Blue</string>
+    <string name="light_mode_steady_on_Purple">Static Purple</string>
+    <string name="light_mode_steady_on_Lightblue">Static Light Blue</string>
+    <string name="light_mode_breath_Red">Breath Red</string>
+    <string name="light_mode_breath_Yellow">Breath Yellow</string>
+    <string name="light_mode_breath_Green">Breath Green</string>
+    <string name="light_mode_breath_Skyblue">Breath Sky Blue</string>
+    <string name="light_mode_breath_Blue">Breath Blue</string>
+    <string name="light_mode_breath_Purple">Breath Purple</string>
+    <string name="light_mode_breath_Lightblue">Breath Light Blue</string>
+    <string name="light_mode_breath_ColorCycle">Breath Color Cycle</string>
+    <string name="light_mode_rotating_ColorCycle">Rotating Color Cycle</string>
+    <string name="light_mode_turn_off">Turn off</string>
+    <string name="light_brightness_unsupported_title">Brightness adjustment is not supported in the Rotating Color Cycle</string>
+
 
     <string name="time_zone_Majuro">Majuro</string>
     <string name="time_zone_Midway">Midway</string>

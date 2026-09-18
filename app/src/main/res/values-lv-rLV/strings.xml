@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">Laikapamatsa</string>
     <string name="time_timePicker_title">Laikašanas iestatījumi</string>
     <string name="time_datePicker_title">Datuma iestatījumi</string>
+    <string name="light">Shaker gaismas</string>
+    <string name="light_brightness_high">Augsts</string>
+    <string name="light_brightness_medium">Vidējs</string>
+    <string name="light_brightness_low">Zems</string>
+    <string name="light_mode_title">Režīms</string>
+    <string name="light_mode_steady_on_Red">Statisks Sarkans</string>
+    <string name="light_mode_steady_on_Yellow">Statisks Dzeltens</string>
+    <string name="light_mode_steady_on_Green">Statisks Zaļš</string>
+    <string name="light_mode_steady_on_Skyblue">Statisks Debeszils</string>
+    <string name="light_mode_steady_on_Blue">Statisks Zils</string>
+    <string name="light_mode_steady_on_Purple">Statisks Violeta</string>
+    <string name="light_mode_steady_on_Lightblue">Statisks Gaiši zils</string>
+    <string name="light_mode_breath_Red">Elpas Sarkans</string>
+    <string name="light_mode_breath_Yellow">Elpas Dzeltens</string>
+    <string name="light_mode_breath_Green">Elpas Zaļš</string>
+    <string name="light_mode_breath_Skyblue">Elpas Debeszils</string>
+    <string name="light_mode_breath_Blue">Elpas Zils</string>
+    <string name="light_mode_breath_Purple">Elpas Violeta</string>
+    <string name="light_mode_breath_Lightblue">Elpas Gaiši zils</string>
+    <string name="light_mode_breath_ColorCycle">Elpas Krāsu cikls</string>
+    <string name="light_mode_rotating_ColorCycle">Mainīgs Krāsu cikls</string>
+    <string name="light_mode_turn_off">Izslēgt</string>
+    <string name="light_brightness_unsupported_title">Spilgtuma regulēšana netiek atbalstīta rotācijas/cilpas režīmā.</string>
 </resources>

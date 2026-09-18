@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">Tidszon</string>
     <string name="time_timePicker_title">Tidsinställningar</string>
     <string name="time_datePicker_title">Datuminställningar</string>
+    <string name="light">Skakellampor</string>
+    <string name="light_brightness_high">Hög</string>
+    <string name="light_brightness_medium">Medium</string>
+    <string name="light_brightness_low">Låg</string>
+    <string name="light_mode_title">Läge</string>
+    <string name="light_mode_steady_on_Red">Statisk röd</string>
+    <string name="light_mode_steady_on_Yellow">Statisk gul</string>
+    <string name="light_mode_steady_on_Green">Statisk grön</string>
+    <string name="light_mode_steady_on_Skyblue">Statisk himmelsblå</string>
+    <string name="light_mode_steady_on_Blue">Statisk blå</string>
+    <string name="light_mode_steady_on_Purple">Statisk lila</string>
+    <string name="light_mode_steady_on_Lightblue">Statisk ljusblå</string>
+    <string name="light_mode_breath_Red">Andetag i rött</string>
+    <string name="light_mode_breath_Yellow">Andas gult</string>
+    <string name="light_mode_breath_Green">Andas grönt</string>
+    <string name="light_mode_breath_Skyblue">Andas Himmelsblå</string>
+    <string name="light_mode_breath_Blue">Andas blått</string>
+    <string name="light_mode_breath_Purple">Andas lila</string>
+    <string name="light_mode_breath_Lightblue">Andas ljusblå</string>
+    <string name="light_mode_breath_ColorCycle">Färgcykel för andetag</string>
+    <string name="light_mode_rotating_ColorCycle">Roterande färgcykel</string>
+    <string name="light_mode_turn_off">Stänga av</string>
+    <string name="light_brightness_unsupported_title">Justering av ljusstyrka stöds inte i det roterande färgcykelläget.</string>
 </resources>

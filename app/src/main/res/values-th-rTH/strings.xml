@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">เขตเวลา</string>
     <string name="time_timePicker_title">การตั้งค่าเวลา</string>
     <string name="time_datePicker_title">การตั้งค่าวันที่</string>
+    <string name="light">โคมไฟโยก</string>
+    <string name="light_brightness_high">สูง</string>
+    <string name="light_brightness_medium">ปานกลาง</string>
+    <string name="light_brightness_low">ต่ำ</string>
+    <string name="light_mode_title">โหมด</string>
+    <string name="light_mode_steady_on_Red">สีแดงคงที่</string>
+    <string name="light_mode_steady_on_Yellow">สีเหลืองนิ่ง</string>
+    <string name="light_mode_steady_on_Green">สีเขียวคงที่</string>
+    <string name="light_mode_steady_on_Skyblue">สีฟ้าสกายบลูแบบเรียบ</string>
+    <string name="light_mode_steady_on_Blue">สีฟ้าคงที่</string>
+    <string name="light_mode_steady_on_Purple">สีม่วงสแตติก</string>
+    <string name="light_mode_steady_on_Lightblue">สีฟ้าอ่อนแบบนิ่ง</string>
+    <string name="light_mode_breath_Red">ลมหายใจสีแดง</string>
+    <string name="light_mode_breath_Yellow">ลมหายใจสีเหลือง</string>
+    <string name="light_mode_breath_Green">ลมหายใจสีเขียว</string>
+    <string name="light_mode_breath_Skyblue">ลมหายใจสีฟ้าคราม</string>
+    <string name="light_mode_breath_Blue">ลมหายใจสีฟ้า</string>
+    <string name="light_mode_breath_Purple">ลมหายใจสีม่วง</string>
+    <string name="light_mode_breath_Lightblue">ลมหายใจสีฟ้าอ่อน</string>
+    <string name="light_mode_breath_ColorCycle">วงจรสีตามจังหวะการหายใจ</string>
+    <string name="light_mode_rotating_ColorCycle">วงจรสีแบบหมุนวน</string>
+    <string name="light_mode_turn_off">ปิด</string>
+    <string name="light_brightness_unsupported_title">ไม่รองรับการปรับความสว่างในโหมดวนสีแบบหมุน</string>
 </resources>

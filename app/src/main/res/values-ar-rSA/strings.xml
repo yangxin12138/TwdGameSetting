@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">المنطقة الزمنية</string>
     <string name="time_timePicker_title">إعدادات الوقت</string>
     <string name="time_datePicker_title">إعدادات التاريخ</string>
+    <string name="light">ضوء جويستيك</string>
+    <string name="light_brightness_high">مرتفع</string>
+    <string name="light_brightness_medium">متوسط</string>
+    <string name="light_brightness_low">منخفض</string>
+    <string name="light_mode_title">وضع</string>
+    <string name="light_mode_steady_on_Red">استمر على الأحمر</string>
+    <string name="light_mode_steady_on_Yellow">استمر على الأصفر</string>
+    <string name="light_mode_steady_on_Green">استمر على المسار الأخضر</string>
+    <string name="light_mode_steady_on_Skyblue">استقر على اللون الأزرق الفاتح</string>
+    <string name="light_mode_steady_on_Blue">استمر على الأزرق</string>
+    <string name="light_mode_steady_on_Purple">استمر على الأرجواني</string>
+    <string name="light_mode_steady_on_Lightblue">الثبات على اللون الأزرق الفاتح</string>
+    <string name="light_mode_breath_Red">نفخة حمراء</string>
+    <string name="light_mode_breath_Yellow">تنفس الأصفر</string>
+    <string name="light_mode_breath_Green">نفاس الأخضر</string>
+    <string name="light_mode_breath_Skyblue">نسمة من السماء الزرقاء</string>
+    <string name="light_mode_breath_Blue">نفاسة زرقاء</string>
+    <string name="light_mode_breath_Purple">تنفس الأرجواني</string>
+    <string name="light_mode_breath_Lightblue">نسمة زرقاء خفيفة</string>
+    <string name="light_mode_breath_ColorCycle">دورة لون التنفس</string>
+    <string name="light_mode_rotating_ColorCycle">دورة الألوان الدوارة</string>
+    <string name="light_mode_turn_off">أغلق</string>
+    <string name="light_brightness_unsupported_title">ضبط السطوع غير مدعوم في دورة الألوان الدوارة</string>
 </resources>

@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">Zeitzone</string>
     <string name="time_timePicker_title">Zeiteinstellungen</string>
     <string name="time_datePicker_title">Datumseinstellungen</string>
+    <string name="light">Schüttellampe</string>
+    <string name="light_brightness_high">Hoch</string>
+    <string name="light_brightness_medium">Medium</string>
+    <string name="light_brightness_low">Niedrig</string>
+    <string name="light_mode_title">Modus</string>
+    <string name="light_mode_steady_on_Red">Dauerhaftes Rot</string>
+    <string name="light_mode_steady_on_Yellow">Dauerhaftes Gelb</string>
+    <string name="light_mode_steady_on_Green">Dauerhaftes Grün</string>
+    <string name="light_mode_steady_on_Skyblue">Dauerhaftes Himmelblau</string>
+    <string name="light_mode_steady_on_Blue">Dauerhaftes Blau</string>
+    <string name="light_mode_steady_on_Purple">Dauerhaftes Lila</string>
+    <string name="light_mode_steady_on_Lightblue">Dauerhaftes Hellblau</string>
+    <string name="light_mode_breath_Red">Atmen Rot</string>
+    <string name="light_mode_breath_Yellow">Atmen Gelb</string>
+    <string name="light_mode_breath_Green">Atmen Grün</string>
+    <string name="light_mode_breath_Skyblue">Atmen Himmelblau</string>
+    <string name="light_mode_breath_Blue">Atmen Blau</string>
+    <string name="light_mode_breath_Purple">Atmen Lila</string>
+    <string name="light_mode_breath_Lightblue">Atmen Hellblau</string>
+    <string name="light_mode_breath_ColorCycle">Atmen Farbwechsel</string>
+    <string name="light_mode_rotating_ColorCycle">Drehen Farbwechsel</string>
+    <string name="light_mode_turn_off">Ausschalten</string>
+    <string name="light_brightness_unsupported_title">Die Helligkeitsanpassung wird im rotierenden Farbzyklus nicht unterstützt.</string>
 </resources>

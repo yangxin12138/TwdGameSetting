@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">הגדרות זמן</string>
     <string name="time_timePicker_title">הגדרות זמן</string>
     <string name="time_datePicker_title">הגדרות תאריך</string>
+    <string name="light">תאורה</string>
+    <string name="light_brightness_high">גָבוֹהַ</string>
+    <string name="light_brightness_medium">בֵּינוֹנִי</string>
+    <string name="light_brightness_low">נָמוּך</string>
+    <string name="light_mode_title">מצב</string>
+    <string name="light_mode_steady_on_Red">נִצחִי אָדוֹם</string>
+    <string name="light_mode_steady_on_Yellow">נִצחִי צָהוֹב</string>
+    <string name="light_mode_steady_on_Green">נִצחִי יָרוֹק</string>
+    <string name="light_mode_steady_on_Skyblue">נִצחִי כחול שמיים</string>
+    <string name="light_mode_steady_on_Blue">נִצחִי כְּחוֹל</string>
+    <string name="light_mode_steady_on_Purple">נִצחִי סָגוֹל</string>
+    <string name="light_mode_steady_on_Lightblue">נִצחִי כחול בהיר</string>
+    <string name="light_mode_breath_Red">לִנְשׁוֹם אָדוֹם</string>
+    <string name="light_mode_breath_Yellow">לִנְשׁוֹם צָהוֹב</string>
+    <string name="light_mode_breath_Green">לִנְשׁוֹם יָרוֹק</string>
+    <string name="light_mode_breath_Skyblue">לִנְשׁוֹם כחול שמיים</string>
+    <string name="light_mode_breath_Blue">לִנְשׁוֹם כְּחוֹל</string>
+    <string name="light_mode_breath_Purple">לִנְשׁוֹם סָגוֹל</string>
+    <string name="light_mode_breath_Lightblue">לִנְשׁוֹם כחול בהיר</string>
+    <string name="light_mode_breath_ColorCycle">לִנְשׁוֹם מחזור שינוי צבע</string>
+    <string name="light_mode_rotating_ColorCycle">לְסוֹבֵב מחזור שינוי צבע</string>
+    <string name="light_mode_turn_off">לְכַבּוֹת</string>
+    <string name="light_brightness_unsupported_title">כוונון הבהירות אינו נתמך במצב מחזור צבעים מסתובב.</string>
 </resources>

@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">Časové pásmo</string>
     <string name="time_timePicker_title">Nastavení času</string>
     <string name="time_datePicker_title">Nastavení data</string>
+    <string name="light">Joystick světlo</string>
+    <string name="light_brightness_high">Vysoká</string>
+    <string name="light_brightness_medium">Střední</string>
+    <string name="light_brightness_low">Nízká</string>
+    <string name="light_mode_title">Režim</string>
+    <string name="light_mode_steady_on_Red">Vždycky jasná červená</string>
+    <string name="light_mode_steady_on_Yellow">Vždycky jasná žluté</string>
+    <string name="light_mode_steady_on_Green">Vždycky jasná zelené</string>
+    <string name="light_mode_steady_on_Skyblue">Vždycky jasná obloze modré</string>
+    <string name="light_mode_steady_on_Blue">Vždycky jasná modré</string>
+    <string name="light_mode_steady_on_Purple">Vždycky jasná fialové</string>
+    <string name="light_mode_steady_on_Lightblue">Vždycky jasná světle modré</string>
+    <string name="light_mode_breath_Red">Dýchání Červená</string>
+    <string name="light_mode_breath_Yellow">Dýchání Žlutá</string>
+    <string name="light_mode_breath_Green">Dýchání Zelená</string>
+    <string name="light_mode_breath_Skyblue">Dych obloha modrá</string>
+    <string name="light_mode_breath_Blue">Dych modrý</string>
+    <string name="light_mode_breath_Purple">Dych fialový</string>
+    <string name="light_mode_breath_Lightblue">Dych světle modrá</string>
+    <string name="light_mode_breath_ColorCycle">Dychový barevný cyklus</string>
+    <string name="light_mode_rotating_ColorCycle">Rotační barevný cyklus</string>
+    <string name="light_mode_turn_off">Vypnout</string>
+    <string name="light_brightness_unsupported_title">Nastavení jasu není podporováno v rotačním barevném cyklu</string>
 </resources>

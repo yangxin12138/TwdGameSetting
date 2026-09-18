@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">Strefa czasowa</string>
     <string name="time_timePicker_title">Ustawienia czasu</string>
     <string name="time_datePicker_title">Ustawienia daty</string>
+    <string name="light">Światło shaker</string>
+    <string name="light_brightness_high">Wysoki</string>
+    <string name="light_brightness_medium">Średni</string>
+    <string name="light_brightness_low">Niski</string>
+    <string name="light_mode_title">Tryb</string>
+    <string name="light_mode_steady_on_Red">Statyczna czerwień</string>
+    <string name="light_mode_steady_on_Yellow">Statyczna żółć</string>
+    <string name="light_mode_steady_on_Green">Statyczna zieleń</string>
+    <string name="light_mode_steady_on_Skyblue">Statyczny błękit nieba</string>
+    <string name="light_mode_steady_on_Blue">Statyczny niebieski</string>
+    <string name="light_mode_steady_on_Purple">Statyczny fiolet</string>
+    <string name="light_mode_steady_on_Lightblue">Statyczny jasnoniebieski</string>
+    <string name="light_mode_breath_Red">Oddech czerwieni</string>
+    <string name="light_mode_breath_Yellow">Żółty oddech</string>
+    <string name="light_mode_breath_Green">Oddychaj zielenią</string>
+    <string name="light_mode_breath_Skyblue">Oddech Błękit nieba</string>
+    <string name="light_mode_breath_Blue">Oddech błękitu</string>
+    <string name="light_mode_breath_Purple">Fioletowy oddech</string>
+    <string name="light_mode_breath_Lightblue">Oddech jasnoniebieski</string>
+    <string name="light_mode_breath_ColorCycle">Cykl zmiany koloru oddechu</string>
+    <string name="light_mode_rotating_ColorCycle">Rotacyjny cykl kolorów</string>
+    <string name="light_mode_turn_off">Wyłączyć coś</string>
+    <string name="light_brightness_unsupported_title">Regulacja jasności nie jest obsługiwana w trybie rotacyjnego cyklu kolorów.</string>
 </resources>

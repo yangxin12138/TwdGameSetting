@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/tv_dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/light_brightness_unsupported_title"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/btn_dialog_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:text="@string/factory_dialog_Confirm"
+        android:textSize="24sp"
+        android:textColor="@drawable/text_color_selector"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:focusable="true"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/bg_option_selector"/>
+</LinearLayout>

@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">Vremenska zona</string>
     <string name="time_timePicker_title">Postavke vremena</string>
     <string name="time_datePicker_title">Postavke datuma</string>
+    <string name="light">Joystick svjetlo</string>
+    <string name="light_brightness_high">Visok</string>
+    <string name="light_brightness_medium">Srednji</string>
+    <string name="light_brightness_low">Nizak</string>
+    <string name="light_mode_title">Način rada</string>
+    <string name="light_mode_steady_on_Red">Uvijek svijetlo crveno</string>
+    <string name="light_mode_steady_on_Yellow">Uvijek svijetlo žutom</string>
+    <string name="light_mode_steady_on_Green">Uvijek svijetlo zelenom</string>
+    <string name="light_mode_steady_on_Skyblue">Uvijek svijetlo plavom nebu</string>
+    <string name="light_mode_steady_on_Blue">Uvijek svijetlo plavom</string>
+    <string name="light_mode_steady_on_Purple">Uvijek svijetlo ljubičastom</string>
+    <string name="light_mode_steady_on_Lightblue">Uvijek svijetlo svjetlo plavom</string>
+    <string name="light_mode_breath_Red">Dih Crvena</string>
+    <string name="light_mode_breath_Yellow">Dih Žuta</string>
+    <string name="light_mode_breath_Green">Dih Zelena</string>
+    <string name="light_mode_breath_Skyblue">Dih Nebo Plavo</string>
+    <string name="light_mode_breath_Blue">Dih plavi</string>
+    <string name="light_mode_breath_Purple">Dih ljubičasta</string>
+    <string name="light_mode_breath_Lightblue">Dih svjetlo plava</string>
+    <string name="light_mode_breath_ColorCycle">Ciklus boja disanja</string>
+    <string name="light_mode_rotating_ColorCycle">Rotacijski ciklus boja</string>
+    <string name="light_mode_turn_off">Isključi</string>
+    <string name="light_brightness_unsupported_title">Prilagođavanje svjetline nije podržano u ciklusu rotacije boja</string>
 </resources>

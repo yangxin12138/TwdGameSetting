@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">Tidszone</string>
     <string name="time_timePicker_title">Tidsinnstillinger</string>
     <string name="time_datePicker_title">Datoinnstillinger</string>
+    <string name="light">Joystisk lys</string>
+    <string name="light_brightness_high">Høy</string>
+    <string name="light_brightness_medium">Medium</string>
+    <string name="light_brightness_low">Lav</string>
+    <string name="light_mode_title">Model</string>
+    <string name="light_mode_steady_on_Red">Statisk rødt</string>
+    <string name="light_mode_steady_on_Yellow">Statisk gul</string>
+    <string name="light_mode_steady_on_Green">Statisk grønn</string>
+    <string name="light_mode_steady_on_Skyblue">Statisk himmelblå</string>
+    <string name="light_mode_steady_on_Blue">Statisk blå</string>
+    <string name="light_mode_steady_on_Purple">Statisk lilla</string>
+    <string name="light_mode_steady_on_Lightblue">Statisk lyseblå</string>
+    <string name="light_mode_breath_Red">Pust rødt</string>
+    <string name="light_mode_breath_Yellow">Pust gul</string>
+    <string name="light_mode_breath_Green">Pust grønt</string>
+    <string name="light_mode_breath_Skyblue">Pust himmelblå</string>
+    <string name="light_mode_breath_Blue">Pust blått</string>
+    <string name="light_mode_breath_Purple">Pust lilla</string>
+    <string name="light_mode_breath_Lightblue">Pust lyseblå</string>
+    <string name="light_mode_breath_ColorCycle">Fargesyklus med pusteeffekt</string>
+    <string name="light_mode_rotating_ColorCycle">Syklus for roterende fargeendring</string>
+    <string name="light_mode_turn_off">Slå av</string>
+    <string name="light_brightness_unsupported_title">Lysstyrken kan ikke justeres i modusen for roterende fargeskifte.</string>
 </resources>

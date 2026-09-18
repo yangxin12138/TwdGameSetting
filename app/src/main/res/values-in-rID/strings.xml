@@ -27,4 +27,27 @@
     <string name="time_timeZone_title">Zona Waktu</string>
     <string name="time_timePicker_title">Pengaturan Waktu</string>
     <string name="time_datePicker_title">Pengaturan Tanggal</string>
+    <string name="light">Lampu Shaker</string>
+    <string name="light_brightness_high">Tinggi</string>
+    <string name="light_brightness_medium">Sedang</string>
+    <string name="light_brightness_low">Rendah</string>
+    <string name="light_mode_title">Mode</string>
+    <string name="light_mode_steady_on_Red">Statis Merah</string>
+    <string name="light_mode_steady_on_Yellow">Statis Kuning</string>
+    <string name="light_mode_steady_on_Green">Statis Hijau</string>
+    <string name="light_mode_steady_on_Skyblue">Statis Biru langit</string>
+    <string name="light_mode_steady_on_Blue">Statis Biru</string>
+    <string name="light_mode_steady_on_Purple">Statis Ungu</string>
+    <string name="light_mode_steady_on_Lightblue">Statis Biru pucat</string>
+    <string name="light_mode_breath_Red">Bernapas Merah</string>
+    <string name="light_mode_breath_Yellow">Bernapas Kuning</string>
+    <string name="light_mode_breath_Green">Bernapas Hijau</string>
+    <string name="light_mode_breath_Skyblue">Bernapas Biru langit</string>
+    <string name="light_mode_breath_Blue">Bernapas Biru</string>
+    <string name="light_mode_breath_Purple">Bernapas Ungu</string>
+    <string name="light_mode_breath_Lightblue">Bernapas Biru pucat</string>
+    <string name="light_mode_breath_ColorCycle">Bernapas Siklus perubahan warna</string>
+    <string name="light_mode_rotating_ColorCycle">Memutar Siklus perubahan warna</string>
+    <string name="light_mode_turn_off">Mematikan</string>
+    <string name="light_brightness_unsupported_title">Pengaturan kecerahan tidak didukung pada Siklus Warna Berputar.</string>
 </resources>
