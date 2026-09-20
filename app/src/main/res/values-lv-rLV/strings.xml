@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">Mainīgs Krāsu cikls</string>
     <string name="light_mode_turn_off">Izslēgt</string>
     <string name="light_brightness_unsupported_title">Spilgtuma regulēšana netiek atbalstīta rotācijas/cilpas režīmā.</string>
+    <string name="light_rotation_speed">Rotācijas ātrums</string>
+    <string name="light_rotation_speed_fast">Ātrs</string>
+    <string name="light_rotation_speed_slow">Lēns</string>
+    <string name="light_rotation_speed_moderate">Mērens</string>
 </resources>

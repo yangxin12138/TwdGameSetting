@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">Kiertää Värisykli</string>
     <string name="light_mode_turn_off">Sammuta</string>
     <string name="light_brightness_unsupported_title">Kirkkauden säätöä ei tueta pyörivässä värisyklissä.</string>
+    <string name="light_rotation_speed">Pyörimisnopeus</string>
+    <string name="light_rotation_speed_fast">Nopeasti</string>
+    <string name="light_rotation_speed_slow">Hidas</string>
+    <string name="light_rotation_speed_moderate">Kohtalainen</string>
 </resources>

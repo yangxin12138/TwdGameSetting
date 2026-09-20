@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">Kitaran Warna Berputar</string>
     <string name="light_mode_turn_off">Matikan</string>
     <string name="light_brightness_unsupported_title">Kecerahan tidak boleh dilaraskan dalam mod kitaran perubahan warna berputar.</string>
+    <string name="light_rotation_speed">Kelajuan Putaran</string>
+    <string name="light_rotation_speed_fast">Pantas</string>
+    <string name="light_rotation_speed_slow">Perlahan</string>
+    <string name="light_rotation_speed_moderate">Sederhana</string>
 </resources>

@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">Ciklinis spalvų keitimas</string>
     <string name="light_mode_turn_off">Išjungti</string>
     <string name="light_brightness_unsupported_title">Šviesumo negalima reguliuoti besisukančio spalvų kaitos ciklo režimu.</string>
+    <string name="light_rotation_speed">Sukimosi greitis</string>
+    <string name="light_rotation_speed_fast">Greitas</string>
+    <string name="light_rotation_speed_slow">Lėtas</string>
+    <string name="light_rotation_speed_moderate">Vidutinis</string>
 </resources>

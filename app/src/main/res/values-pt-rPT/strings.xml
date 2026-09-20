@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">Ciclo de Cores Rotativo</string>
     <string name="light_mode_turn_off">Desligar</string>
     <string name="light_brightness_unsupported_title">O ajuste de brilho não é compatível com o Ciclo de Cores Rotativo.</string>
+    <string name="light_rotation_speed">Velocidade</string>
+    <string name="light_rotation_speed_fast">Rápido</string>
+    <string name="light_rotation_speed_slow">Devagar</string>
+    <string name="light_rotation_speed_moderate">Moderado</string>
 </resources>

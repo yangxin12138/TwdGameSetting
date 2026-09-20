@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">Ротационен цвятен цикъл</string>
     <string name="light_mode_turn_off">Изключи</string>
     <string name="light_brightness_unsupported_title">Регулиране на яркостта не е поддържано в Ротационния цвят на цикъла</string>
+    <string name="light_rotation_speed">Скорост на въртене</string>
+    <string name="light_rotation_speed_fast">Бърз</string>
+    <string name="light_rotation_speed_slow">Бавно</string>
+    <string name="light_rotation_speed_moderate">Умерен</string>
 </resources>

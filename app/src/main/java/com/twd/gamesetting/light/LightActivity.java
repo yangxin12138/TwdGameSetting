@@ -21,14 +21,18 @@ public class LightActivity extends AppCompatActivity {
 
     private LinearLayout ll_light_bright;
     private LinearLayout ll_light_mode;
+    private LinearLayout ll_light_speed;
     private TextView tv_cur_light_bright;
     private TextView tv_cur_light_mode;
+    private TextView tv_cur_light_speed;
 
     private String JOYSTICK_LED_BRIGHTNESS = "persist.brightness.joystick.led";//保存摇杆的亮度
     private String JOYSTICK_LED_MODE = "persist.sys.joystick.led";//保存摇杆颜色模式
+    private String JOYSTICK_LED_SPEED = "persist.speed.joystick.led";//旋转模式的速度 0慢 1中  2快
     private String path_Brightness = "/sys/leds/brightness"; //0到255  在mode为1时 设定亮度
     private String path_mode = "/sys/leds/mode"; //0关闭，1固定单色，2呼吸灯，3变换色 4炫彩
     private String path_color = "/sys/leds/color"; //0到6   在 mode为1和2时 指定颜色  0红  1黄 2绿  3天空蓝  4蓝 5紫 6淡蓝
+    private String path_speed = "/sys/leds/speed";//0慢 1中 2快
 
 
     private String[] MODE_NAMES;
@@ -90,9 +94,11 @@ public class LightActivity extends AppCompatActivity {
     private void initView(){
         ll_light_bright = findViewById(R.id.ll_light_bright);
         ll_light_mode = findViewById(R.id.ll_light_mode);
+        ll_light_speed = findViewById(R.id.ll_light_rotation_speed);
         tv_cur_light_bright = findViewById(R.id.tv_light_cur_bright);
         tv_cur_light_mode = findViewById(R.id.tv_light_cur_mode);
-        initBright(); initMode();
+        tv_cur_light_speed = findViewById(R.id.tv_light_cur_speed);
+        initBright(); initMode(); updateSpeedVisibility();
 
         ll_light_bright.setOnKeyListener(new View.OnKeyListener() {
             @Override
@@ -138,12 +144,39 @@ public class LightActivity extends AppCompatActivity {
                         currentVal = (currentVal - 1 + 17) % 17;
                         setModeValue(currentVal);
                         updateModeText(currentVal);
+                        updateSpeedVisibility();
                         return true;
                     case KeyEvent.KEYCODE_DPAD_RIGHT:
                         // 往后循环，16 再往后回到 0
                         currentVal = (currentVal + 1) % 17;
                         setModeValue(currentVal);
                         updateModeText(currentVal);
+                        updateSpeedVisibility();
+                        return true;
+                }
+                return false;
+            }
+        });
+        ll_light_speed.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (event.getAction() != KeyEvent.ACTION_DOWN) { return false; }
+                if (!v.isFocused()) { return false; }
+                if (v.getVisibility() != View.VISIBLE) return false;
+                int currentVal = Integer.parseInt(
+                        SystemUtils.getProperty(JOYSTICK_LED_SPEED, "0"));
+                switch (keyCode) {
+                    case KeyEvent.KEYCODE_DPAD_LEFT:
+                        // 减速度，0 再减回到 2
+                        currentVal = (currentVal - 1 + 3) % 3;
+                        setSpeedValue(currentVal);
+                        updateSpeedText(currentVal);
+                        return true;
+                    case KeyEvent.KEYCODE_DPAD_RIGHT:
+                        // 加速度，2 再加回到 0
+                        currentVal = (currentVal + 1) % 3;
+                        setSpeedValue(currentVal);
+                        updateSpeedText(currentVal);
                         return true;
                 }
                 return false;
@@ -151,6 +184,9 @@ public class LightActivity extends AppCompatActivity {
         });
         ll_light_mode.setOnFocusChangeListener((v, hasFocus) -> {
             tv_cur_light_mode.setSelected(hasFocus);
+        });
+        ll_light_speed.setOnFocusChangeListener((v, hasFocus) -> {
+            tv_cur_light_speed.setSelected(hasFocus);
         });
         ll_light_bright.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -175,6 +211,11 @@ public class LightActivity extends AppCompatActivity {
         super.onResume();
         initBright();
         initMode();
+        updateSpeedVisibility();
+    }
+    private void initSpeed() {
+        String curSpeed = SystemUtils.getProperty(JOYSTICK_LED_SPEED, "0");
+        updateSpeedText(Integer.parseInt(curSpeed));
     }
     private void initBright(){
         String curBright = SystemUtils.getProperty(JOYSTICK_LED_BRIGHTNESS,"0");
@@ -197,6 +238,19 @@ public class LightActivity extends AppCompatActivity {
                 break;
         }
     }
+    private void updateSpeedText(int value) {
+        switch (value) {
+            case 0:
+                tv_cur_light_speed.setText(getResources().getString(R.string.light_rotation_speed_slow));
+                break;
+            case 1:
+                tv_cur_light_speed.setText(getResources().getString(R.string.light_rotation_speed_moderate));
+                break;
+            case 2:
+                tv_cur_light_speed.setText(getResources().getString(R.string.light_rotation_speed_fast));
+                break;
+        }
+    }
     private void updateModeText(int value) {
         if (value >= 0 && value < MODE_NAMES.length) {
             tv_cur_light_mode.setText(MODE_NAMES[value]);
@@ -208,6 +262,11 @@ public class LightActivity extends AppCompatActivity {
         int brightness;
         if (value == 0) {brightness = 50;} else if (value == 1) {brightness = 125;} else {brightness = 255;}
         SystemUtils.writeSysNode(path_Brightness, brightness);
+    }
+
+    private void setSpeedValue(int value){
+        SystemUtils.setProperty(JOYSTICK_LED_SPEED, String.valueOf(value));
+        SystemUtils.writeSysNode(path_speed, value);
     }
 
     private void setModeValue(int value){
@@ -228,7 +287,13 @@ public class LightActivity extends AppCompatActivity {
             SystemUtils.writeSysNode(path_color, nodes[1]);
         }
     }
-
+    private void updateSpeedVisibility() {
+        boolean visible = isRainbowRotateMode();
+        ll_light_speed.setVisibility(visible ? View.VISIBLE : View.GONE);
+        if (visible) {
+            initSpeed();
+        }
+    }
     private boolean isRainbowRotateMode() {
         int mode = Integer.parseInt(SystemUtils.getProperty(JOYSTICK_LED_MODE, "0"));
         return mode == MODE_RAINBOW_ROTATE;

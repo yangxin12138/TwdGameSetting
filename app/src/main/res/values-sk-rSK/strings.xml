@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">Rotujúci farebný cyklus</string>
     <string name="light_mode_turn_off">Vypnúť</string>
     <string name="light_brightness_unsupported_title">Nastavenie jasu nie je v režime rotujúceho farebného cyklu podporované.</string>
+    <string name="light_rotation_speed">Rýchlosť otáčania</string>
+    <string name="light_rotation_speed_fast">Rýchly</string>
+    <string name="light_rotation_speed_slow">Pomaly</string>
+    <string name="light_rotation_speed_moderate">Mierny</string>
 </resources>

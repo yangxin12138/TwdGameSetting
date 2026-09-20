@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">Циклическая смена цветов</string>
     <string name="light_mode_turn_off">Выключать</string>
     <string name="light_brightness_unsupported_title">Регулировка яркости не поддерживается в режиме циклической смены цветов с вращением.</string>
+    <string name="light_rotation_speed">Скорость вращения</string>
+    <string name="light_rotation_speed_fast">Быстрый</string>
+    <string name="light_rotation_speed_slow">Медленный</string>
+    <string name="light_rotation_speed_moderate">Умеренный</string>
 </resources>

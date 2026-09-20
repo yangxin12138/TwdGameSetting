@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">วงจรสีแบบหมุนวน</string>
     <string name="light_mode_turn_off">ปิด</string>
     <string name="light_brightness_unsupported_title">ไม่รองรับการปรับความสว่างในโหมดวนสีแบบหมุน</string>
+    <string name="light_rotation_speed">ความเร็วรอบ</string>
+    <string name="light_rotation_speed_fast">เร็ว</string>
+    <string name="light_rotation_speed_slow">ช้า</string>
+    <string name="light_rotation_speed_moderate">ปานกลาง</string>
 </resources>

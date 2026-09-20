@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">Roterende kleurcyclus</string>
     <string name="light_mode_turn_off">Uitschakelen</string>
     <string name="light_brightness_unsupported_title">Helderheidsaanpassing wordt niet ondersteund in de Roterende Kleurcyclus</string>
+    <string name="light_rotation_speed">Rotatiesnelheid</string>
+    <string name="light_rotation_speed_fast">Snel</string>
+    <string name="light_rotation_speed_slow">Langzaam</string>
+    <string name="light_rotation_speed_moderate">Gematigd</string>
 </resources>

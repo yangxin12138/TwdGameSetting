@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">לְסוֹבֵב מחזור שינוי צבע</string>
     <string name="light_mode_turn_off">לְכַבּוֹת</string>
     <string name="light_brightness_unsupported_title">כוונון הבהירות אינו נתמך במצב מחזור צבעים מסתובב.</string>
+    <string name="light_rotation_speed">מהירות סיבוב</string>
+    <string name="light_rotation_speed_fast">מָהִיר</string>
+    <string name="light_rotation_speed_slow">לְהַאֵט</string>
+    <string name="light_rotation_speed_moderate">לְמַתֵן</string>
 </resources>

@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">Περιστροφικός Αλλαγή χρώματος</string>
     <string name="light_mode_turn_off">Κλείνω</string>
     <string name="light_brightness_unsupported_title">Η ρύθμιση φωτεινότητας δεν υποστηρίζεται στον περιστρεφόμενο κύκλο χρωμάτων.</string>
+    <string name="light_rotation_speed">Ταχύτητα περιστροφής</string>
+    <string name="light_rotation_speed_fast">Γρήγορα</string>
+    <string name="light_rotation_speed_slow">Αργός</string>
+    <string name="light_rotation_speed_moderate">Μέτριος</string>
 </resources>

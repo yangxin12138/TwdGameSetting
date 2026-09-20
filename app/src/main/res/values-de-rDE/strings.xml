@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">Drehen Farbwechsel</string>
     <string name="light_mode_turn_off">Ausschalten</string>
     <string name="light_brightness_unsupported_title">Die Helligkeitsanpassung wird im rotierenden Farbzyklus nicht unterstützt.</string>
+    <string name="light_rotation_speed">Drehzahl</string>
+    <string name="light_rotation_speed_fast">Schnell</string>
+    <string name="light_rotation_speed_slow">Langsam</string>
+    <string name="light_rotation_speed_moderate">Mäßig</string>
 </resources>

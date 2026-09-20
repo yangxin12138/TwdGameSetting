@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">Umiikot na Siklo ng Kulay</string>
     <string name="light_mode_turn_off">Patayin</string>
     <string name="light_brightness_unsupported_title">Hindi sinusuportahan ang pagsasaayos ng liwanag sa Rotating Color Cycle.</string>
+    <string name="light_rotation_speed">Bilis ng Pag-ikot</string>
+    <string name="light_rotation_speed_fast">Mabilis</string>
+    <string name="light_rotation_speed_slow">Mabagal</string>
+    <string name="light_rotation_speed_moderate">Katamtaman</string>
 </resources>

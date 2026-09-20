@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">چرخهٔ چرخشی</string>
     <string name="light_mode_turn_off">خاموش کردن</string>
     <string name="light_brightness_unsupported_title">تنظیم روشنایی در حالت چرخه چرخشی پشتیبانی نمی‌شود.</string>
+    <string name="light_rotation_speed">سرعت چرخش</string>
+    <string name="light_rotation_speed_fast">سریع</string>
+    <string name="light_rotation_speed_slow">آهسته</string>
+    <string name="light_rotation_speed_moderate">متوسط</string>
 </resources>

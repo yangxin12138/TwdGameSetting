@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">Ruotare Ciclo di cambio colore</string>
     <string name="light_mode_turn_off">Spegnere</string>
     <string name="light_brightness_unsupported_title">La regolazione della luminosità non è supportata nella modalità di rotazione ciclica dei colori.</string>
+    <string name="light_rotation_speed">Velocità di rotazione</string>
+    <string name="light_rotation_speed_fast">Veloce</string>
+    <string name="light_rotation_speed_slow">Lento</string>
+    <string name="light_rotation_speed_moderate">Moderare</string>
 </resources>

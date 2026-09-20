@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">Krožeče barvno zaporedje</string>
     <string name="light_mode_turn_off">Izklopi</string>
     <string name="light_brightness_unsupported_title">Prilagajanje svetlosti v načinu kroženja barv z vrtenjem ni podprto.</string>
+    <string name="light_rotation_speed">Hitrost vrtenja</string>
+    <string name="light_rotation_speed_fast">Hitro</string>
+    <string name="light_rotation_speed_slow">Počasno</string>
+    <string name="light_rotation_speed_moderate">Zmerno</string>
 </resources>

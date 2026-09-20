@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">Ciclu de culori rotativ</string>
     <string name="light_mode_turn_off">Opriți</string>
     <string name="light_brightness_unsupported_title">Reglarea luminozității nu este disponibilă în modul de ciclu cromatic rotativ.</string>
+    <string name="light_rotation_speed">Viteză de rotație</string>
+    <string name="light_rotation_speed_fast">Rapid</string>
+    <string name="light_rotation_speed_slow">Lent</string>
+    <string name="light_rotation_speed_moderate">Moderat</string>
 </resources>

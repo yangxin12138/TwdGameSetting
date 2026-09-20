@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">Rotacyjny cykl kolorów</string>
     <string name="light_mode_turn_off">Wyłączyć coś</string>
     <string name="light_brightness_unsupported_title">Regulacja jasności nie jest obsługiwana w trybie rotacyjnego cyklu kolorów.</string>
+    <string name="light_rotation_speed">Prędkość obrotowa</string>
+    <string name="light_rotation_speed_fast">Szybko</string>
+    <string name="light_rotation_speed_slow">Powolny</string>
+    <string name="light_rotation_speed_moderate">Umiarkowany</string>
 </resources>

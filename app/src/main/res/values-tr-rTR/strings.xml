@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">Dönen Renk Döngüsü</string>
     <string name="light_mode_turn_off">Kapamak</string>
     <string name="light_brightness_unsupported_title">Dönen Renk Döngüsü\'nde parlaklık ayarı desteklenmez.</string>
+    <string name="light_rotation_speed">Dönüş Hızı</string>
+    <string name="light_rotation_speed_fast">Hızlı</string>
+    <string name="light_rotation_speed_slow">Yavaş</string>
+    <string name="light_rotation_speed_moderate">Ilıman</string>
 </resources>

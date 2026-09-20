@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">Memutar Siklus perubahan warna</string>
     <string name="light_mode_turn_off">Mematikan</string>
     <string name="light_brightness_unsupported_title">Pengaturan kecerahan tidak didukung pada Siklus Warna Berputar.</string>
+    <string name="light_rotation_speed">Kecepatan Rotasi</string>
+    <string name="light_rotation_speed_fast">Cepat</string>
+    <string name="light_rotation_speed_slow">Lambat</string>
+    <string name="light_rotation_speed_moderate">Sedang</string>
 </resources>

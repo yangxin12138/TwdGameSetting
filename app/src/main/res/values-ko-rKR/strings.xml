@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">회전 주기</string>
     <string name="light_mode_turn_off">끄다</string>
     <string name="light_brightness_unsupported_title">회전/반복 모드에서는 밝기 조절이 지원되지 않습니다.</string>
+    <string name="light_rotation_speed">회전 속도</string>
+    <string name="light_rotation_speed_fast">빠른</string>
+    <string name="light_rotation_speed_slow">느린</string>
+    <string name="light_rotation_speed_moderate">보통의</string>
 </resources>

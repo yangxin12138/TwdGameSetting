@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">炫彩_旋转</string>
     <string name="light_mode_turn_off">关闭氛围灯</string>
     <string name="light_brightness_unsupported_title">炫彩_旋转模式不支持亮度调节</string>
+    <string name="light_rotation_speed">旋转速度</string>
+    <string name="light_rotation_speed_fast">快</string>
+    <string name="light_rotation_speed_slow">慢</string>
+    <string name="light_rotation_speed_moderate">中</string>
 </resources>

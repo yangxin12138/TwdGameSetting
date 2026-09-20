@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">घुमाएँ  रंग बदलना</string>
     <string name="light_mode_turn_off">बंद करें</string>
     <string name="light_brightness_unsupported_title">रोटेटिंग कलर साइकिल में ब्राइटनेस एडजस्टमेंट सपोर्टेड नहीं है।</string>
+    <string name="light_rotation_speed">घूमने की गति</string>
+    <string name="light_rotation_speed_fast">तेज़</string>
+    <string name="light_rotation_speed_slow">धीमा</string>
+    <string name="light_rotation_speed_moderate">मध्यम</string>
 </resources>

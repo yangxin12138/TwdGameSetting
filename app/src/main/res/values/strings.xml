@@ -51,6 +51,10 @@
     <string name="light_mode_breath_ColorCycle">Breath Color Cycle</string>
     <string name="light_mode_rotating_ColorCycle">Rotating Color Cycle</string>
     <string name="light_mode_turn_off">Turn off</string>
+    <string name="light_rotation_speed">Rotation Speed</string>
+    <string name="light_rotation_speed_fast">Fast</string>
+    <string name="light_rotation_speed_moderate">Moderate</string>
+    <string name="light_rotation_speed_slow">Slow</string>
     <string name="light_brightness_unsupported_title">Brightness adjustment is not supported in the Rotating Color Cycle</string>
 
 

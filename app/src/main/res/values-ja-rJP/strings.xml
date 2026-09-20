@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">回転カラーサイクル</string>
     <string name="light_mode_turn_off">消す</string>
     <string name="light_brightness_unsupported_title">「回転カラーサイクル」では、明るさの調整はサポートされていません。</string>
+    <string name="light_rotation_speed">回転速度</string>
+    <string name="light_rotation_speed_fast">速い</string>
+    <string name="light_rotation_speed_slow">遅い</string>
+    <string name="light_rotation_speed_moderate">適度</string>
 </resources>

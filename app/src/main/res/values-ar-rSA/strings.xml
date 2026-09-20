@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">دورة الألوان الدوارة</string>
     <string name="light_mode_turn_off">أغلق</string>
     <string name="light_brightness_unsupported_title">ضبط السطوع غير مدعوم في دورة الألوان الدوارة</string>
+    <string name="light_rotation_speed">سرعة الدوران</string>
+    <string name="light_rotation_speed_fast">سريع</string>
+    <string name="light_rotation_speed_slow">بطيء</string>
+    <string name="light_rotation_speed_moderate">معتدل</string>
 </resources>

@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">Forog Színváltó ciklus</string>
     <string name="light_mode_turn_off">Kapcsolja ki</string>
     <string name="light_brightness_unsupported_title">A fényerő-szabályozás nem támogatott a forgó színciklus módban.</string>
+    <string name="light_rotation_speed">Forgási sebesség</string>
+    <string name="light_rotation_speed_fast">Gyors</string>
+    <string name="light_rotation_speed_slow">Lassú</string>
+    <string name="light_rotation_speed_moderate">Mérsékelt</string>
 </resources>

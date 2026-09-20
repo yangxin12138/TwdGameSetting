@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">Chu kỳ màu xoay vòng</string>
     <string name="light_mode_turn_off">Tắt</string>
     <string name="light_brightness_unsupported_title">Tính năng điều chỉnh độ sáng không được hỗ trợ trong chế độ Chu kỳ màu xoay vòng.</string>
+    <string name="light_rotation_speed">Tốc độ quay</string>
+    <string name="light_rotation_speed_fast">Nhanh</string>
+    <string name="light_rotation_speed_slow">Chậm</string>
+    <string name="light_rotation_speed_moderate">Vừa phải</string>
 </resources>

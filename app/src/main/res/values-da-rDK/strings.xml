@@ -50,4 +50,8 @@
     <string name="light_mode_rotating_ColorCycle">Roterende Farvecyklus</string>
     <string name="light_mode_turn_off">Slå for</string>
     <string name="light_brightness_unsupported_title">Lysstyrkejustering understøttes ikke i roterende farvecyklus</string>
+    <string name="light_rotation_speed">Rotationshastighed</string>
+    <string name="light_rotation_speed_fast">Hurtig</string>
+    <string name="light_rotation_speed_slow">Langsom</string>
+    <string name="light_rotation_speed_moderate">Moderat</string>
 </resources>
