@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">نسمة من السماء الزرقاء</string>
     <string name="light_mode_breath_Blue">نفاسة زرقاء</string>
     <string name="light_mode_breath_Purple">تنفس الأرجواني</string>
+    <string name="light_mode_steady_on_White">أبيض ثابت</string>
     <string name="light_mode_breath_Lightblue">نسمة زرقاء خفيفة</string>
     <string name="light_mode_breath_ColorCycle">دورة لون التنفس</string>
     <string name="light_mode_rotating_ColorCycle">دورة الألوان الدوارة</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">سريع</string>
     <string name="light_rotation_speed_slow">بطيء</string>
     <string name="light_rotation_speed_moderate">معتدل</string>
+    <string name="light_mode_breath_White">التنفس الأبيض</string>
 </resources>

@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">Respiração Azul-Celeste</string>
     <string name="light_mode_breath_Blue">Respiração Azul</string>
     <string name="light_mode_breath_Purple">Respiração Púrpura</string>
+    <string name="light_mode_steady_on_White">Branco Estático</string>
     <string name="light_mode_breath_Lightblue">Respiração Azul Claro</string>
     <string name="light_mode_breath_ColorCycle">Ciclo de Cores da Respiração</string>
     <string name="light_mode_rotating_ColorCycle">Ciclo de Cores Rotativo</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">Rápido</string>
     <string name="light_rotation_speed_slow">Devagar</string>
     <string name="light_rotation_speed_moderate">Moderado</string>
+    <string name="light_mode_breath_White">Respiração Branco</string>
 </resources>

@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">Hengittää Taivaansininen</string>
     <string name="light_mode_breath_Blue">Hengittää sininen</string>
     <string name="light_mode_breath_Purple">Hengittää Violetti</string>
+    <string name="light_mode_steady_on_White">Pidä aina päällä Valkoinen</string>
     <string name="light_mode_breath_Lightblue">Hengittää Vaaleansininen</string>
     <string name="light_mode_breath_ColorCycle">Hengittää Värisykli</string>
     <string name="light_mode_rotating_ColorCycle">Kiertää Värisykli</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">Nopeasti</string>
     <string name="light_rotation_speed_slow">Hidas</string>
     <string name="light_rotation_speed_moderate">Kohtalainen</string>
+    <string name="light_mode_breath_White">Hengittää Valkoinen</string>
 </resources>

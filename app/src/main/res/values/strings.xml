@@ -41,6 +41,7 @@
     <string name="light_mode_steady_on_Blue">Static Blue</string>
     <string name="light_mode_steady_on_Purple">Static Purple</string>
     <string name="light_mode_steady_on_Lightblue">Static Light Blue</string>
+    <string name="light_mode_steady_on_White">Static White</string>
     <string name="light_mode_breath_Red">Breath Red</string>
     <string name="light_mode_breath_Yellow">Breath Yellow</string>
     <string name="light_mode_breath_Green">Breath Green</string>
@@ -48,6 +49,7 @@
     <string name="light_mode_breath_Blue">Breath Blue</string>
     <string name="light_mode_breath_Purple">Breath Purple</string>
     <string name="light_mode_breath_Lightblue">Breath Light Blue</string>
+    <string name="light_mode_breath_White">Breath White</string>
     <string name="light_mode_breath_ColorCycle">Breath Color Cycle</string>
     <string name="light_mode_rotating_ColorCycle">Rotating Color Cycle</string>
     <string name="light_mode_turn_off">Turn off</string>

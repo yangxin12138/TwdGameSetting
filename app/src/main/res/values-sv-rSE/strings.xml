@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">Andas Himmelsblå</string>
     <string name="light_mode_breath_Blue">Andas blått</string>
     <string name="light_mode_breath_Purple">Andas lila</string>
+    <string name="light_mode_steady_on_White">Statisk Vit</string>
     <string name="light_mode_breath_Lightblue">Andas ljusblå</string>
     <string name="light_mode_breath_ColorCycle">Färgcykel för andetag</string>
     <string name="light_mode_rotating_ColorCycle">Roterande färgcykel</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">Snabb</string>
     <string name="light_rotation_speed_slow">Långsam</string>
     <string name="light_rotation_speed_moderate">Måttlig</string>
+    <string name="light_mode_breath_White">Andas Vit</string>
 </resources>

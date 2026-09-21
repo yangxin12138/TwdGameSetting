@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">Dih Nebo Plavo</string>
     <string name="light_mode_breath_Blue">Dih plavi</string>
     <string name="light_mode_breath_Purple">Dih ljubičasta</string>
+    <string name="light_mode_steady_on_White">Uvijek svijetlo bijela</string>
     <string name="light_mode_breath_Lightblue">Dih svjetlo plava</string>
     <string name="light_mode_breath_ColorCycle">Ciklus boja disanja</string>
     <string name="light_mode_rotating_ColorCycle">Rotacijski ciklus boja</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">Brzo</string>
     <string name="light_rotation_speed_slow">Usporiti</string>
     <string name="light_rotation_speed_moderate">Umjereno</string>
+    <string name="light_mode_breath_White">Dih Bijeli</string>
 </resources>

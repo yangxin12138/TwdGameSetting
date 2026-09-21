@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">Dych Nebesky modrý</string>
     <string name="light_mode_breath_Blue">Dych modrej</string>
     <string name="light_mode_breath_Purple">Dych Fialový</string>
+    <string name="light_mode_steady_on_White">Statická biela</string>
     <string name="light_mode_breath_Lightblue">Dych svetlomodrá</string>
     <string name="light_mode_breath_ColorCycle">Cyklus farieb dychu</string>
     <string name="light_mode_rotating_ColorCycle">Rotujúci farebný cyklus</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">Rýchly</string>
     <string name="light_rotation_speed_slow">Pomaly</string>
     <string name="light_rotation_speed_moderate">Mierny</string>
+    <string name="light_mode_breath_White">Dych biela</string>
 </resources>

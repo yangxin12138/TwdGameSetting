@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">息をする 空色</string>
     <string name="light_mode_breath_Blue">息をする 青色</string>
     <string name="light_mode_breath_Purple">息をする 紫</string>
+    <string name="light_mode_steady_on_White">永遠の 白色</string>
     <string name="light_mode_breath_Lightblue">息をする 淡い青色</string>
     <string name="light_mode_breath_ColorCycle">息をする  カラーサイクル</string>
     <string name="light_mode_rotating_ColorCycle">回転カラーサイクル</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">速い</string>
     <string name="light_rotation_speed_slow">遅い</string>
     <string name="light_rotation_speed_moderate">適度</string>
+    <string name="light_mode_breath_White">息をする 白</string>
 </resources>

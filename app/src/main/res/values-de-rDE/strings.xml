@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">Atmen Himmelblau</string>
     <string name="light_mode_breath_Blue">Atmen Blau</string>
     <string name="light_mode_breath_Purple">Atmen Lila</string>
+    <string name="light_mode_steady_on_White">Atmen</string>
     <string name="light_mode_breath_Lightblue">Atmen Hellblau</string>
     <string name="light_mode_breath_ColorCycle">Atmen Farbwechsel</string>
     <string name="light_mode_rotating_ColorCycle">Drehen Farbwechsel</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">Schnell</string>
     <string name="light_rotation_speed_slow">Langsam</string>
     <string name="light_rotation_speed_moderate">Mäßig</string>
+    <string name="light_mode_breath_White">Atmen Weiß</string>
 </resources>

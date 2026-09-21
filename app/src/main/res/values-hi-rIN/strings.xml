@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">साँस लेना आसमानी नीला</string>
     <string name="light_mode_breath_Blue">साँस लेना नीला</string>
     <string name="light_mode_breath_Purple">साँस लेना बैंगनी</string>
+    <string name="light_mode_steady_on_White">शाश्वत व्हाइट</string>
     <string name="light_mode_breath_Lightblue">साँस लेना हल्का नीला</string>
     <string name="light_mode_breath_ColorCycle">साँस लेना रंग बदलना</string>
     <string name="light_mode_rotating_ColorCycle">घुमाएँ  रंग बदलना</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">तेज़</string>
     <string name="light_rotation_speed_slow">धीमा</string>
     <string name="light_rotation_speed_moderate">मध्यम</string>
+    <string name="light_mode_breath_White">साँस लेना सफेद</string>
 </resources>

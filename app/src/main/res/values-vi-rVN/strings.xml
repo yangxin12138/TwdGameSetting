@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">Hơi thở màu xanh da trời</string>
     <string name="light_mode_breath_Blue">Hơi thở xanh</string>
     <string name="light_mode_breath_Purple">Hơi thở Tím</string>
+    <string name="light_mode_steady_on_White">Trắng tĩnh</string>
     <string name="light_mode_breath_Lightblue">Hơi thở màu xanh nhạt</string>
     <string name="light_mode_breath_ColorCycle">Chu kỳ màu sắc theo hơi thở</string>
     <string name="light_mode_rotating_ColorCycle">Chu kỳ màu xoay vòng</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">Nhanh</string>
     <string name="light_rotation_speed_slow">Chậm</string>
     <string name="light_rotation_speed_moderate">Vừa phải</string>
+    <string name="light_mode_breath_White">Hơi thở trắng</string>
 </resources>

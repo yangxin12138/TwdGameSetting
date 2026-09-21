@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">Åndedrag himmelblå</string>
     <string name="light_mode_breath_Blue">Åndedrag  blå</string>
     <string name="light_mode_breath_Purple">Åndedrag lilla</string>
+    <string name="light_mode_steady_on_White">Lys hvid</string>
     <string name="light_mode_breath_Lightblue">Åndedrag lyseblå</string>
     <string name="light_mode_breath_ColorCycle">Åndedrag Farvecyklus</string>
     <string name="light_mode_rotating_ColorCycle">Roterende Farvecyklus</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">Hurtig</string>
     <string name="light_rotation_speed_slow">Langsom</string>
     <string name="light_rotation_speed_moderate">Moderat</string>
+    <string name="light_mode_breath_White">Åndedrag vejrtrækning</string>
 </resources>

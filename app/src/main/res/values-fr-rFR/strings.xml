@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">Haleine Bleu ciel</string>
     <string name="light_mode_breath_Blue">Haleine Bleu</string>
     <string name="light_mode_breath_Purple">Haleine Violet</string>
+    <string name="light_mode_steady_on_White">Allumer Blanc</string>
     <string name="light_mode_breath_Lightblue">Haleine Bleu pâle</string>
     <string name="light_mode_breath_ColorCycle">Cycle de couleurs de Haleine</string>
     <string name="light_mode_rotating_ColorCycle">Cycle de couleurs rotatif</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">Rapide</string>
     <string name="light_rotation_speed_slow">Lent</string>
     <string name="light_rotation_speed_moderate">Modéré</string>
+    <string name="light_mode_breath_White">Haleine Allumer</string>
 </resources>

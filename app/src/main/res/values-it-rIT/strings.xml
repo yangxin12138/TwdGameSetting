@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">Respirare Azzurro</string>
     <string name="light_mode_breath_Blue">Respirare Blu</string>
     <string name="light_mode_breath_Purple">Respirare Viola</string>
+    <string name="light_mode_steady_on_White">Statico Bianco</string>
     <string name="light_mode_breath_Lightblue">Respirare Azzurro pallido</string>
     <string name="light_mode_breath_ColorCycle">Respirare Ciclo di cambio colore</string>
     <string name="light_mode_rotating_ColorCycle">Ruotare Ciclo di cambio colore</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">Veloce</string>
     <string name="light_rotation_speed_slow">Lento</string>
     <string name="light_rotation_speed_moderate">Moderare</string>
+    <string name="light_mode_breath_White">Respirare Bianco</string>
 </resources>

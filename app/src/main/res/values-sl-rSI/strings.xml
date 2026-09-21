@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">Dihaj Nebesno modra</string>
     <string name="light_mode_breath_Blue">Dihaj modro</string>
     <string name="light_mode_breath_Purple">Dihaj Vijolični</string>
+    <string name="light_mode_steady_on_White">Statična Bela</string>
     <string name="light_mode_breath_Lightblue">Dihaj svetlo modre barve</string>
     <string name="light_mode_breath_ColorCycle">Cikel barv dihanja</string>
     <string name="light_mode_rotating_ColorCycle">Krožeče barvno zaporedje</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">Hitro</string>
     <string name="light_rotation_speed_slow">Počasno</string>
     <string name="light_rotation_speed_moderate">Zmerno</string>
+    <string name="light_mode_breath_White">Dihaj Bela</string>
 </resources>

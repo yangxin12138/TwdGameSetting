@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">αναπνέω Γαλάζιο</string>
     <string name="light_mode_breath_Blue">αναπνέω μπλε</string>
     <string name="light_mode_breath_Purple">αναπνέω Μωβ</string>
+    <string name="light_mode_steady_on_White">αιώνιος Λευκό</string>
     <string name="light_mode_breath_Lightblue">αναπνέω Απαλό γαλάζιο</string>
     <string name="light_mode_breath_ColorCycle">αναπνέω Αλλαγή χρώματος</string>
     <string name="light_mode_rotating_ColorCycle">Περιστροφικός Αλλαγή χρώματος</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">Γρήγορα</string>
     <string name="light_rotation_speed_slow">Αργός</string>
     <string name="light_rotation_speed_moderate">Μέτριος</string>
+    <string name="light_mode_breath_White">αναπνέω Λευκό</string>
 </resources>

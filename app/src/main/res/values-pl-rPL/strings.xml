@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">Oddech Błękit nieba</string>
     <string name="light_mode_breath_Blue">Oddech błękitu</string>
     <string name="light_mode_breath_Purple">Fioletowy oddech</string>
+    <string name="light_mode_steady_on_White">Statyczny Biały</string>
     <string name="light_mode_breath_Lightblue">Oddech jasnoniebieski</string>
     <string name="light_mode_breath_ColorCycle">Cykl zmiany koloru oddechu</string>
     <string name="light_mode_rotating_ColorCycle">Rotacyjny cykl kolorów</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">Szybko</string>
     <string name="light_rotation_speed_slow">Powolny</string>
     <string name="light_rotation_speed_moderate">Umiarkowany</string>
+    <string name="light_mode_breath_White">Oddech Biały</string>
 </resources>

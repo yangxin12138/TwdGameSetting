@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">تنفس آبی آسمانی</string>
     <string name="light_mode_breath_Blue">تنفسِ آبی</string>
     <string name="light_mode_breath_Purple">نفس ارغوانی</string>
+    <string name="light_mode_steady_on_White">سفید ایستا</string>
     <string name="light_mode_breath_Lightblue">تنفسِ آبی روشن</string>
     <string name="light_mode_breath_ColorCycle">تنفسِ چرخه</string>
     <string name="light_mode_rotating_ColorCycle">چرخهٔ چرخشی</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">سریع</string>
     <string name="light_rotation_speed_slow">آهسته</string>
     <string name="light_rotation_speed_moderate">متوسط</string>
+    <string name="light_mode_breath_White">تنفسِ سفید</string>
 </resources>

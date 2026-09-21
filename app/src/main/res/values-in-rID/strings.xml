@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">Bernapas Biru langit</string>
     <string name="light_mode_breath_Blue">Bernapas Biru</string>
     <string name="light_mode_breath_Purple">Bernapas Ungu</string>
+    <string name="light_mode_steady_on_White">Bernapas</string>
     <string name="light_mode_breath_Lightblue">Bernapas Biru pucat</string>
     <string name="light_mode_breath_ColorCycle">Bernapas Siklus perubahan warna</string>
     <string name="light_mode_rotating_ColorCycle">Memutar Siklus perubahan warna</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">Cepat</string>
     <string name="light_rotation_speed_slow">Lambat</string>
     <string name="light_rotation_speed_moderate">Sedang</string>
+    <string name="light_mode_breath_White">Bernapas Putih</string>
 </resources>

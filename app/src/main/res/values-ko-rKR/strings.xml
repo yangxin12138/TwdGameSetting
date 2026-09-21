@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">숨 쉬다 하늘색</string>
     <string name="light_mode_breath_Blue">숨 쉬다 파란색</string>
     <string name="light_mode_breath_Purple">숨 쉬다 퍼플</string>
+    <string name="light_mode_steady_on_White">스태틱 화이트</string>
     <string name="light_mode_breath_Lightblue">숨 쉬다 연한 파란색</string>
     <string name="light_mode_breath_ColorCycle">숨 쉬다 주기</string>
     <string name="light_mode_rotating_ColorCycle">회전 주기</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">빠른</string>
     <string name="light_rotation_speed_slow">느린</string>
     <string name="light_rotation_speed_moderate">보통의</string>
+    <string name="light_mode_breath_White">숨 쉬다 화이트</string>
 </resources>

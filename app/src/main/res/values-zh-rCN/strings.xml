@@ -38,14 +38,15 @@
     <string name="light_mode_steady_on_Skyblue">长亮_天空蓝</string>
     <string name="light_mode_steady_on_Blue">长亮_蓝色</string>
     <string name="light_mode_steady_on_Purple">长亮_紫色</string>
-    <string name="light_mode_steady_on_Lightblue">长亮_淡蓝色</string>
+    <string name="light_mode_steady_on_Lightblue">长亮_青蓝</string>
     <string name="light_mode_breath_Red">呼吸_红色</string>
     <string name="light_mode_breath_Yellow">呼吸_黄色</string>
     <string name="light_mode_breath_Green">呼吸_绿色</string>
     <string name="light_mode_breath_Skyblue">呼吸_天空蓝</string>
     <string name="light_mode_breath_Blue">呼吸_蓝色</string>
     <string name="light_mode_breath_Purple">呼吸_紫色</string>
-    <string name="light_mode_breath_Lightblue">呼吸_淡蓝色</string>
+    <string name="light_mode_steady_on_White">长亮_白色</string>
+    <string name="light_mode_breath_Lightblue">呼吸_青蓝</string>
     <string name="light_mode_breath_ColorCycle">呼吸_变色循环</string>
     <string name="light_mode_rotating_ColorCycle">炫彩_旋转</string>
     <string name="light_mode_turn_off">关闭氛围灯</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">快</string>
     <string name="light_rotation_speed_slow">慢</string>
     <string name="light_rotation_speed_moderate">中</string>
+    <string name="light_mode_breath_White">呼吸_白色</string>
 </resources>

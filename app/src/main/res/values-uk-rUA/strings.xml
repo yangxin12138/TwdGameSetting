@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">Подих небесної блакиті</string>
     <string name="light_mode_breath_Blue">Дихай синім</string>
     <string name="light_mode_breath_Purple">Фіолетовий подих</string>
+    <string name="light_mode_steady_on_White">Статичний білий</string>
     <string name="light_mode_breath_Lightblue">Дихання світло-блакитного кольору</string>
     <string name="light_mode_breath_ColorCycle">Цикл зміни кольору залежно від дихання</string>
     <string name="light_mode_rotating_ColorCycle">Циклічна зміна кольорів</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">Швидкий</string>
     <string name="light_rotation_speed_slow">Повільно</string>
     <string name="light_rotation_speed_moderate">Помірний</string>
+    <string name="light_mode_breath_White">Дихання Білий</string>
 </resources>

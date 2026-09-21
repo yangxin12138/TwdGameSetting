@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">Elpas Debeszils</string>
     <string name="light_mode_breath_Blue">Elpas Zils</string>
     <string name="light_mode_breath_Purple">Elpas Violeta</string>
+    <string name="light_mode_steady_on_White">Statisks Baltā</string>
     <string name="light_mode_breath_Lightblue">Elpas Gaiši zils</string>
     <string name="light_mode_breath_ColorCycle">Elpas Krāsu cikls</string>
     <string name="light_mode_rotating_ColorCycle">Mainīgs Krāsu cikls</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">Ātrs</string>
     <string name="light_rotation_speed_slow">Lēns</string>
     <string name="light_rotation_speed_moderate">Mērens</string>
+    <string name="light_mode_breath_White">Elpas Baltā</string>
 </resources>

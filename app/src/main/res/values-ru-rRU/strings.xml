@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">Дыхание цвета небесной лазури</string>
     <string name="light_mode_breath_Blue">Дыхание синевы</string>
     <string name="light_mode_breath_Purple">Дыхание пурпура</string>
+    <string name="light_mode_steady_on_White">Статический Белый</string>
     <string name="light_mode_breath_Lightblue">Дыхание Светло-голубой</string>
     <string name="light_mode_breath_ColorCycle">Цикл смены цвета при дыхании</string>
     <string name="light_mode_rotating_ColorCycle">Циклическая смена цветов</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">Быстрый</string>
     <string name="light_rotation_speed_slow">Медленный</string>
     <string name="light_rotation_speed_moderate">Умеренный</string>
+    <string name="light_mode_breath_White">Дыхание Белый</string>
 </resources>

@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">ลมหายใจสีฟ้าคราม</string>
     <string name="light_mode_breath_Blue">ลมหายใจสีฟ้า</string>
     <string name="light_mode_breath_Purple">ลมหายใจสีม่วง</string>
+    <string name="light_mode_steady_on_White">ขาวสถิติ</string>
     <string name="light_mode_breath_Lightblue">ลมหายใจสีฟ้าอ่อน</string>
     <string name="light_mode_breath_ColorCycle">วงจรสีตามจังหวะการหายใจ</string>
     <string name="light_mode_rotating_ColorCycle">วงจรสีแบบหมุนวน</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">เร็ว</string>
     <string name="light_rotation_speed_slow">ช้า</string>
     <string name="light_rotation_speed_moderate">ปานกลาง</string>
+    <string name="light_mode_breath_White">หายใจขาว</string>
 </resources>

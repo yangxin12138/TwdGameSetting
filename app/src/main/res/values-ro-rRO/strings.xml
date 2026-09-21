@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">Respirație de albastru-cer</string>
     <string name="light_mode_breath_Blue">Respirație albastră</string>
     <string name="light_mode_breath_Purple">Respirație purpurie</string>
+    <string name="light_mode_steady_on_White">Alb static</string>
     <string name="light_mode_breath_Lightblue">Respirație Albastră Deschisă</string>
     <string name="light_mode_breath_ColorCycle">Ciclu de culori sincronizat cu respirația</string>
     <string name="light_mode_rotating_ColorCycle">Ciclu de culori rotativ</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">Rapid</string>
     <string name="light_rotation_speed_slow">Lent</string>
     <string name="light_rotation_speed_moderate">Moderat</string>
+    <string name="light_mode_breath_White">Respirație Alb</string>
 </resources>

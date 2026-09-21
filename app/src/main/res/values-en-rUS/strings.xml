@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">Breath Sky Blue</string>
     <string name="light_mode_breath_Blue">Breath Blue</string>
     <string name="light_mode_breath_Purple">Breath Purple</string>
+    <string name="light_mode_steady_on_White">Static White</string>
     <string name="light_mode_breath_Lightblue">Breath Light Blue</string>
     <string name="light_mode_breath_ColorCycle">Breath Color Cycle</string>
     <string name="light_mode_rotating_ColorCycle">Rotating Color Cycle</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">Fast</string>
     <string name="light_rotation_speed_slow">Slow</string>
     <string name="light_rotation_speed_moderate">Moderate</string>
+    <string name="light_mode_breath_White">Breath White</string>
 </resources>

@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">Pust himmelblå</string>
     <string name="light_mode_breath_Blue">Pust blått</string>
     <string name="light_mode_breath_Purple">Pust lilla</string>
+    <string name="light_mode_steady_on_White">Statisk Hvit</string>
     <string name="light_mode_breath_Lightblue">Pust lyseblå</string>
     <string name="light_mode_breath_ColorCycle">Fargesyklus med pusteeffekt</string>
     <string name="light_mode_rotating_ColorCycle">Syklus for roterende fargeendring</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">Rask</string>
     <string name="light_rotation_speed_slow">Langsom</string>
     <string name="light_rotation_speed_moderate">Moderat</string>
+    <string name="light_mode_breath_White">Pust Hvit</string>
 </resources>

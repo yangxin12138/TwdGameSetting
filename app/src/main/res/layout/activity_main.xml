@@ -211,44 +211,6 @@
                 android:drawablePadding="12dp"
                 android:paddingEnd="36dp"/>
 
-            <!-- 关于本机 -->
-            <LinearLayout
-                android:id="@+id/ll_about"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/item_height"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginTop="@dimen/index_ll_marginTop"
-                android:background="@drawable/bg_option_selector"
-                android:focusable="true"
-                android:focusableInTouchMode="true"
-                android:clickable="true"
-                android:gravity="center_vertical"
-                android:paddingStart="36dp"
-                android:paddingEnd="36dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:duplicateParentState="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/index_About"
-                    android:textColor="@drawable/text_color_selector"
-                    android:textSize="26sp"/>
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"/>
-
-                <ImageView
-                    android:duplicateParentState="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:src="@drawable/arrow_selector"/>
-            </LinearLayout>
-
             <LinearLayout
                 android:id="@+id/ll_light"
                 android:layout_width="match_parent"
@@ -322,7 +284,44 @@
                     android:layout_marginStart="12dp"
                     android:src="@drawable/arrow_selector"/>
             </LinearLayout>
+            <!-- 关于本机 -->
+            <LinearLayout
+                android:id="@+id/ll_about"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="@dimen/index_ll_marginTop"
+                android:background="@drawable/bg_option_selector"
+                android:layout_marginBottom="@dimen/index_ll_marginTop"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingStart="36dp"
+                android:paddingEnd="36dp"
+                android:orientation="horizontal">
 
+                <TextView
+                    android:duplicateParentState="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/index_About"
+                    android:textColor="@drawable/text_color_selector"
+                    android:textSize="26sp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:duplicateParentState="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:src="@drawable/arrow_selector"/>
+            </LinearLayout>
         </LinearLayout>
     </com.twd.gamesetting.FocusScrollView>
 

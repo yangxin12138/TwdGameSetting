@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">Aliento azul cielo</string>
     <string name="light_mode_breath_Blue">Aliento azul</string>
     <string name="light_mode_breath_Purple">Aliento púrpura</string>
+    <string name="light_mode_steady_on_White">Blanco estático</string>
     <string name="light_mode_breath_Lightblue">Aliento azul claro</string>
     <string name="light_mode_breath_ColorCycle">Ciclo de color de la respiración</string>
     <string name="light_mode_rotating_ColorCycle">Ciclo de colores rotativo</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">Rápido</string>
     <string name="light_rotation_speed_slow">Lento</string>
     <string name="light_rotation_speed_moderate">Moderado</string>
+    <string name="light_mode_breath_White">Aliento Blanco</string>
 </resources>

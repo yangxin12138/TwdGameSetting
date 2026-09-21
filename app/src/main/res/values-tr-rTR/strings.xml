@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">Gök Mavisi Nefes</string>
     <string name="light_mode_breath_Blue">Mavi Nefes</string>
     <string name="light_mode_breath_Purple">Mor Nefes</string>
+    <string name="light_mode_steady_on_White">Statik Beyaz</string>
     <string name="light_mode_breath_Lightblue">Nefes Açık Mavi</string>
     <string name="light_mode_breath_ColorCycle">Nefes Rengi Döngüsü</string>
     <string name="light_mode_rotating_ColorCycle">Dönen Renk Döngüsü</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">Hızlı</string>
     <string name="light_rotation_speed_slow">Yavaş</string>
     <string name="light_rotation_speed_moderate">Ilıman</string>
+    <string name="light_mode_breath_White">Beyaz Nefes</string>
 </resources>

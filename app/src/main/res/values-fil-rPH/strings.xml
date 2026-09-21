@@ -45,6 +45,7 @@
     <string name="light_mode_breath_Skyblue">Hininga Asul na Langit</string>
     <string name="light_mode_breath_Blue">Hininga Blue</string>
     <string name="light_mode_breath_Purple">Hininga Dilaw</string>
+    <string name="light_mode_steady_on_White">Matatag sa White</string>
     <string name="light_mode_breath_Lightblue">Hininga Mapusyaw na Asul</string>
     <string name="light_mode_breath_ColorCycle">Hininga Pag-ikot ng Kulay</string>
     <string name="light_mode_rotating_ColorCycle">Umiikot na Siklo ng Kulay</string>
@@ -54,4 +55,5 @@
     <string name="light_rotation_speed_fast">Mabilis</string>
     <string name="light_rotation_speed_slow">Mabagal</string>
     <string name="light_rotation_speed_moderate">Katamtaman</string>
+    <string name="light_mode_breath_White">Hininga White</string>
 </resources>
