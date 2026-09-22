@@ -14,12 +14,8 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.twd.gamesetting.R;
 import com.twd.gamesetting.dialog.DatePickerDialog;
@@ -30,7 +26,7 @@ import com.twd.gamesetting.interfaces.OnTimeZoneSelectedListener;
 import com.twd.gamesetting.interfaces.TimeSelectedInterface;
 import com.twd.gamesetting.utils.DateTimeUtils;
 
-import java.text.DateFormat;
+import android.text.format.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -154,21 +150,17 @@ public class TimeActivity extends AppCompatActivity implements View.OnClickListe
         calendar.setTimeZone(mCurrentTimeZone);
         Date currentDate = calendar.getTime();
         //设置日期的格式
-        SimpleDateFormat dateFormat = getDateFormatterByTimeZone(mCurrentTimeZone);
+        java.text.DateFormat dateFormat = getSystemLocaleDateFormatter(mCurrentTimeZone);
         String formatterDate = dateFormat.format(currentDate);
 
         String timeFormatString = DateTimeUtils.getTimeFormat(this);
-        //设置时间的格式
-        DateFormat timeFormat = new SimpleDateFormat(timeFormatString);
-        timeFormat.setTimeZone(mCurrentTimeZone); // 时间也绑定时区
+        java.text.DateFormat timeFormat = new java.text.SimpleDateFormat(timeFormatString);
+        timeFormat.setTimeZone(mCurrentTimeZone);
         String formatterTime = timeFormat.format(currentDate);
 
-        // 获取当前时区的完整名称
         String timeZoneDisplayName = utils.getTimeZoneList().get(mCurrentTimeZone.getID());
-
-        // 计算时区偏移量，并格式化为"+HH:mm"的形式
         String timeZoneInfo = timeZoneDisplayName;
-        //在TextView上更新日期和时间
+
         tv_time_summary.setText(formatterTime);
         tv_date_summary.setText(formatterDate);
         tv_timeZone_summary.setText(timeZoneInfo);
@@ -206,40 +198,35 @@ public class TimeActivity extends AppCompatActivity implements View.OnClickListe
         return sdf;
     }
 
+    private java.text.DateFormat getSystemLocaleDateFormatter(TimeZone timeZone) {
+        // getDateFormat = Android原生短日期，和系统设置页面保持一致
+        java.text.DateFormat dateFormat = DateFormat.getDateFormat(this);
+        dateFormat.setTimeZone(timeZone);
+        return dateFormat;
+    }
+
     @Override
     public void onDateSelected(String time) {
         try {
-            // 使用"/"分割日期字符串
-            String[] parts = time.split("/");
-            if (parts.length == 3) {
-                // 分别解析年、月、日
-                int year = Integer.parseInt(parts[0]);
-                int month = Integer.parseInt(parts[1]);
-                int day = Integer.parseInt(parts[2]);
-                Calendar calendar =  Calendar.getInstance();
-                calendar.setTimeZone(mCurrentTimeZone);
-                calendar.set(Calendar.YEAR,year);
-                calendar.set(Calendar.MONTH,month-1);
-                calendar.set(Calendar.DAY_OF_MONTH,day);
-
-                long when = calendar.getTimeInMillis();
-                AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-                if (alarmManager != null) {
-                    alarmManager.setTime(when);
-                    Log.i(TAG, "onDateSelected: 手动设置日期成功 → " + time);
-                }
-                // 2. 缓存手动设置的时间戳（核心！用于拦截后恢复）
-                mManualSetTimeMillis = when;
-
-                // 3. 立即更新UI
-                SimpleDateFormat dateFormat = getDateFormatterByTimeZone(mCurrentTimeZone);
-                String formattedDate = dateFormat.format(calendar.getTime());
-                tv_date_summary.setText(formattedDate);
-
-            } else {
-                // 如果日期格式不正确，抛出异常或处理错误
-                throw new IllegalArgumentException("Date format should be yyyy/MM/dd");
+            java.text.DateFormat dateParser = getSystemLocaleDateFormatter(mCurrentTimeZone);
+            java.util.Date parsedDate = dateParser.parse(time);
+            if(parsedDate == null){
+                Log.e(TAG, "onDateSelected:日期解析失败");
+                return;
             }
+            Calendar calendar =  Calendar.getInstance();
+            calendar.setTimeZone(mCurrentTimeZone);
+            calendar.setTime(parsedDate);
+
+            long when = calendar.getTimeInMillis();
+            AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+            if (alarmManager != null) {
+                alarmManager.setTime(when);
+                Log.i(TAG, "onDateSelected: 手动设置日期成功 → " + time);
+            }
+            mManualSetTimeMillis = when;
+            String formattedDate = dateParser.format(calendar.getTime());
+            tv_date_summary.setText(formattedDate);
         }catch (Exception e) {
             Log.e(TAG, "onDateSelected: 设置日期异常", e);
         }
@@ -311,11 +298,11 @@ public class TimeActivity extends AppCompatActivity implements View.OnClickListe
                 Log.e(TAG, "onTimeSelected: 获取AlarmManager失败");
                 return;
             }
-// 2. 缓存手动设置的时间戳（核心！用于拦截后恢复）
+            // 2. 缓存手动设置的时间戳（核心！用于拦截后恢复）
             mManualSetTimeMillis = newTimeInMillis;
             // 步骤6：更新UI显示（适配当前的12/24小时制格式）
             String timeFormatString = DateTimeUtils.getTimeFormat(this); // 复用原有工具类的格式
-            DateFormat displayFormat = new SimpleDateFormat(timeFormatString, Locale.getDefault());
+            java.text.DateFormat displayFormat = new SimpleDateFormat(timeFormatString, Locale.getDefault());
             displayFormat.setTimeZone(mCurrentTimeZone);
             tv_time_summary.setText(displayFormat.format(targetCalendar.getTime()));
 

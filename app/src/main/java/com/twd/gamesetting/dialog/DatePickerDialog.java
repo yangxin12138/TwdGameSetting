@@ -21,6 +21,8 @@ import com.twd.gamesetting.time.TimeActivity;
 import java.util.Calendar;
 import java.util.Locale;
 
+import android.text.format.DateFormat;
+
 /**
  * @Author:Yangxin
  * @Description:
@@ -88,21 +90,39 @@ public class DatePickerDialog extends Dialog implements View.OnClickListener, Vi
             // 兼容不同Android版本的DatePicker布局
             ViewGroup firstChild = (ViewGroup) datePicker.getChildAt(0);
             ViewGroup secondChild = (ViewGroup) firstChild.getChildAt(0);
-            yearPicker = (NumberPicker) secondChild.getChildAt(0);
-            monthPicker = (NumberPicker) secondChild.getChildAt(1);
-            dayPicker = (NumberPicker) secondChild.getChildAt(2);
+            NumberPicker yearPickerTmp = (NumberPicker) secondChild.getChildAt(0);
+            NumberPicker monthPickerTmp = (NumberPicker) secondChild.getChildAt(1);
+            NumberPicker dayPickerTmp = (NumberPicker) secondChild.getChildAt(2);
 
-            // 核心修复1：重新排序年/月/日（适配美国格式：月/日/年）
-            Locale currentLocale = mContext.getResources().getConfiguration().locale;
-            if (Locale.US.getLanguage().equals(currentLocale.getLanguage())) {
-                // 美国格式：月/日/年 → 调整picker顺序
-                monthPicker = (NumberPicker) secondChild.getChildAt(0);
-                dayPicker = (NumberPicker) secondChild.getChildAt(1);
-                yearPicker = (NumberPicker) secondChild.getChildAt(2);
-                Log.i(TAG, "onCreate: 美国格式 → 月/日/年");
+            String pattern;
+            try {
+                java.text.DateFormat df = DateFormat.getDateFormat(mContext);
+                pattern = ((java.text.SimpleDateFormat) df).toPattern();
+            } catch (Exception e) {
+                pattern = "yyyyMMdd";
+                Log.e(TAG, "读取日期模板失败", e);
+            }
+            Log.i(TAG, "日期pattern = " + pattern);
+
+            // 根据日期模板自动调整顺序，不再硬编码Locale
+            if (pattern.startsWith("M")) {
+                // MM/dd/yyyy 月/日/年
+                monthPicker = yearPickerTmp;
+                dayPicker = monthPickerTmp;
+                yearPicker = dayPickerTmp;
+                Log.i(TAG, "onCreate: 美式格式 月/日/年");
+            } else if (pattern.startsWith("d")) {
+                // dd/MM/yyyy 日/月/年
+                dayPicker = yearPickerTmp;
+                monthPicker = monthPickerTmp;
+                yearPicker = dayPickerTmp;
+                Log.i(TAG, "onCreate: 英式格式 日/月/年");
             } else {
-                // 其他格式：年/月/日
-                Log.i(TAG, "onCreate: 中文格式 → 年/月/日");
+                // yyyy/MM/dd 年/月/日
+                yearPicker = yearPickerTmp;
+                monthPicker = monthPickerTmp;
+                dayPicker = dayPickerTmp;
+                Log.i(TAG, "onCreate: 年/月/日");
             }
 
             // 核心修复2：固定月份选择器的显示值，禁用系统自动格式化
@@ -129,6 +149,7 @@ public class DatePickerDialog extends Dialog implements View.OnClickListener, Vi
             Log.e(TAG, "获取NumberPicker失败", e);
         }
 
+
         Calendar calendar = Calendar.getInstance();
         int year = calendar.get(Calendar.YEAR);
         int month = calendar.get(Calendar.MONTH); // 0-11 对应1-12月
@@ -139,11 +160,8 @@ public class DatePickerDialog extends Dialog implements View.OnClickListener, Vi
         datePicker.init(year, month, day, new DatePicker.OnDateChangedListener() {
             @Override
             public void onDateChanged(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                int displayMonth = monthOfYear + 1;
-                selectDate = String.format("%04d/%02d/%02d", year, displayMonth, dayOfMonth);
+                selectDate = formatDateByLocale(year, monthOfYear, dayOfMonth);
                 Log.i(TAG, "onDateChanged: 日期是 = " + selectDate);
-
-                // 防滚动后格式还原：重新设置月份显示值
                 if (finalMonthPicker != null) {
                     finalMonthPicker.setDisplayedValues(currentMonthDisplayValues);
                 }
@@ -151,7 +169,7 @@ public class DatePickerDialog extends Dialog implements View.OnClickListener, Vi
         });
 
         // 初始化默认选中日期
-        selectDate = String.format("%04d/%02d/%02d", year, month + 1, day);
+         selectDate = formatDateByLocale(year, month, day);
 
         // 设置点击和焦点监听（增加非空判断，避免空指针）
         if (yearPicker != null) {
@@ -183,9 +201,6 @@ public class DatePickerDialog extends Dialog implements View.OnClickListener, Vi
             dateSelectedInterface.onDateSelected(selectDate);
         }
         dismiss();
-        Intent restartIntent = new Intent(mContext.getApplicationContext(), TimeActivity.class);
-        restartIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
-        mContext.startActivity(restartIntent);
     }
 
     @Override
@@ -196,5 +211,13 @@ public class DatePickerDialog extends Dialog implements View.OnClickListener, Vi
         }else {
             v.setBackgroundResource(0);
         }
+    }
+
+    private String formatDateByLocale(int year, int monthOfYear, int dayOfMonth) {
+        Calendar cal = Calendar.getInstance();
+        cal.set(year, monthOfYear, dayOfMonth);
+        // 原生API，跟随系统Locale生成对应格式
+        java.text.DateFormat df = DateFormat.getDateFormat(mContext);
+        return df.format(cal.getTime());
     }
 }
