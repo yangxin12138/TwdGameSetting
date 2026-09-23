@@ -217,6 +217,13 @@ public class LightActivity extends AppCompatActivity {
                 startActivity(new Intent(LightActivity.this, ModeSelectActivity.class));
             }
         });
+
+        ll_light_speed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LightActivity.this,SpeedSelectActivity.class));
+            }
+        });
     }
     @Override
     protected void onResume() {

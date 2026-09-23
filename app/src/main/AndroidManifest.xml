@@ -24,6 +24,8 @@
         android:roundIcon="@mipmap/ic_settings"
         android:theme="@style/Theme.TwdGameSetting"
         tools:targetApi="31">
+        <activity android:name=".light.SpeedSelectActivity"
+            android:exported="false"/>
         <activity
             android:name=".BrightnessActivity"
             android:exported="false" />
