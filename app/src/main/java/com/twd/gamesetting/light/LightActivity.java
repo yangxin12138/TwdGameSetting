@@ -3,6 +3,7 @@ package com.twd.gamesetting.light;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -102,13 +103,14 @@ public class LightActivity extends AppCompatActivity {
         tv_cur_light_bright = findViewById(R.id.tv_light_cur_bright);
         tv_cur_light_mode = findViewById(R.id.tv_light_cur_mode);
         tv_cur_light_speed = findViewById(R.id.tv_light_cur_speed);
-        initBright(); initMode(); updateSpeedVisibility();
+        initBright(); initMode(); updateItemVisibility();
 
         ll_light_bright.setOnKeyListener(new View.OnKeyListener() {
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 if (event.getAction() != KeyEvent.ACTION_DOWN) { return false; }
                 if (!v.isFocused()) { return false; }
+                if (v.getVisibility() != View.VISIBLE) return false;
                 if (isRainbowRotateMode()) {
                     if (keyCode == KeyEvent.KEYCODE_DPAD_LEFT
                             || keyCode == KeyEvent.KEYCODE_DPAD_RIGHT) {
@@ -153,14 +155,14 @@ public class LightActivity extends AppCompatActivity {
                         index  = (index  - 1 + 17) % 17;
                         setModeValue(index );
                         updateModeText(index );
-                        updateSpeedVisibility();
+                        updateItemVisibility();
                         return true;
                     case KeyEvent.KEYCODE_DPAD_RIGHT:
                         // 往后循环，16 再往后回到 0
                         index  = (index  + 1) % 17;
                         setModeValue(index );
                         updateModeText(index );
-                        updateSpeedVisibility();
+                        updateItemVisibility();
                         return true;
                 }
                 return false;
@@ -200,6 +202,7 @@ public class LightActivity extends AppCompatActivity {
         ll_light_bright.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (v.getVisibility() != View.VISIBLE) return;
                 if (isRainbowRotateMode()) {
                     showBrightUnsupportedDialog();
                     return;
@@ -220,7 +223,7 @@ public class LightActivity extends AppCompatActivity {
         super.onResume();
         initBright();
         initMode();
-        updateSpeedVisibility();
+        updateItemVisibility();
     }
     private void initSpeed() {
         String curSpeed = SystemUtils.getProperty(JOYSTICK_LED_SPEED, "0");
@@ -234,8 +237,10 @@ public class LightActivity extends AppCompatActivity {
     private void initMode(){
         int kernelMode = Integer.parseInt(
                 SystemUtils.getProperty(JOYSTICK_LED_MODE, "0"));
+        Log.d("yangxin", "initMode: kernelMode = "+kernelMode);
         int kernelColor = Integer.parseInt(
                 SystemUtils.getProperty(JOYSTICK_LED_COLOR, "-1"));
+        Log.d("yangxin", "initMode: kernelColor = "+kernelColor);
         updateModeText(modeKernelToIndex(kernelMode, kernelColor));
     }
     private void updateBrightText(int index) {
@@ -297,6 +302,25 @@ public class LightActivity extends AppCompatActivity {
             if(kernelColor >=0){
                 SystemUtils.writeSysNode(path_color, kernelColor);
             }
+        }
+    }
+
+    /**
+     * 根据当前模式控制亮度项 / 旋转速度项的显示：
+     * - 炫彩旋转(kernelMode==4)：显示速度，隐藏亮度
+     * - 其他模式：显示亮度，隐藏速度
+     */
+    private void updateItemVisibility() {
+        boolean isRainbow = isRainbowRotateMode();
+
+        // 炫彩旋转：显示速度，隐藏亮度
+        ll_light_speed.setVisibility(isRainbow ? View.VISIBLE : View.GONE);
+        ll_light_bright.setVisibility(isRainbow ? View.GONE : View.VISIBLE);
+
+        if (isRainbow) {
+            initSpeed();
+        } else {
+            initBright();
         }
     }
     private void updateSpeedVisibility() {

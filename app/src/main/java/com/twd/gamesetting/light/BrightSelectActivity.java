@@ -27,17 +27,24 @@ public class BrightSelectActivity extends AppCompatActivity {
         tvHigh.setOnClickListener(v -> selectBright(2));
 
         // 默认焦点给当前值
-        int cur = Integer.parseInt(SystemUtils.getProperty(JOYSTICK_LED_BRIGHTNESS, "0"));
-        if (cur == 0) tvLow.requestFocus();
-        else if (cur == 1) tvMid.requestFocus();
+        int kernel = Integer.parseInt(
+                SystemUtils.getProperty(JOYSTICK_LED_BRIGHTNESS, "50"));
+        if (kernel == 50) tvLow.requestFocus();
+        else if (kernel == 125) tvMid.requestFocus();
         else tvHigh.requestFocus();
     }
 
     private void selectBright(int value) {
-        SystemUtils.setProperty(JOYSTICK_LED_BRIGHTNESS, String.valueOf(value));
-        int brightness;
-        if (value == 0) {brightness = 50;} else if (value == 1) {brightness = 125;} else {brightness = 255;}
-        SystemUtils.writeSysNode(path_Brightness, brightness);
+        int kernel = brightIndexToKernel(value);
+        SystemUtils.writeSysNode(path_Brightness, kernel);
+        SystemUtils.setProperty(JOYSTICK_LED_BRIGHTNESS, String.valueOf(kernel));
         finish();
+    }
+
+    /** UI 索引(0/1/2) → 内核亮度值(50/125/255) */
+    private int brightIndexToKernel(int index) {
+        if (index == 0) return 50;
+        if (index == 1) return 125;
+        return 255;
     }
 }
