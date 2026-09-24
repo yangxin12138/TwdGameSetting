@@ -4,6 +4,8 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,7 +56,23 @@ public class BrightnessActivity extends AppCompatActivity {
         // OK 键确认选择
         lvBrightness.setOnItemClickListener((parent, view, position, id) -> {
             setBrightness(BRIGHTNESS_VALUES[position]);
+            Log.d("yangxin", "onCreate: 亮度调节点击OK键");
             finish();
+        });
+
+        lvBrightness.setOnKeyListener((v, keyCode, event) -> {
+            if (event.getAction() == KeyEvent.ACTION_DOWN) {
+                if (keyCode == KeyEvent.KEYCODE_BUTTON_A) {
+                    int position = lvBrightness.getSelectedItemPosition();
+                    if (position >= 0) {
+                        setBrightness(BRIGHTNESS_VALUES[position]);
+                        Log.d("yangxin", "OK键确认亮度: " + BRIGHTNESS_VALUES[position]);
+                        finish();
+                    }
+                    return true; // 消费事件
+                }
+            }
+            return false;
         });
 
         // 焦点变化
