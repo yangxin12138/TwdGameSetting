@@ -122,7 +122,7 @@
     <string name="time_zone_Rangoon">Rangoon</string>
     <string name="time_zone_Krasnoyarsk">Krasnoyarsk</string>
     <string name="time_zone_Bangkok">Bangkok</string>
-    <string name="time_zone_Shanghai">China Standard Time</string>
+    <string name="time_zone_Shanghai">Beijing</string>
     <string name="time_zone_Hong_Kong">Hong_Kong</string>
     <string name="time_zone_Irkutsk">Irkutsk</string>
     <string name="time_zone_Kuala_Lumpur">Kuala_Lumpur</string>
@@ -141,6 +141,6 @@
     <string name="time_zone_Magadan">Magadan</string>
     <string name="time_zone_Auckland">Auckland</string>
     <string name="time_zone_Fiji">Fiji</string>
-    <string name="time_zone_Tongatapu">Brisbane</string>
+    <string name="time_zone_Tongatapu">Tongatapu</string>
     <string name="time_zone_Madrid">Madrid</string>
 </resources>

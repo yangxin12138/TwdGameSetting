@@ -10,7 +10,7 @@ android {
         applicationId "com.twd.gamesetting"
         minSdk 21
         targetSdk 34
-        versionCode 2
+        versionCode 3
         versionName "2.9"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
