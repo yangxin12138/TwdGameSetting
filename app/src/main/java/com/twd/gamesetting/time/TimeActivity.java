@@ -38,6 +38,7 @@ public class TimeActivity extends AppCompatActivity implements View.OnClickListe
         TimeSelectedInterface, DateSelectedInterface
         , OnTimeZoneSelectedListener {
     private final static String TAG = TimeActivity.class.getSimpleName();
+    private static final int REQUEST_CODE_TIME_ZONE = 1001;
     private LinearLayout LL_autoTime;
     private LinearLayout LL_time_item;
     private LinearLayout LL_date_item;
@@ -123,7 +124,8 @@ public class TimeActivity extends AppCompatActivity implements View.OnClickListe
         } else if (v.getId() == R.id.ll_date_item) {
             showDateDialog();
         } else if (v.getId() == R.id.ll_time_zone_item) {
-            showTimeZoneDialog();
+            Intent intent = new Intent(this, TimeZoneActivity.class);
+            startActivityForResult(intent, REQUEST_CODE_TIME_ZONE);
         } else if (v.getId() == R.id.ll_24Hours_item) {
             mIs24HoursEnabled = !mIs24HoursEnabled;
             tv_24Hours_summary.setText(mIs24HoursEnabled ? switch_on : switch_off);
@@ -387,6 +389,18 @@ public class TimeActivity extends AppCompatActivity implements View.OnClickListe
         // 注销广播接收器
         if (mTimeChangeReceiver != null) {
             unregisterReceiver(mTimeChangeReceiver);
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_CODE_TIME_ZONE
+                && resultCode == RESULT_OK && data != null) {
+            String timeZoneId = data.getStringExtra(TimeZoneActivity.EXTRA_TIME_ZONE_ID);
+            if (timeZoneId != null) {
+                onTimeZoneSelected(timeZoneId);  // 复用已有回调，刷新 UI
+            }
         }
     }
 }
