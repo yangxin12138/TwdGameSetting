@@ -11,6 +11,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -29,6 +30,18 @@ public class AboutActivity extends AppCompatActivity {
     TextView factory_tv;
     private SoundHelper soundHelper;
     private Context context;
+
+    private StringBuilder keySequence = new StringBuilder();
+    // 目标应用包名
+    private static final String TARGET_PACKAGE_NAME = "com.ty.actionspcbatest";
+    // 目标 Activity 全类名
+    private static final String TARGET_ACTIVITY_NAME = "com.ty.actionspcbatest.PcbaTestActivity";
+    private static final String TRIGGER_SEQUENCE = "UDLRB";
+    private boolean hasTriggered = false; // 防止重复触发
+    private static final int MAX_SEQUENCE_LENGTH = 20; // 序列最大长度，避免无限增长
+    private long lastKeyTime = 0L;
+    // 两次按键之间的最大允许间隔（毫秒），超过就清空重来
+    private static final long KEY_INTERVAL_TIMEOUT = 1500L;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -147,6 +160,68 @@ public class AboutActivity extends AppCompatActivity {
             intent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
             intent.setPackage("android");
             context.sendBroadcast(intent);
+        }
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, android.view.KeyEvent event) {
+        String token = null;
+        switch (keyCode) {
+            case android.view.KeyEvent.KEYCODE_DPAD_UP:    token = "U"; break;
+            case android.view.KeyEvent.KEYCODE_DPAD_DOWN:  token = "D"; break;
+            case android.view.KeyEvent.KEYCODE_DPAD_LEFT:  token = "L"; break;
+            case android.view.KeyEvent.KEYCODE_DPAD_RIGHT: token = "R"; break;
+            case android.view.KeyEvent.KEYCODE_BACK:       token = "B"; break;
+            default:
+                return super.onKeyDown(keyCode, event);
+        }
+
+        long now = System.currentTimeMillis();
+
+        // 1. 如果距离上次按键超过阈值，清空序列，重新开始
+        if (now - lastKeyTime > KEY_INTERVAL_TIMEOUT) {
+            keySequence.setLength(0);
+            hasTriggered = false;
+        }
+        lastKeyTime = now;
+
+        // 2. 追加当前按键
+        keySequence.append(token);
+
+        // 3. 防止序列无限增长（只保留最后 N 位）
+        if (keySequence.length() > TRIGGER_SEQUENCE.length()) {
+            keySequence.delete(0, keySequence.length() - TRIGGER_SEQUENCE.length());
+        }
+
+        Log.i(TAG, "onKeyDown: keySequence = " + keySequence
+                + ", interval = " + (now - lastKeyTime));
+
+        // 4. 检查是否匹配触发序列
+        if (!hasTriggered && keySequence.toString().equals(TRIGGER_SEQUENCE)) {
+            hasTriggered = true;
+            keySequence.setLength(0);
+            openTargetApp();
+            return true; // 消费掉这次返回键，避免退出 Activity
+        }
+
+        return super.onKeyDown(keyCode, event);
+    }
+
+    private void openTargetApp() {
+        try {
+            Intent intent = new Intent();
+            intent.setComponent(new android.content.ComponentName(
+                    TARGET_PACKAGE_NAME,
+                    TARGET_ACTIVITY_NAME
+            ));
+            // 如果目标 Activity 没有在同一个任务栈里，或者想以新任务启动，加上这个标志
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+            startActivity(intent);
+            Log.i(TAG, "openTargetApp: 已启动 " + TARGET_PACKAGE_NAME + "/" + TARGET_ACTIVITY_NAME);
+        } catch (Exception e) {
+            Log.e(TAG, "openTargetApp: 启动失败", e);
+            e.printStackTrace();
         }
     }
 }
