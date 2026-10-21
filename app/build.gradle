@@ -11,7 +11,7 @@ android {
         minSdk 21
         targetSdk 34
         versionCode 3
-        versionName "3.1"
+        versionName "3.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -28,7 +28,7 @@ android {
             applicationVariants.all { variant ->
                 variant.outputs.all {
                     def buildTypeName = variant.buildType.name
-                    outputFileName = "${rootProject.name}_${buildTypeName}_v${variant.versionName}.apk"
+                    outputFileName = "${rootProject.name}_xifan_${buildTypeName}_v${variant.versionName}.apk"
                 }
             }
         }

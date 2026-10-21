@@ -145,10 +145,10 @@ public class BrightnessActivity extends AppCompatActivity {
             tvName.setText(getItem(position));
 
             if (position == focusedItem) {
-                itemView.setBackgroundResource(R.color.bg_focus);
-                tvName.setTextColor(context.getResources().getColor(R.color.tv_focus));
+                itemView.setBackgroundResource(R.drawable.bg_gradient_focus_red);
+                tvName.setTextColor(context.getResources().getColor(R.color.tv_normal));
             } else {
-                itemView.setBackgroundResource(R.color.bg_normal);
+                itemView.setBackgroundResource(R.drawable.bg_gradient_normal);
                 tvName.setTextColor(context.getResources().getColor(R.color.tv_normal));
             }
 

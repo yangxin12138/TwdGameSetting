@@ -184,16 +184,16 @@ public class TimeZoneActivity extends AppCompatActivity {
             }
 
             if (position == focusedItem){
-                itemView.setBackgroundResource(R.color.bg_focus);
-                tvTimeName.setTextColor(ContextCompat.getColor(context,R.color.tv_focus));
-                tvTimeGMT.setTextColor(ContextCompat.getColor(context,R.color.tv_focus));
+                itemView.setBackgroundResource(R.drawable.bg_gradient_focus_red);
+                tvTimeName.setTextColor(ContextCompat.getColor(context,R.color.tv_normal));
+                tvTimeGMT.setTextColor(ContextCompat.getColor(context,R.color.tv_normal));
                 if (timeZoneBean.isSelect()){
-                    ivCheck.setImageResource(R.drawable.ic_check_focus);
+                    ivCheck.setImageResource(R.drawable.ic_check_normal);
                 }else {
                     ivCheck.setImageResource(R.drawable.unselected);
                 }
             }else {
-                itemView.setBackgroundResource(R.color.bg_normal);
+                itemView.setBackgroundResource(R.drawable.bg_gradient_normal);
                 tvTimeName.setTextColor(ContextCompat.getColor(context,R.color.tv_normal));
                 tvTimeGMT.setTextColor(ContextCompat.getColor(context,R.color.tv_normal));
                 if (timeZoneBean.isSelect()){
