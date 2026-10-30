@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="@dimen/index_ll_marginTop"
+    android:background="@drawable/bg_option_selector"
+    android:gravity="center_vertical"
+    android:paddingStart="36dp"
+    android:paddingEnd="36dp"
+    android:orientation="horizontal">
+
+    <!-- 主标题 -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/text_color_selector"
+        android:textSize="26sp"/>
+
+    <!-- 中间弹性空间 -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <!-- 左箭头（仅亮度项显示） -->
+    <ImageView
+        android:id="@+id/iv_left_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_left_selector"
+        android:visibility="gone"/>
+
+    <!-- 副标题（语言/声音/亮度都显示，内容不同） -->
+    <TextView
+        android:id="@+id/tv_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:textColor="@drawable/text_color_selector"
+        android:textSize="26sp"
+        android:visibility="gone"/>
+
+    <!-- 右箭头（普通项和亮度项显示） -->
+    <ImageView
+        android:id="@+id/iv_right_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_selector"/>
+</LinearLayout>
