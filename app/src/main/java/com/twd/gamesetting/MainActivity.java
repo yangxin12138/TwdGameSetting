@@ -9,37 +9,42 @@ import android.provider.Settings;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.Switch;
-import android.widget.TextView;
+import android.widget.AdapterView;
+import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SwitchCompat;
 
+import com.twd.gamesetting.bean.SettingItem;
 import com.twd.gamesetting.light.LightActivity;
 import com.twd.gamesetting.time.TimeActivity;
 import com.twd.gamesetting.utils.GlobalSoundSwitchUtil;
 import com.twd.gamesetting.utils.SoundHelper;
 import com.twd.gamesetting.utils.SystemUtils;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
 
-    LinearLayout LL_language;  TextView tv_cur_lang;
-    TextView tv_wifi;
-    TextView tv_bluetooth;
-    LinearLayout LL_bright; TextView tv_cur_bright;
-    LinearLayout LL_sound;
-    LinearLayout LL_about;
-    LinearLayout LL_time;
-    LinearLayout LL_light;
-    TextView tv_sound_status;
+    // 动作常量定义（截图3报错是因为缺这些）
+    public static final int ACTION_LANGUAGE = 1;
+    public static final int ACTION_SOUND    = 2;
+    public static final int ACTION_BRIGHT   = 3;
+    public static final int ACTION_WIFI     = 4;
+    public static final int ACTION_BLUETOOTH= 5;
+    public static final int ACTION_LIGHT    = 6;
+    public static final int ACTION_TIME     = 7;
+    public static final int ACTION_ABOUT    = 8;
+
+    private ListView listView;
+    private SettingItemAdapter adapter;
+    private List<SettingItem> items = new ArrayList<>();
+
     private SoundHelper soundHelper;
-    // 防焦点音效频繁触发
     private long lastFocusSoundTime = 0;
 
-    // 亮度范围 50~100，步长10
+    // 亮度范围
     private final int MIN_BRIGHT = 10;
     private final int MAX_BRIGHT = 100;
     private final int STEP = 10;
@@ -47,211 +52,243 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        initView();
+        setContentView(R.layout.activity_main); // 确保你的xml已经改成了ListView版本
+        listView = findViewById(R.id.list_settings);
+        soundHelper = SoundHelper.getInstance(this);
+
+        // 1. 构建数据
+        buildItems();
+
+        // 2. 设置 Adapter
+        adapter = new SettingItemAdapter(this, items);
+        listView.setAdapter(adapter);
+
+        // 3. 焦点改变监听（播放按键音）
+        listView.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                adapter.setFocusedItem(position);
+                long now = System.currentTimeMillis();
+                if (now - lastFocusSoundTime > 120) {
+                    // soundHelper.playSelect();
+                    lastFocusSoundTime = now;
+                }
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) { }
+        });
+
+        // 4. 点击事件监听（OK键）
+        listView.setOnItemClickListener((parent, view, position, id) -> {
+            SettingItem item = items.get(position);
+            handleItemClick(item);
+        });
+
+        // 5. 特殊按键监听：亮度项左右键（截图1报错是因为缺变量）
+        listView.setOnKeyListener((v, keyCode, event) -> {
+            if (event.getAction() != KeyEvent.ACTION_DOWN) return false;
+
+            int pos = listView.getSelectedItemPosition();
+            if (pos < 0 || pos >= items.size()) return false;
+
+            SettingItem item = items.get(pos);
+            if (item.getType() != SettingItem.TYPE_BRIGHT) return false;
+
+            if (keyCode == KeyEvent.KEYCODE_DPAD_LEFT) {
+                int val = Math.max(MIN_BRIGHT, getCurrentBrightValue() - STEP);
+                setBrightness(val);
+                updateBrightSubTitle(val);
+                adapter.notifyDataSetChanged();
+                return true;
+            } else if (keyCode == KeyEvent.KEYCODE_DPAD_RIGHT) {
+                int val = Math.min(MAX_BRIGHT, getCurrentBrightValue() + STEP);
+                setBrightness(val);
+                updateBrightSubTitle(val);
+                adapter.notifyDataSetChanged();
+                return true;
+            }
+            return false;
+        });
+
+        listView.requestFocus();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        // 每次返回MainActivity时更新当前语言显示
+        // 截图2报错是因为没有 updateCurrentLanguage() 和 readCurrentBrightness() 的实现
         updateCurrentLanguage();
-        readCurrentBrightness();
-    }
-    private void initView(){
-
-        soundHelper = SoundHelper.getInstance(this);
-        LL_sound = findViewById(R.id.ll_sound);
-        tv_sound_status = findViewById(R.id.tv_sound_status);
-
-        LL_language = findViewById(R.id.ll_language);  tv_cur_lang =findViewById(R.id.tv_cur_lang);
-        tv_wifi = findViewById(R.id.tv_wifi);
-        tv_bluetooth = findViewById(R.id.tv_bluetooth);
-        LL_about = findViewById(R.id.ll_about);
-        LL_bright = findViewById(R.id.ll_bright); tv_cur_bright = findViewById(R.id.tv_cur_bright);
-        LL_time = findViewById(R.id.ll_time);
-        LL_light = findViewById(R.id.ll_light);
-        // 初始化读取亮度
         readCurrentBrightness();
 
         boolean soundOpen = GlobalSoundSwitchUtil.isSoundEffectOpen(getContentResolver());
-        updateSoundStatusText(soundOpen);
-
-
-
-
-        LL_bright.setOnKeyListener(new View.OnKeyListener() {
-            @Override
-            public boolean onKey(View v, int keyCode, KeyEvent event) {
-                if (event.getAction() != KeyEvent.ACTION_DOWN) {return false;}
-                if (!v.isFocused()) {return false;}
-                int currentVal = getCurrentBrightValue();
-                switch (keyCode) {
-                    case KeyEvent.KEYCODE_DPAD_LEFT:
-                        // 左箭头：亮度降低
-                        currentVal -= STEP;
-                        if (currentVal < MIN_BRIGHT) currentVal = MIN_BRIGHT;
-                        setBrightness(currentVal);
-                        //soundHelper.playSelect();
-                        return true;
-                    case KeyEvent.KEYCODE_DPAD_RIGHT:
-                        // 右箭头：亮度升高
-                        currentVal += STEP;
-                        if (currentVal > MAX_BRIGHT) currentVal = MAX_BRIGHT;
-                        setBrightness(currentVal);
-                        //soundHelper.playSelect();
-                        return true;
-                }return false;}});
-        LL_sound.setOnClickListener(v -> {
-            //soundHelper.playConfirm(); // 按下OK播放确认音效
-            boolean current = GlobalSoundSwitchUtil.isSoundEffectOpen(getContentResolver());
-            boolean newState = !current;
-            // 保存
-            GlobalSoundSwitchUtil.setSoundEffect(getContentResolver(), newState);
-            // 更新界面文字
-            updateSoundStatusText(newState);
-        });
-        LL_language.setOnClickListener(this::onClick);
-        tv_wifi.setOnClickListener(this::onClick);
-        tv_bluetooth.setOnClickListener(this::onClick);
-        LL_about.setOnClickListener(this::onClick);
-        LL_bright.setOnClickListener(this::onClick);
-        LL_time.setOnClickListener(this::onClick);
-        LL_light.setOnClickListener(this::onClick);
-        LL_language.requestFocus();
-        updateCurrentLanguage();
-        boolean hasJoyStickLight = SystemUtils.getProperty("ro.sys.joystick.led","0").equals("1");
-        Log.d("yangxin", "initView: led = " + SystemUtils.getProperty("ro.sys.joystick.led","0"));
-        LL_light.setVisibility(hasJoyStickLight ? View.VISIBLE : View.GONE);
+        updateSoundSubTitle(soundOpen);
+        adapter.notifyDataSetChanged();
+        updateLightVisibility();
     }
 
-    @Override
-    public void onClick(View view) {
-        Intent intent;
-        //soundHelper.playConfirm();
-        if (view.getId() == R.id.ll_language){
-            intent = new Intent(this,LanguageActivity.class);
-            startActivity(intent);
-        } else if (view.getId() == R.id.tv_wifi) {
-            intent = new Intent();
-            intent.setComponent(new ComponentName("com.android.settings","com.android.settings.wifi.WifiSettings"));
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(intent);
-        } else if (view.getId() == R.id.tv_bluetooth) {
-            intent = new Intent(Settings.ACTION_BLUETOOTH_SETTINGS);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(intent);
-        } else if (view.getId() == R.id.ll_about) {
-            intent = new Intent(this, AboutActivity.class);
-            startActivity(intent);
-        }else if (view.getId() == R.id.ll_time) {
-            intent = new Intent(this, TimeActivity.class);
-            startActivity(intent);
-        }else if (view.getId() == R.id.ll_light) {
-            intent = new Intent(this, LightActivity.class);
-            startActivity(intent);
-        }else if (view.getId() == R.id.ll_bright) {
-            intent = new Intent(this, BrightnessActivity.class);
-            startActivity(intent);
+    /**
+     * 构建数据列表
+     */
+    private void buildItems() {
+        items.clear();
+        items.add(new SettingItem(SettingItem.TYPE_NORMAL, R.string.index_language, ACTION_LANGUAGE));
+        items.add(new SettingItem(SettingItem.TYPE_SOUND,  R.string.index_sound,    ACTION_SOUND));
+        items.add(new SettingItem(SettingItem.TYPE_BRIGHT, R.string.index_bright,   ACTION_BRIGHT));
+        items.add(new SettingItem(SettingItem.TYPE_NORMAL, R.string.index_Wifi,     ACTION_WIFI));
+        items.add(new SettingItem(SettingItem.TYPE_NORMAL, R.string.index_Bluetooth,ACTION_BLUETOOTH));
+
+        // 动态判断是否显示灯光
+        if (SystemUtils.getProperty("ro.sys.joystick.led", "0").equals("1")) {
+            items.add(new SettingItem(SettingItem.TYPE_NORMAL, R.string.light, ACTION_LIGHT));
         }
-    }
-    @SuppressLint("MissingSuperCall")
-    @Override
-    public void onBackPressed() {
-        //soundHelper.playSelect();
-        super.onBackPressed();
-    }
-    private void updateCurrentLanguage() {
-        Locale currentLocale = getResources().getConfiguration().locale;
-        String currentLanguage = currentLocale.getLanguage() + "_" + currentLocale.getCountry();
 
-        Log.i("Language", "当前系统语言: " + currentLanguage);
+        items.add(new SettingItem(SettingItem.TYPE_NORMAL, R.string.time_setting,   ACTION_TIME));
+        items.add(new SettingItem(SettingItem.TYPE_NORMAL, R.string.index_About,    ACTION_ABOUT));
+    }
 
-        // 根据语言代码显示对应的语言名称（只支持中文和英文）
-        if (currentLanguage.contains("zh_CN")) {
-            tv_cur_lang.setText("简体中文");
-        } else if (currentLanguage.contains("zh_TW")) {
-            tv_cur_lang.setText("繁體中文");
-        } else if (currentLanguage.equals("en_US")) {
-            tv_cur_lang.setText("English");
-        }else if (currentLanguage.equals("fr_FR")) {
-            tv_cur_lang.setText("Français");
-        }else if (currentLanguage.equals("de_DE")) {
-            tv_cur_lang.setText("Deutsch");
-        }else if (currentLanguage.equals("ru_RU")) {
-            tv_cur_lang.setText("Pусский");
-        }else if (currentLanguage.equals("ja_JP")) {
-            tv_cur_lang.setText("日本語");
-        }else if (currentLanguage.equals("ko_KR")) {
-            tv_cur_lang.setText("한국어");
-        } else if (currentLanguage.equals("es_ES")) {
-            tv_cur_lang.setText("Español");
-        } else if (currentLanguage.equals("ar_SA")) {
-            tv_cur_lang.setText("Arabic");
-        } else if (currentLanguage.equals("bg_BG")) {
-            tv_cur_lang.setText("Български");
-        } else if (currentLanguage.equals("cs_CZ")) {
-            tv_cur_lang.setText("Čeština");
-        } else if (currentLanguage.equals("da_DK")) {
-            tv_cur_lang.setText("Dansk");
-        } else if (currentLanguage.equals("el_GR")) {
-            tv_cur_lang.setText("Ελληνικά");
-        } else if (currentLanguage.equals("fa_IR")) {
-            tv_cur_lang.setText("Farsi");
-        } else if (currentLanguage.equals("fi_FI")) {
-            tv_cur_lang.setText("Suomi");
-        } else if (currentLanguage.equals("fil_PH")) {
-            tv_cur_lang.setText("Filipino");
-        } else if (currentLanguage.equals("hi_IN")) {
-            tv_cur_lang.setText("हिंदी");
-        } else if (currentLanguage.equals("hr_HR")) {
-            tv_cur_lang.setText("Hrvatski");
-        } else if (currentLanguage.equals("hu_HU")) {
-            tv_cur_lang.setText("Magyar");
-        } else if (currentLanguage.equals("in_ID")) {
-            tv_cur_lang.setText("Bahasa Indonesia");
-        } else if (currentLanguage.equals("it_IT")) {
-            tv_cur_lang.setText("Italiano");
-        } else if (currentLanguage.equals("iw_IL")) {
-            tv_cur_lang.setText("Hebrew");
-        }  else if (currentLanguage.equals("lt_LT")) {
-            tv_cur_lang.setText("Lietuvių");
-        }  else if (currentLanguage.equals("lv_LT")) {
-            tv_cur_lang.setText("Latviski");
-        }  else if (currentLanguage.equals("ms_MY")) {
-            tv_cur_lang.setText("Bahasa Melayu");
-        }  else if (currentLanguage.equals("nb_NO")) {
-            tv_cur_lang.setText("Norsk bokmål");
-        }  else if (currentLanguage.equals("nl_NL")) {
-            tv_cur_lang.setText("Nederlands");
-        }  else if (currentLanguage.equals("pl_PL")) {
-            tv_cur_lang.setText("Polski");
-        }  else if (currentLanguage.equals("pt_PT")) {
-            tv_cur_lang.setText("Português");
-        }  else if (currentLanguage.equals("ro_RO")) {
-            tv_cur_lang.setText("Română");
-        }  else if (currentLanguage.equals("sk_SK")) {
-            tv_cur_lang.setText("Slovensky");
-        }  else if (currentLanguage.equals("sl_SI")) {
-            tv_cur_lang.setText("Slovenski jezik");
-        }  else if (currentLanguage.equals("sv_SE")) {
-            tv_cur_lang.setText("Svenska");
-        }  else if (currentLanguage.equals("th_TH")) {
-            tv_cur_lang.setText("ไทย");
-        }  else if (currentLanguage.equals("tr_TR")) {
-            tv_cur_lang.setText("Türkçe");
-        }  else if (currentLanguage.equals("uk_UA")) {
-            tv_cur_lang.setText("Українська");
-        }  else if (currentLanguage.equals("vi_VN")) {
-            tv_cur_lang.setText("Tiếng Việt");
-        }  else {
-            // 默认显示英文
-            tv_cur_lang.setText("English");
+    /**
+     * 处理点击事件
+     */
+    private void handleItemClick(SettingItem item) {
+        Intent intent;
+        switch (item.getActionId()) {
+            case ACTION_LANGUAGE:
+                intent = new Intent(this, LanguageActivity.class);
+                startActivity(intent);
+                break;
+            case ACTION_SOUND:
+                boolean current = GlobalSoundSwitchUtil.isSoundEffectOpen(getContentResolver());
+                boolean newState = !current;
+                GlobalSoundSwitchUtil.setSoundEffect(getContentResolver(), newState);
+                updateSoundSubTitle(newState);
+                adapter.notifyDataSetChanged();
+                break;
+            case ACTION_WIFI:
+                intent = new Intent();
+                intent.setComponent(new ComponentName("com.android.settings", "com.android.settings.wifi.WifiSettings"));
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+                break;
+            case ACTION_BLUETOOTH:
+                intent = new Intent(Settings.ACTION_BLUETOOTH_SETTINGS);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+                break;
+            case ACTION_LIGHT:
+                intent = new Intent(this, LightActivity.class);
+                startActivity(intent);
+                break;
+            case ACTION_TIME:
+                intent = new Intent(this, TimeActivity.class);
+                startActivity(intent);
+                break;
+            case ACTION_ABOUT:
+                intent = new Intent(this, AboutActivity.class);
+                startActivity(intent);
+                break;
+            case ACTION_BRIGHT:
+                 intent = new Intent(this, BrightnessActivity.class);
+                 startActivity(intent);
+                break;
         }
     }
 
     /**
-     * 读取系统当前屏幕亮度 0~255，转换为百分比0~100
+     * 动态显示/隐藏灯光项（如果需要在 onResume 动态更新的话）
+     */
+    private void updateLightVisibility() {
+        // 因为我们在 buildItems 里已经判断了，这里如果不需要动态刷新，可以留空。
+        // 若需要动态处理，需要遍历 items 更改 visible 并重建列表。
+    }
+
+    // ==========================================
+    // 副标题更新方法
+    // ==========================================
+
+    private void updateLanguageSubTitle() {
+        Locale currentLocale = getResources().getConfiguration().locale;
+        String code = currentLocale.getLanguage() + "_" + currentLocale.getCountry();
+        String name = getLanguageDisplayName(code);
+        for (SettingItem it : items) {
+            if (it.getActionId() == ACTION_LANGUAGE) {
+                it.setSubTitle(name);
+                break;
+            }
+        }
+    }
+
+    private void updateSoundSubTitle(boolean isOpen) {
+        for (SettingItem it : items) {
+            if (it.getActionId() == ACTION_SOUND) {
+                it.setSubTitle(getString(isOpen ? R.string.status_on : R.string.status_off));
+                break;
+            }
+        }
+    }
+
+    private void updateBrightSubTitle(int percent) {
+        for (SettingItem it : items) {
+            if (it.getActionId() == ACTION_BRIGHT) {
+                it.setSubTitle(percent + "%");
+                break;
+            }
+        }
+    }
+
+    /**
+     * 提取出来的语言显示名称处理 (把你原来的大段 if-else 搬过来)
+     */
+    private String getLanguageDisplayName(String code) {
+        if (code.contains("zh_CN")) return "简体中文";
+        else if (code.contains("zh_TW")) return "繁體中文";
+        else if (code.equals("en_US")) return "English";
+        else if (code.equals("fr_FR")) return "Français";
+        else if (code.equals("de_DE")) return "Deutsch";
+        else if (code.equals("ru_RU")) return "Pусский";
+        else if (code.equals("ja_JP")) return "日本語";
+        else if (code.equals("ko_KR")) return "한국어";
+        else if (code.equals("es_ES")) return "Español";
+        else if (code.equals("ar_SA")) return "Arabic";
+        else if (code.equals("bg_BG")) return "Български";
+        else if (code.equals("cs_CZ")) return "Čeština";
+        else if (code.equals("da_DK")) return "Dansk";
+        else if (code.equals("el_GR")) return "Ελληνικά";
+        else if (code.equals("fa_IR")) return "Farsi";
+        else if (code.equals("fi_FI")) return "Suomi";
+        else if (code.equals("fil_PH")) return "Filipino";
+        else if (code.equals("hi_IN")) return "हिंदी";
+        else if (code.equals("hr_HR")) return "Hrvatski";
+        else if (code.equals("hu_HU")) return "Magyar";
+        else if (code.equals("in_ID")) return "Bahasa Indonesia";
+        else if (code.equals("it_IT")) return "Italiano";
+        else if (code.equals("iw_IL")) return "Hebrew";
+        else if (code.equals("lt_LT")) return "Lietuvių";
+        else if (code.equals("lv_LT")) return "Latviski";
+        else if (code.equals("ms_MY")) return "Bahasa Melayu";
+        else if (code.equals("nb_NO")) return "Norsk bokmål";
+        else if (code.equals("nl_NL")) return "Nederlands";
+        else if (code.equals("pl_PL")) return "Polski";
+        else if (code.equals("pt_PT")) return "Português";
+        else if (code.equals("ro_RO")) return "Română";
+        else if (code.equals("sk_SK")) return "Slovensky";
+        else if (code.equals("sl_SI")) return "Slovenski jezik";
+        else if (code.equals("sv_SE")) return "Svenska";
+        else if (code.equals("th_TH")) return "ไทย";
+        else if (code.equals("tr_TR")) return "Türkçe";
+        else if (code.equals("uk_UA")) return "Українська";
+        else if (code.equals("vi_VN")) return "Tiếng Việt";
+        else return "English";
+    }
+
+    /**
+     * 读取并更新当前系统语言
+     */
+    private void updateCurrentLanguage() {
+        updateLanguageSubTitle();
+    }
+
+    /**
+     * 读取当前屏幕亮度
      */
     private void readCurrentBrightness() {
         ContentResolver cr = getContentResolver();
@@ -259,55 +296,38 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         try {
             sysBright = Settings.System.getInt(cr, Settings.System.SCREEN_BRIGHTNESS);
         } catch (Settings.SettingNotFoundException e) {
-            // 无设置时默认128（50%）
             sysBright = 128;
         }
-        // 转百分比：0~255 → 0~100
         int percent = Math.round(sysBright * 100f / 255f);
-        // 限制在50~100区间显示
         percent = Math.max(MIN_BRIGHT, Math.min(MAX_BRIGHT, percent));
-        tv_cur_bright.setText(percent + "%");
+        updateBrightSubTitle(percent);
     }
 
     /**
-     * 获取当前UI显示的亮度百分比数值
+     * 获取当前 UI 显示的亮度值
      */
     private int getCurrentBrightValue() {
-        String text = tv_cur_bright.getText().toString().replace("%", "");
-        try {
-            return Integer.parseInt(text);
-        } catch (Exception e) {
-            return 50;
+        for (SettingItem it : items) {
+            if (it.getActionId() == ACTION_BRIGHT) {
+                String text = it.getSubTitle().replace("%", "");
+                try {
+                    return Integer.parseInt(text);
+                } catch (Exception e) {
+                    return 50;
+                }
+            }
         }
+        return 50;
     }
 
     /**
-     * 设置亮度：百分比50~100 转系统0~255并保存
-     * @param percent 50~100
+     * 设置亮度
      */
     private void setBrightness(int percent) {
-        // 更新UI显示
-        tv_cur_bright.setText(percent + "%");
-        // 百分比转系统标准值 0~255
         int sysVal = Math.round(percent * 255f / 100f);
-        // 写入系统设置
         Settings.System.putInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS, sysVal);
-        // 同步实时生效当前页面亮度
         android.view.WindowManager.LayoutParams lp = getWindow().getAttributes();
         lp.screenBrightness = sysVal / 255f;
         getWindow().setAttributes(lp);
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
-    private void updateSoundStatusText(boolean isOpen){
-        if(isOpen){
-            tv_sound_status.setText(R.string.status_on);
-        }else{
-            tv_sound_status.setText(R.string.status_off);
-        }
     }
 }
