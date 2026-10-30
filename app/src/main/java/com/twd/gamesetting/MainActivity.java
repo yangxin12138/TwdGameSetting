@@ -187,8 +187,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case ACTION_BRIGHT:
-                // intent = new Intent(this, BrightnessActivity.class);
-                // startActivity(intent);
+                 intent = new Intent(this, BrightnessActivity.class);
+                 startActivity(intent);
                 break;
         }
     }
